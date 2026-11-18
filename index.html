@@ -1,506 +1,466 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>راديو المغرب | دليل الإذاعات المغربية المباشرة</title>
-<meta name="description" content="دليل شامل لأفضل الإذاعات المغربية: استمع مباشرة إلى هيت راديو، راديو مارس، ميدي 1، شذى FM، والمزيد. مقالات حصرية وتطبيق أندرويد."/>
-<link rel="canonical" href="https://azzeddine786.github.io/Raddddddd/"/>
-<meta name="robots" content="index,follow,max-image-preview:large">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        paper: '#f8f7f3',
-        ink: '#272525',
-        red: '#b63539',
-        line: '#e1dfd8',
-        dark: '#2c141a',
-        wine: '#481d26'
-      },
-      fontFamily: {
-        sans: ['IBM Plex Sans Arabic', 'Manrope', 'sans-serif'],
-        latin: ['Manrope', 'sans-serif'],
-      }
-    }
-  }
-}
-</script>
-<style>
-  :root { --paper: #f8f7f3; --ink: #272525; --red: #b63539; --line: #e1dfd8; --dim: #706e6b; --dark: #2c141a; }
-  body { background: var(--paper); color: var(--ink); font-family: 'IBM Plex Sans Arabic', 'Manrope', sans-serif; margin: 0; -webkit-font-smoothing: antialiased; }
-  .wrap { width: min(1100px, calc(100% - 32px)); margin-inline: auto; }
-  
-  /* Top Bar */
-  .top { background: #fffefa; border-bottom: 1px solid var(--line); }
-  .top-inner { display: flex; align-items: center; gap: 15px; min-height: 70px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
-  .mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 11px; color: white; background: var(--red); font-weight: 800; font-size: 14px; }
-  .brand-name { font-size: 20px; font-weight: 700; line-height: 1.2; }
-  .brand-name em { color: var(--red); font-style: normal; }
-  .brand-sub { color: #817571; font-size: 8px; letter-spacing: .2em; }
-  .tools { margin-inline-start: auto; display: flex; align-items: center; gap: 10px; }
-  .lang-btn { display: inline-flex; align-items: center; justify-content: center; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; font: 700 12px 'Manrope', sans-serif; background: white; cursor: pointer; }
-  
-  /* Hero (Match Image) */
-  .hero { position: relative; margin-top: 20px; overflow: hidden; background: linear-gradient(135deg, #35171e, #57222a 55%, #491b24); color: #fff7eb; display: grid; grid-template-columns: 1fr; border-radius: 24px; padding: 30px 20px; text-align: center; }
-  .hero::before { position: absolute; content: ""; inset: 0; z-index: 0; background-image: radial-gradient(#e5a18f24 .8px, transparent 1px); background-size: 16px 16px; }
-  .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
-  .hero-badge { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #efb6a63b; border-radius: 30px; padding: 4px 12px; color: #ffe4ce; background: #ffffff08; font-size: 11px; font-weight: 600; margin-bottom: 15px; }
-  .hero h1 { font-size: clamp(32px, 6vw, 48px); font-weight: 700; letter-spacing: -.04em; line-height: 1.2; margin: 0 0 12px; }
-  .hero h1 strong { color: #f4b496; font-weight: 700; }
-  .hero p { color: #e7cfc8; font-size: 14px; line-height: 1.8; margin: 0 0 20px; }
-  .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 25px; }
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 700; cursor: pointer; border: none; transition: .2s; }
-  .btn-ivory { background: #fff4e3; color: #4b2227; }
-  .btn-ghost { color: #fff0e4; border: 1px solid #f7ccbb45; background: none; }
-  
-  /* Interactive Radio Art */
-  .radio-art { position: relative; width: 100%; max-width: 480px; margin: 0 auto; background: #1f0d12; border: 1px solid #6c2d35; border-radius: 16px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); text-align: left; direction: ltr; }
-  .radio-inner { display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; }
-  .radio-dial { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #a84b52; display: grid; place-items: center; position: relative; }
-  .radio-dial::before { content: ''; position: absolute; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #a84b52; }
-  .radio-dial::after { content: ''; width: 8px; height: 8px; background: #e5a18f; border-radius: 50%; }
-  .radio-freq { text-align: center; }
-  .radio-freq .freq-num { font-family: monospace; font-size: 32px; color: #e5a18f; letter-spacing: 2px; }
-  .radio-freq .freq-unit { font-family: monospace; font-size: 10px; color: #a84b52; letter-spacing: 2px; }
-  .radio-station-name { font-size: 12px; color: #fff; margin-top: 5px; font-weight: bold; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; }
-  .radio-bar { width: 100%; height: 4px; background: #4a2a30; border-radius: 2px; margin-top: 15px; overflow: hidden; }
-  .radio-bar-fill { height: 100%; background: #e5a18f; width: 0%; transition: width 0.3s ease; border-radius: 2px; }
-  
-  /* Directory */
-  .directory { padding-top: 25px; }
-  .section-head { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 15px; }
-  .section-head h2 { margin: 0; font-size: 24px; font-weight: 800; }
-  .search-wrap { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 8px; background: white; padding: 0 12px; height: 38px; width: min(250px, 100%); }
-  .search-wrap input { width: 100%; border: none; outline: none; font-size: 13px; }
-  .filter-row { display: flex; align-items: center; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 15px; }
-  .chip { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--line); background: white; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
-  .chip.active { background: var(--ink); color: white; border-color: var(--ink); }
-  
-  /* Grid */
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
-  .station { background: #fffefa; border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; transition: .2s; }
-  .station:hover { border-color: #c8bab0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-  .tile-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-  .station-logo { width: 50px; height: 50px; border-radius: 10px; border: 1px solid #e8e3dc; display: grid; place-items: center; overflow: hidden; background: #f2e9df; font-weight: bold; font-size: 14px; color: var(--red); }
-  .station-logo img { width: 100%; height: 100%; object-fit: contain; background: white; padding: 2px; }
-  .station h3 { margin: 0 0 4px; font-size: 15px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .station-meta { font-size: 11px; color: var(--dim); margin-bottom: 12px; }
-  .play-link { display: inline-flex; align-items: center; justify-content: center; gap: 5px; width: 100%; padding: 8px; border-radius: 8px; background: var(--red); color: white; border: none; font-weight: 700; font-size: 12px; cursor: pointer; transition: .2s; }
-  .play-link:hover { background: #95292e; }
-  
-  /* Player Bar */
-  .player { position: fixed; z-index: 50; inset-inline: 0; bottom: 0; background: #1f0d12; color: white; border-top: 1px solid #6c2d35; padding: 10px 15px; transform: translateY(120%); transition: transform .3s; display: flex; align-items: center; gap: 12px; }
-  .player.open { transform: translateY(0); }
-  .player-logo { width: 40px; height: 40px; border-radius: 8px; background: white; display: grid; place-items: center; overflow: hidden; }
-  .player-logo img { width: 100%; height: 100%; object-fit: contain; }
-  .player-info { flex: 1; min-width: 0; }
-  .player-info b { display: block; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .player-info span { font-size: 11px; color: #a84b52; }
-  .player-btn { width: 40px; height: 40px; border-radius: 50%; background: #e5a18f; color: #1f0d12; border: none; display: grid; place-items: center; cursor: pointer; font-size: 18px; }
-  .player-close { background: none; border: none; color: white; cursor: pointer; padding: 5px; }
-  
-  /* App Card */
-  .app-card { background: #2c2023; color: white; border-radius: 16px; padding: 20px; display: flex; align-items: center; gap: 15px; margin-top: 25px; }
-  .app-card img { width: 50px; height: 50px; border-radius: 12px; }
-  .app-card div { flex: 1; }
-  .app-card b { display: block; font-size: 15px; margin-bottom: 2px; }
-  .app-card span { font-size: 12px; color: #dfcabb; }
-  .app-btn { background: white; color: black; padding: 8px 16px; border-radius: 8px; font-weight: bold; font-size: 12px; text-decoration: none; }
-  
-  /* Articles */
-  .article-card { background: white; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); cursor: pointer; transition: .2s; }
-  .article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-  .article-card img { width: 100%; height: 140px; object-fit: cover; }
-  .article-card div { padding: 12px; }
-  .article-card span { font-size: 10px; font-weight: bold; color: var(--red); background: #fbefea; padding: 3px 8px; border-radius: 12px; }
-  .article-card h3 { font-size: 15px; font-weight: 800; margin: 8px 0 0; line-height: 1.4; }
-  
-  /* Footer */
-  .foot { border-top: 1px solid var(--line); background: #f2f1eb; padding: 20px 0; margin-top: 30px; text-align: center; }
-  .foot-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; font-size: 12px; color: var(--dim); margin-bottom: 10px; }
-  .foot-links a { color: inherit; text-decoration: none; }
-  .foot-links a:hover { color: var(--red); }
-  .foot p { font-size: 11px; color: #999; margin: 0; }
-
-  @media(max-width: 600px) {
-    .hero-actions { flex-direction: column; }
-    .btn { width: 100%; }
-    .app-card { flex-direction: column; text-align: center; }
-  }
-  
-  /* SPA Content Styles (for static pages) */
-  .page-content { padding: 40px 0; max-width: 800px; margin: auto; line-height: 1.95; }
-  .page-content h1 { font-size: 30px; font-weight: 800; margin-bottom: 20px; color: var(--ink); }
-  .page-content h2 { font-size: 22px; font-weight: 700; margin-top: 30px; color: var(--wine); }
-  .page-content h3 { font-size: 18px; font-weight: 700; margin-top: 20px; color: var(--ink); }
-  .page-content p { margin-bottom: 15px; color: #444; }
-  .page-content ul { list-style-type: disc; padding-right: 20px; margin-bottom: 15px; color: #444; }
-  .page-content li { margin-bottom: 8px; }
-  .page-content a { color: var(--red); text-decoration: underline; }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8f7f3">
+<meta name="description" content="اكتشف محطات الراديو المغربية، ابحث عن محطتك المفضلة واستمع إلى بثها المباشر في مكان واحد.">
+<title>راديو المغرب | محطات الراديو المغربية مباشرة</title>
+<link rel="preconnect" href="https://raw.githubusercontent.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style id="siteStyles">
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;450;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#f8f7f3;--white:#fff;--ink:#272525;--dim:#706e6b;--line:#e1dfd8;--red:#b63539;--red-dark:#95292e;--blush:#faf0ec;--green:#447364;--wine:#481d26;--radius:18px;--font:"IBM Plex Sans Arabic","Manrope",Tahoma,Arial,sans-serif;--latin:"Manrope","IBM Plex Sans Arabic",Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--font);-webkit-font-smoothing:antialiased}html[lang=fr] body{font-family:var(--latin)}body.player-open{padding-bottom:104px}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,select{cursor:pointer}button{color:inherit}button{border:0;background:none}button:disabled{cursor:default;opacity:.55}button,a,input,select{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d88550;outline-offset:4px}button::-moz-focus-inner{border:0}svg{display:block}.i{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.defs{position:absolute;width:0;height:0;overflow:hidden}.wrap{width:min(1280px,calc(100% - 9vw));margin-inline:auto}.mono{font-family:var(--mono);direction:ltr;unicode-bidi:isolate;letter-spacing:.13em;font-size:10px;font-weight:600}.skip{position:fixed;z-index:100;top:-100px;inset-inline-start:15px;background:var(--ink);color:white;padding:10px 20px;border-radius:10px}.skip:focus{top:10px}[hidden]{display:none!important}.top{background:#fffefa;border-bottom:1px solid var(--line)}.top-inner{display:flex;align-items:center;gap:clamp(18px,4vw,66px);min-height:82px}.brand{display:inline-flex;align-items:center;gap:11px;flex-shrink:0}.mark{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;color:white;background:var(--red);box-shadow:inset 0 -4px 8px #74182024}.mark .i{width:31px;height:31px;stroke-width:1.85}.wordmark{display:flex;flex-direction:column;gap:3px}.brand-name{font-size:24px;font-weight:700;line-height:1.2;letter-spacing:-.05em}.brand-name em{color:var(--red);font-style:normal}.brand-sub{color:#817571;font-size:8px;letter-spacing:.24em}.nav{align-self:stretch;display:flex;align-items:stretch;gap:27px}.nav button,.nav a{display:inline-flex;align-items:center;gap:7px;position:relative;font-size:14px;font-weight:600;color:#676461;padding:2px 0}.nav .i{width:16px;height:16px}.nav .on{color:var(--red)}.nav .on:after{content:"";position:absolute;inset-inline:0;bottom:0;height:3px;background:var(--red);border-radius:4px 4px 0 0}.tools{margin-inline-start:auto;display:flex;align-items:center;gap:16px}.clock-box{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--dim)}.clock-box .i{width:15px;height:15px}.clock-box time{font:600 12px var(--mono);color:var(--ink);direction:ltr}.lang{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:7px 12px;border:1px solid var(--line);border-radius:9px;font:700 12px var(--latin);background:white}.lang .i{width:16px;height:16px}.lang:hover{border-color:#a29c97}.mobile-fav{display:none}
+.hero{isolation:isolate;position:relative;margin-top:24px;overflow:hidden;background:linear-gradient(106deg,#35171e,#57222a 55%,#491b24);color:#fff7eb;display:grid;grid-template-columns:1.04fr 1fr;align-items:center;min-height:332px;border-radius:22px;box-shadow:0 4px 15px #4d17200b}.hero:before{position:absolute;content:"";inset:0;z-index:-1;background-image:radial-gradient(#e5a18f24 .8px,transparent 1px);background-size:18px 18px;mask-image:linear-gradient(90deg,#000,transparent 94%)}.hero:after{content:"";position:absolute;bottom:0;inset-inline:0;height:6px;background:repeating-linear-gradient(90deg,transparent 0 9px,#f1c7ab45 9px 10px);opacity:.65}.hero-copy{padding:32px clamp(24px,3.5vw,54px) 36px 8px;z-index:1}.hero-kicker{display:inline-flex;align-items:center;gap:8px;border:1px solid #efb6a63b;border-radius:30px;padding:3px 11px;color:#ffe4ce;background:#ffffff08;font-size:11px;font-weight:600}.light-dot{width:7px;height:7px;border-radius:50%;display:inline-block;background:#f39c7d;box-shadow:0 0 0 4px #ffab7e14}.hero h1{font-size:clamp(38px,4.3vw,66px);font-weight:700;letter-spacing:-.065em;line-height:1.19;margin:14px 0 10px}.hero h1 strong{color:#f4b496;font-weight:700}.hero p{color:#e7cfc8;max-width:510px;margin:0;font-size:15px;line-height:1.85}.hero-actions{display:flex;align-items:center;gap:16px;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:42px;padding:8px 19px;border-radius:10px;font-size:14px;font-weight:700;transition:background .18s,transform .18s}.btn:active{transform:translateY(1px)}.btn .i{width:17px;height:17px}.btn-ivory{background:#fff4e3;color:#4b2227;box-shadow:0 3px 8px #23061129}.btn-ivory:hover{background:#fff}.btn-ghost{color:#fff0e4;border:1px solid #f7ccbb45}.btn-ghost:hover{background:#ffffff10}.hero-art{position:relative;display:grid;align-items:center;justify-items:center;align-self:stretch;direction:ltr;min-width:0}.hero-art>svg{width:min(100%,520px);height:auto;max-height:324px}.art-caption{position:absolute;bottom:16px;left:22px;font-size:8px;color:#e9bda779;letter-spacing:.22em}.serial{position:absolute;left:24px;top:19px;display:flex;align-items:center;gap:8px;font-size:8px;color:#ecc8b785}.serial:before{content:"";width:23px;height:1px;background:currentColor}html[dir=ltr] .hero-copy{padding:32px 8px 36px clamp(24px,3.5vw,54px)}html[dir=ltr] .hero h1{font-size:clamp(38px,4vw,60px);line-height:1.04;letter-spacing:-.065em}
+.directory{padding-top:31px}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}.eyebrow{font:700 10px var(--mono);letter-spacing:.15em;color:var(--red);display:flex;align-items:center;gap:8px}.eyebrow:before{content:"";width:18px;height:2px;background:var(--red)}.section-head h2,.guide h2{margin:4px 0 0;font-size:clamp(26px,3vw,37px);line-height:1.4;letter-spacing:-.055em}.heading-inline{display:flex;align-items:center;gap:12px}.count-badge{font:700 12px var(--mono);color:var(--red);border:1px solid #e6cfc7;background:#fbefea;padding:3px 8px;border-radius:7px}.search-wrap{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:11px;background:white;padding:0 14px;min-height:43px;width:min(320px,100%);box-shadow:0 2px 3px #25221d03}.search-wrap:focus-within{border-color:#bb6665;box-shadow:0 0 0 3px #b635390c}.search-wrap .i{color:var(--dim);width:18px}.search-wrap input{width:100%;min-width:0;border:none;background:none;outline:0;padding:9px 0;color:var(--ink);font-size:14px}.search-wrap input:focus-visible{outline:0}.search-wrap kbd{border:1px solid var(--line);border-radius:4px;color:#8e8983;font:12px var(--mono);padding:1px 5px}.filter-row{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding:17px 0 14px}.chips{display:flex;align-items:center;gap:7px;overflow-x:auto;scrollbar-width:thin;flex:1;min-width:0;padding:3px}.chip{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);border-radius:30px;background:#fffefa;padding:5px 13px;white-space:nowrap;font-weight:500;font-size:13px;transition:.18s}.chip .i{width:14px;height:14px}.chip:hover{border-color:#b9afa7}.chip.active{background:var(--ink);border-color:var(--ink);color:white}.sort{display:flex;align-items:center;gap:6px;position:relative;flex-shrink:0;color:#68645f;font-size:12px}.sort .i{width:16px}.sort select{color:inherit;max-width:155px;font:inherit;padding:5px 2px;border:0;background:transparent}.index-line{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:42px;color:var(--dim);font-size:12px}.index-line .mono{font-size:9px;color:#8c8780}.status-dot{display:inline-block;width:6px;height:6px;margin-inline-end:6px;background:var(--green);border-radius:50%}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.station{min-width:0;position:relative;background:#fffefa;border:1px solid var(--line);border-radius:15px;padding:15px 16px 0;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,border-color .2s,transform .2s}.station:hover{border-color:#c8bab0;transform:translateY(-2px);box-shadow:0 6px 18px #3d30200b}.station.selected{border-color:#be7470;box-shadow:0 0 0 1px #be747025}.tile-top{display:flex;align-items:flex-start;justify-content:space-between;gap:7px}.station-logo{display:inline-grid;position:relative;place-items:center;width:62px;height:62px;border:1px solid #e8e3dc;border-radius:14px;overflow:hidden;background:var(--logo-bg,#f2e9df);color:var(--logo-fg,#894a36);font:800 19px var(--latin);direction:auto;flex-shrink:0}.station-logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:4px}.tile-code{display:flex;align-items:center;gap:7px;color:#a29a94;font-size:8px}.circle-btn{width:32px;height:32px;display:inline-grid;place-items:center;border:1px solid var(--line);border-radius:50%;background:transparent}.circle-btn .i{width:16px;height:16px}.circle-btn:hover,.circle-btn.saved{color:var(--red);background:#fbefea;border-color:#e7c9c1}.circle-btn.saved .i{fill:currentColor}.station h3{margin:12px 0 3px;font-size:18px;letter-spacing:-.035em;line-height:1.45}.station-title{text-align:start;font-weight:700;line-height:inherit;padding:0;max-width:100%;overflow-wrap:anywhere}.station-title:hover{color:var(--red)}.station-meta{display:flex;align-items:center;gap:6px;margin:0 0 14px;color:var(--dim);font-size:12px;min-height:20px}.station-meta .i{width:13px;height:13px}.tile-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 0;margin-top:auto;border-top:1px solid #ece9e2}.play-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--red);padding:0}.play-disc{width:29px;height:29px;border-radius:50%;background:var(--blush);color:var(--red);display:grid;place-items:center;transition:.18s}.play-disc .i{width:13px;height:13px}.play-link:hover .play-disc,.selected .play-disc{background:var(--red);color:white}.tile-foot .mono{font-size:8px;color:#8d8982;display:flex;align-items:center;gap:4px}.tile-foot .mono:before{content:"";width:4px;height:4px;border-radius:50%;background:#87998c}.more-wrap{display:flex;justify-content:center;margin-top:20px}.btn-line{background:#fffefa;color:var(--ink);border:1px solid var(--line)}.btn-line:hover{border-color:#a99b92}.btn-red{color:#fff;background:var(--red)}.btn-red:hover{background:var(--red-dark)}.state{border:1px dashed #ccc3b9;background:#fcfbf8;border-radius:15px;padding:27px;text-align:center}.state>.i{margin:0 auto 8px;color:var(--red);width:30px;height:30px}.state h3{margin:0;font-size:19px}.state p{margin:6px 0 14px;color:var(--dim);font-size:14px}.skeleton{height:196px;background:linear-gradient(100deg,#f1eee8 20%,#fbfaf7 45%,#f1eee8 70%);background-size:250% 100%;animation:shine 1.6s linear infinite;border:1px solid var(--line);border-radius:15px}@keyframes shine{to{background-position:-160% 0}}.guide{padding-block:40px 33px}.guide-grid{margin-top:14px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.note{background:#efeee7;border:1px solid #e3e1d8;border-radius:14px;padding:18px;display:grid;grid-template-columns:40px 1fr;gap:13px;align-items:start;text-align:start}.note:hover{background:#eae8df}.note-icon{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:#fffdf6;color:var(--green)}.note:nth-child(2) .note-icon{color:#985136}.note:nth-child(3) .note-icon{color:#6d5877}.note small{display:block;color:#79736b;font-size:9px;margin-bottom:4px}.note b{font-size:16px;line-height:1.55}.foot{border-top:1px solid var(--line);background:#f2f1eb}.foot-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-block:20px}.foot-brand{display:flex;align-items:center;gap:10px}.foot-brand .i{color:var(--red);width:26px;height:26px}.foot-brand b{font-size:15px}.foot-brand small{display:block;color:var(--dim);font-size:11px}.foot-links{display:flex;gap:15px;flex-wrap:wrap;align-items:center;font-size:12px;color:#67615b}.foot-links button{padding:0;font:inherit}.foot-links a:hover,.foot-links button:hover{color:var(--red)}
+.player{position:fixed;z-index:20;inset-inline:0;bottom:0;background:#272225;color:white;border-top:2px solid #b35a52;box-shadow:0 -5px 30px #21151a1f;padding-bottom:env(safe-area-inset-bottom)}.player-inner{display:flex;align-items:center;gap:13px;min-height:80px;padding-block:8px}.player .station-logo{width:48px;height:48px;border-radius:10px}.player-id{min-width:0;flex:1}.player-id b{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}.player-status{display:flex;align-items:center;gap:7px;color:#d0c2bd;font-size:12px}.eq{height:11px;display:flex;align-items:center;gap:2px}.eq i{width:2px;height:4px;background:#eead8e;border-radius:3px}.is-playing .eq i{animation:wave .8s infinite alternate}.is-playing .eq i:nth-child(2){animation-delay:-.3s}.is-playing .eq i:nth-child(3){animation-delay:-.55s}.is-playing .eq i:nth-child(4){animation-delay:-.2s}@keyframes wave{to{height:12px}}.player-controls{display:flex;align-items:center;gap:10px}.p-play{border-radius:50%;width:43px;height:43px;background:#f5ddc7;color:#49242a;display:grid;place-items:center}.p-play .i{width:18px;height:18px}.p-icon{display:grid;place-items:center;color:#e4d8d2;width:32px;height:36px}.p-icon:hover{color:white}.volume{display:flex;align-items:center;gap:7px;color:#d7c8c1;margin-inline:12px}.volume .i{width:16px}.volume input{width:83px;accent-color:#ecae93;direction:ltr}.stream-out{color:#ffe0c5;font-size:12px;text-decoration:underline}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,10px);z-index:50;background:#332a2d;color:#fff6ed;padding:10px 19px;border-radius:12px;box-shadow:0 6px 22px #28192122;opacity:0;pointer-events:none;transition:.2s;font-size:13px;text-align:center;max-width:90vw}.toast.show{opacity:1;transform:translate(-50%,0)}.player-open .toast{bottom:100px}
+dialog{width:min(480px,calc(100% - 30px));padding:0;border:1px solid var(--line);border-radius:19px;background:#fffefa;color:var(--ink);box-shadow:0 30px 100px #2d1a2438;max-height:85dvh}dialog::backdrop{background:#22191db8;backdrop-filter:blur(4px)}.dialog-inner{padding:25px}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.dialog-head .circle-btn{flex-shrink:0}.dialog-inner h2{margin:4px 0 10px;line-height:1.45;font-size:25px;letter-spacing:-.04em}.dialog-inner p{font-size:15px;line-height:1.85;color:#625e59}.dialog-inner .btn{margin:5px 0;margin-inline-end:6px}.dialog-inner .station-logo{width:80px;height:80px;margin-bottom:10px}.dialog-inner .meta-box{padding:10px 14px;background:#f4f2eb;border-radius:10px;font-size:13px}.dialog-inner .meta-box p{margin:3px 0;font-size:13px}
+@media(min-width:1550px){.hero{min-height:358px}}
+@media(max-width:1060px){.wrap{width:calc(100% - 48px)}.clock-box span{display:none}.top-inner{gap:30px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.nav{gap:18px}.hero-copy{padding-inline-start:30px}.hero h1{font-size:46px}.tile-code{font-size:7px}.tools{gap:10px}}
+@media(max-width:800px){.wrap{width:calc(100% - 32px)}.top-inner{min-height:69px;gap:22px}.clock-box{display:none}.nav{gap:15px}.nav button,.nav a{font-size:13px}.hero{margin-top:16px;grid-template-columns:1.1fr 1fr;min-height:286px}.hero-copy{padding:25px 22px 27px 0}.hero h1{font-size:39px}.hero p{font-size:13px}.serial,.art-caption{font-size:7px}.hero-actions{gap:8px;margin-top:17px}.hero-actions .btn{font-size:12px;min-height:38px;padding:7px 13px}.grid{gap:10px}.station{padding:12px 12px 0}.tile-code>.mono{display:none}.guide-grid{gap:9px}.note{grid-template-columns:1fr;gap:8px;padding:14px}.section-head h2{font-size:30px}.directory{padding-top:25px}}
+@media(max-width:620px){.wrap{width:calc(100% - 28px)}.top-inner{min-height:65px}.mark{height:37px;width:37px;border-radius:10px}.mark .i{width:26px}.brand-name{font-size:21px}.brand-sub{font-size:7px}.brand{gap:8px}.nav{display:none}.mobile-fav{display:inline-grid;place-items:center;width:35px;height:35px;border:1px solid var(--line);border-radius:9px}.mobile-fav.on{background:var(--blush);color:var(--red)}.mobile-fav .i{width:17px}.lang{min-height:35px}.hero{grid-template-columns:minmax(0,1fr);min-height:0;border-radius:16px}.hero-copy,html[dir=ltr] .hero-copy{padding:23px 20px 0}.hero h1,html[dir=ltr] .hero h1{font-size:38px;margin:10px 0 6px}.hero h1 br{display:none}.hero h1 strong:before{content:" "}.hero p{max-width:420px}.hero-art{height:144px;margin-top:-3px;pointer-events:none;justify-items:end;padding-inline-end:12px}.hero-art>svg{width:254px;height:170px;max-width:78%;align-self:end}.hero-actions{margin-top:13px}.serial{left:16px;bottom:19px;top:auto;font-size:7px}.art-caption{display:none}.hero-kicker{font-size:10px}.section-head{align-items:stretch;gap:10px;flex-direction:column}.search-wrap{width:100%;min-height:40px}.search-wrap input{font-size:16px;padding:6px 0}.filter-row{padding:9px 0;gap:5px}.sort{gap:0}.sort select{max-width:90px;font-size:11px}.sort .i{width:14px}.chip{font-size:12px;padding:5px 11px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.station h3{font-size:16px}.station-meta{font-size:11px;margin-bottom:10px;flex-wrap:wrap}.station-logo{width:52px;height:52px;border-radius:11px}.circle-btn{width:28px;height:28px}.tile-foot{padding:9px 0}.play-link{gap:5px;font-size:12px}.play-disc{width:25px;height:25px}.tile-foot .mono{font-size:7px;letter-spacing:.05em}.guide{padding-block:28px}.guide-grid{grid-template-columns:1fr}.note{grid-template-columns:38px 1fr;gap:12px;align-items:center}.note small{font-size:8px}.foot-inner{gap:13px}.foot-links{gap:12px}.player-inner{gap:8px;min-height:72px}.player .station-logo{width:39px;height:39px}.volume{display:none}.player-controls{gap:4px}.p-icon{width:28px}.player-id b{font-size:14px}.player-status{font-size:10px}.p-play{width:35px;height:35px}.stream-out{display:block;font-size:10px}.section-head h2{font-size:28px}.eyebrow{font-size:9px}}
+@media(max-width:350px){.wrap{width:calc(100% - 18px)}.tile-foot .mono{display:none}.hero-art{height:127px}.hero h1{font-size:33px}.station{padding:10px 10px 0}.sort .i{display:none}.index-line .mono{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}}
 </style>
 </head>
 <body>
-
-<!-- HEADER -->
-<div class="top">
-  <div class="wrap top-inner">
-    <a href="#" onclick="navigateTo('home');return false" class="brand">
-      <div class="mark">RM</div>
-      <div>
-        <div class="brand-name">راديو <em>المغرب</em></div>
-        <div class="brand-sub">RADIO MAROC</div>
-      </div>
-    </a>
-    <div class="tools">
-      <button class="lang-btn" onclick="toggleLang()" id="langBtn">FR</button>
-    </div>
-  </div>
+<div id="application">
+<a class="skip" href="#directory" data-t="skip">انتقل إلى المحطات</a>
+<svg class="defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<symbol id="i-signal" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/><path d="M8.6 7.9a5.9 5.9 0 0 0 0 8.2m6.8-8.2a5.9 5.9 0 0 1 0 8.2M5.3 4.7a10.4 10.4 0 0 0 0 14.6M18.7 4.7a10.4 10.4 0 0 1 0 14.6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5a1 1 0 0 1 1.5-.85l12 7.5a1 1 0 0 1 0 1.7l-12 7.5A1 1 0 0 1 7 19.5z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8.8-5.7-8.8-11.3A4.8 4.8 0 0 1 12 6.3a4.8 4.8 0 0 1 8.8 2.4C20.8 14.3 12 20 12 20Z"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.7"/><path d="m16 16 5 5"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></symbol>
+<symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 6h16M4 12h11M4 18h6"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12m0-12L6 18"/></symbol>
+<symbol id="i-next" viewBox="0 0 24 24"><path d="m5 5 11 7-11 7z" fill="currentColor" stroke="none"/><path d="M19 5v14"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3zM16 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></symbol>
+<symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="12" width="5" height="8" rx="2"/><rect x="16" y="12" width="5" height="8" rx="2"/></symbol>
+<symbol id="i-radio" viewBox="0 0 24 24"><path d="m5 8 13-6"/><rect x="3" y="8" width="18" height="13" rx="2.5"/><circle cx="8" cy="15" r="2"/><path d="M13 13h5m-5 4h5"/></symbol>
+<symbol id="i-waves" viewBox="0 0 24 24"><path d="M3 10v4m4-8v12m5-15v18m5-14v10m4-7v4"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17V6l11-3v11M9 9l11-3"/><ellipse cx="6" cy="18" rx="3" ry="2"/><ellipse cx="17" cy="15" rx="3" ry="2"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6C8 3 4 4 2 5v14c4-2 7-1 10 1m0-14c4-3 8-2 10-1v14c-4-2-7-1-10 1z"/></symbol>
+</defs>
+</svg>
+<header class="top">
+<div class="wrap top-inner">
+<a class="brand" href="#home" aria-label="Radio Maroc">
+<span class="mark"><svg class="i" aria-hidden="true"><use href="#i-signal"></use></svg></span>
+<span class="wordmark"><span class="brand-name"><span data-t="radio">راديو</span> <em data-t="morocco">المغرب</em></span><span class="mono brand-sub">RADIO MAROC</span></span>
+</a>
+<nav class="nav" aria-label="Navigation">
+<button class="on" id="navAll" data-act="all"><svg class="i" aria-hidden="true"><use href="#i-grid"></use></svg><span data-t="stations">المحطات</span></button>
+<button id="navFav" data-act="favView"><svg class="i" aria-hidden="true"><use href="#i-heart"></use></svg><span data-t="favs">المفضلة</span></button>
+<a href="#guide" data-t="guide">دليل المستمع</a>
+</nav>
+<div class="tools">
+<div class="clock-box"><svg class="i" aria-hidden="true"><use href="#i-clock"></use></svg><span data-t="clock">توقيت المغرب</span><time id="clockTime">--:--</time></div>
+<button id="mobileFav" class="mobile-fav" data-act="favView" data-label="favs"><svg class="i" aria-hidden="true"><use href="#i-heart"></use></svg></button>
+<button id="langButton" class="lang" data-act="lang"><svg class="i" aria-hidden="true"><use href="#i-globe"></use></svg><span id="langText">FR</span></button>
 </div>
-
-<main id="app"></main>
-
-<!-- FOOTER -->
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot-links" id="footLinks">
-      <a href="#" onclick="navigateTo('about');return false" data-ar="عن الدليل" data-fr="À propos">عن الدليل</a>
-      <a href="#" onclick="navigateTo('privacy');return false" data-ar="الخصوصية" data-fr="Confidentialité">الخصوصية</a>
-      <a href="#" onclick="navigateTo('terms');return false" data-ar="شروط الاستخدام" data-fr="Conditions">شروط الاستخدام</a>
-      <a href="#" onclick="navigateTo('disclaimer');return false" data-ar="إخلاء المسؤولية" data-fr="Disclaimer">إخلاء المسؤولية</a>
-      <a href="#" onclick="navigateTo('cookies');return false" data-ar="الكوكيز" data-fr="Cookies">الكوكيز</a>
-      <a href="#" onclick="navigateTo('contact');return false" data-ar="اتصل بنا" data-fr="Contact">اتصل بنا</a>
-    </div>
-    <p>© 2026 راديو المغرب — جميع الحقوق محفوظة.</p>
-  </div>
-</footer>
-
-<!-- PLAYER BAR -->
-<div class="player" id="playerBar">
-  <div class="player-logo" id="pLogo">RM</div>
-  <div class="player-info">
-    <b id="pName">اختر محطة</b>
-    <span id="pStatus">جاهز</span>
-  </div>
-  <button class="player-btn" id="playBtn" onclick="togglePlay()">▶</button>
-  <button class="player-close" onclick="stopPlayer()">✕</button>
 </div>
+</header>
+<main id="home" class="wrap">
+<section class="hero" aria-labelledby="heroHeading">
+<div class="hero-copy">
+<span class="hero-kicker"><i class="light-dot"></i><span data-t="heroKicker">إذاعات المغرب على الإنترنت</span></span>
+<h1 id="heroHeading"><span data-t="hero1">كل المغرب،</span><br><strong data-t="hero2">على موجة واحدة.</strong></h1>
+<p data-t="heroBody">من الموسيقى إلى الأخبار، اكتشف أصوات المغرب واستمع إلى محطتك المفضلة أينما كنت.</p>
+<div class="hero-actions">
+<button class="btn btn-ivory" id="heroPlay" data-act="heroPlay" disabled><svg class="i" aria-hidden="true"><use href="#i-play"></use></svg><span data-t="listenNow">استمع الآن</span></button>
+<a class="btn btn-ghost" href="#directory"><span data-t="browse">تصفّح المحطات</span><svg class="i" aria-hidden="true"><use href="#i-down"></use></svg></a>
+</div>
+</div>
+<div class="hero-art" aria-hidden="true">
+<span class="mono serial">RM / ANALOG SERIES</span>
+<svg viewBox="0 0 520 330" xmlns="http://www.w3.org/2000/svg" focusable="false">
+<defs>
+<linearGradient id="case" x2=".3" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#fff0ce"/><stop offset=".55" stop-color="#e9c79b"/><stop offset="1" stop-color="#c49c76"/></linearGradient>
+<linearGradient id="edge" x2="0" y2="1"><stop stop-color="#b29070"/><stop offset=".48" stop-color="#8f6856"/><stop offset="1" stop-color="#64443d"/></linearGradient>
+<linearGradient id="face" x2="0" y2="1"><stop stop-color="#714046"/><stop offset="1" stop-color="#432d33"/></linearGradient>
+<linearGradient id="dial" x2="0" y2="1"><stop stop-color="#1e2524"/><stop offset="1" stop-color="#41473e"/></linearGradient>
+<linearGradient id="knob" x2=".8" y2="1"><stop stop-color="#fff0cc"/><stop offset=".5" stop-color="#e7c796"/><stop offset="1" stop-color="#a77c5e"/></linearGradient>
+<radialGradient id="sun"><stop stop-color="#ce8770" stop-opacity=".49"/><stop offset="1" stop-color="#ce8770" stop-opacity=".08"/></radialGradient>
+<pattern id="cloth" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#cca780"/><path d="M0 1h6M1 0v6" stroke="#efcf9e" stroke-width="1"/><ellipse cx="3.6" cy="3.7" rx="1.45" ry="1.6" fill="#654b3e"/></pattern>
+<pattern id="ruler" width="7" height="12" patternUnits="userSpaceOnUse"><path d="M1 1v7" stroke="#e8d8ad" stroke-width="1"/></pattern>
+<filter id="radioShadow" x="-30%" y="-30%" width="170%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<circle cx="267" cy="175" r="140" fill="url(#sun)"/>
+<g fill="none" stroke="#f0b198" opacity=".17"><circle cx="267" cy="175" r="130"/><circle cx="267" cy="175" r="148" stroke-dasharray="2 6"/><path d="M40 197h67m315 0h55M267 18v20m0 255v21"/></g>
+<g fill="none" stroke="#e1a383" stroke-width="1.5" opacity=".67"><path d="M77 130a40 40 0 0 0-2 32m-7-40a51 51 0 0 0-4 47m-7-55a64 64 0 0 0-6 61M435 102a32 32 0 0 1 10 25m-5-32a43 43 0 0 1 14 35"/></g>
+<ellipse cx="269" cy="278" rx="147" ry="13" fill="#1e1016" opacity=".55" filter="url(#radioShadow)"/>
+<g transform="rotate(-7 265 197)">
+<path d="m154 126 180-89" stroke="#4b3935" stroke-width="5" stroke-linecap="round"/><path d="m154 124 180-88" stroke="#e2ccb5" stroke-width="3.2" stroke-linecap="round"/><path d="m255 75 79-39" stroke="#fff4da" stroke-width="1.7"/><circle cx="335" cy="35" r="3.1" fill="#efe0c8"/>
+<rect x="153" y="114" width="24" height="10" rx="3" fill="#9a795e"/>
+<path d="M194 124V99q0-13 13-13h95q13 0 13 13v24" fill="none" stroke="#36292a" stroke-width="10"/><path d="M194 122V98q0-10 12-10h95q12 0 12 10v23" fill="none" stroke="#bb9a7a" stroke-width="5"/>
+<g fill="#7b5746"><rect x="337" y="113" width="10" height="10" rx="2"/><rect x="351" y="113" width="10" height="10" rx="2"/><rect x="365" y="113" width="10" height="10" rx="2"/></g>
+<rect x="140" y="260" width="28" height="10" rx="4" fill="#4b3732"/><rect x="361" y="260" width="28" height="10" rx="4" fill="#4b3732"/>
+<rect x="119" y="121" width="284" height="145" rx="18" fill="url(#edge)"/><rect x="114" y="116" width="283" height="145" rx="17" fill="url(#case)" stroke="#f2d6ae" stroke-width="1.5"/>
+<rect x="124" y="126" width="263" height="125" rx="11" fill="url(#face)" stroke="#af825f" stroke-width="2"/>
+<rect x="132" y="134" width="139" height="109" rx="8" fill="url(#cloth)" stroke="#d3ad86" stroke-width="2"/>
+<rect x="142" y="220" width="49" height="14" rx="3" fill="#563239"/><text x="166.5" y="230" fill="#fae7bf" text-anchor="middle" font-size="7" font-weight="bold" font-family="monospace" letter-spacing="1">MAROC</text>
+<rect x="279" y="135" width="99" height="43" rx="5" fill="url(#dial)" stroke="#d1b38b" stroke-width="1.5"/>
+<g fill="#efdfb6" font-family="monospace" font-size="5.5"><text x="285" y="146">FM</text><text x="301" y="146">88</text><text x="323" y="146">98</text><text x="354" y="146">108</text><text x="285" y="171">MHz</text></g>
+<path d="M285 150h87m-87 12h87" stroke="#cfba92" stroke-width=".65"/><rect x="285" y="151" width="87" height="10" fill="url(#ruler)"/><path d="M340 139v34" stroke="#ff9d75" stroke-width="2"/>
+<g fill="#e6ca9e" font-family="monospace" font-size="5" letter-spacing=".8"><text x="282" y="189">TUNING</text><text x="343" y="189">VOLUME</text></g>
+<g stroke="#2f2428" stroke-width="2"><circle cx="300" cy="211" r="17" fill="url(#knob)"/><circle cx="355" cy="211" r="17" fill="url(#knob)"/></g>
+<g fill="none" stroke="#987458"><circle cx="300" cy="211" r="12.8"/><circle cx="355" cy="211" r="12.8"/></g><path d="m300 201 4-4m48 6-4-5" stroke="#654639" stroke-width="2" stroke-linecap="round"/>
+<circle cx="284" cy="237" r="2.3" fill="#fb9e78"/><text x="291" y="239" fill="#e0bc9e" font-size="5.5" font-family="monospace" letter-spacing="1.2">STEREO RECEIVER</text>
+</g>
+</svg>
+<span class="mono art-caption">BROADCAST COLLECTION &nbsp; / &nbsp; NO. 001</span>
+</div>
+</section>
 
-<div id="toast" style="position:fixed; bottom:80px; left:50%; transform:translate(-50%,10px); z-index:60; background:#332a2d; color:#fff6ed; padding:10px 20px; border-radius:10px; opacity:0; pointer-events:none; transition:.3s; font-size:13px; text-align:center;"></div>
+<section id="directory" class="directory" aria-labelledby="directoryTitle">
+<div class="section-head">
+<div><span class="eyebrow"><bdi dir="ltr">STATION DIRECTORY</bdi></span><div class="heading-inline"><h2 id="directoryTitle">دليل المحطات</h2><span id="stationCount" class="count-badge">—</span></div></div>
+<label class="search-wrap"><svg class="i" aria-hidden="true"><use href="#i-search"></use></svg><input id="search" type="search" autocomplete="off" data-label="search" placeholder="ابحث عن محطة إذاعية…"><kbd aria-hidden="true">/</kbd></label>
+</div>
+<div class="filter-row"><div id="chips" class="chips" role="group" aria-label="Catégories"></div>
+<label class="sort"><svg class="i" aria-hidden="true"><use href="#i-sort"></use></svg><select id="sort" data-label="sort"><option value="source" data-t="sortSource">ترتيب الدليل</option><option value="name" data-t="sortName">حسب الاسم</option><option value="plays" data-t="sortPlays">الأكثر استماعاً لديّ</option></select></label>
+</div>
+<div class="index-line"><span id="resultInfo" role="status" aria-live="polite"></span><span class="mono">MA &nbsp;/&nbsp; WEB RADIO</span></div>
+<div id="stationGrid" class="grid" aria-busy="true"></div>
+<div id="emptyState" class="state" hidden></div>
+<div class="more-wrap"><button id="more" class="btn btn-line" data-act="more" hidden><span data-t="more">عرض المزيد</span><svg class="i" aria-hidden="true"><use href="#i-down"></use></svg></button></div>
+</section>
 
+<section class="guide" id="guide">
+<span class="eyebrow"><bdi dir="ltr">LISTENING NOTES</bdi></span><h2 data-t="guide">دليل المستمع</h2>
+<div class="guide-grid">
+<button class="note" data-act="note" data-key="formats"><span class="note-icon"><svg class="i" aria-hidden="true"><use href="#i-waves"></use></svg></span><span><small class="mono">01 / AUDIO</small><b data-t="formats">كيف يعمل البث المباشر؟</b></span></button>
+<button class="note" data-act="note" data-key="mobile"><span class="note-icon"><svg class="i" aria-hidden="true"><use href="#i-headphones"></use></svg></span><span><small class="mono">02 / MOBILE</small><b data-t="mobile">استماع أفضل على الهاتف</b></span></button>
+<button class="note" data-act="note" data-key="library"><span class="note-icon"><svg class="i" aria-hidden="true"><use href="#i-heart"></use></svg></span><span><small class="mono">03 / COLLECTION</small><b data-t="library">اصنع قائمة محطاتك</b></span></button>
+</div>
+</section>
+</main>
+<footer class="foot"><div class="wrap foot-inner">
+<div class="foot-brand"><svg class="i" aria-hidden="true"><use href="#i-radio"></use></svg><div><b data-t="brand">راديو المغرب</b><small data-t="independent">دليل مستقل للاستماع إلى الإذاعات المغربية</small></div></div>
+<div class="foot-links"><button data-act="note" data-key="about" data-t="about">عن الدليل</button><button data-act="note" data-key="privacy" data-t="privacy">الخصوصية</button><a href="https://github.com/Azzeddine786/Radiomoroco/blob/main/Radiomarocstations.json" target="_blank" rel="noopener noreferrer" data-t="source">مصدر المحطات ↗</a><button data-act="export" data-t="export">تنزيل قالب Blogger</button></div>
+</div></footer>
+
+<aside class="player" id="player" hidden data-label="player">
+<div class="wrap player-inner">
+<div id="playerLogo"></div>
+<div class="player-id"><b id="playerName" dir="auto"></b><div class="player-status"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="playerStatus" role="status"></span></div><a id="externalStream" class="stream-out" target="_blank" rel="noopener noreferrer" hidden data-t="openStream">فتح رابط البث ↗</a></div>
+<label class="volume"><svg class="i" aria-hidden="true"><use href="#i-volume"></use></svg><input id="volume" data-label="volume" type="range" min="0" max="1" value=".85" step=".01"></label>
+<div class="player-controls"><button id="playerToggle" class="p-play" data-act="toggle" data-label="listen"></button><button class="p-icon" data-act="next" data-label="next"><svg class="i" aria-hidden="true"><use href="#i-next"></use></svg></button><button class="p-icon" data-act="stop" data-label="stop"><svg class="i" aria-hidden="true"><use href="#i-close"></use></svg></button></div>
+</div>
+</aside>
+<dialog id="modal" aria-labelledby="modalTitle"><div class="dialog-inner"><div class="dialog-head"><span class="eyebrow"><bdi dir="ltr">RADIO MAROC</bdi></span><button class="circle-btn" data-act="close" data-label="close"><svg class="i" aria-hidden="true"><use href="#i-close"></use></svg></button></div><div id="modalBody"></div></div></dialog>
+<div id="toast" class="toast" role="status"></div>
+<noscript><p>يرجى تفعيل JavaScript لتحميل المحطات وتشغيل الراديو. Activez JavaScript pour charger les stations.</p></noscript>
+</div>
 <script>
-// --- DATA (48 Stations) ---
-const stations = [
-  {id:1, name_ar:"ميدي 1", name_fr:"Medi 1 Radio", cat_ar:"أخبار", cat_fr:"Actualités", city:"طنجة", lang:"عربية/فرنسية", stream:"https://cdn.live.easybroadcast.io/live/83_medi1radio-maghreb_8s9i4bn/playlist.m3u8", logo:"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Medi1radio.jpg"},
-  {id:2, name_ar:"هيت راديو", name_fr:"Hit Radio", cat_ar:"موسيقى", cat_fr:"Musique", city:"الدار البيضاء", lang:"عربية/فرنسية", stream:"https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3", logo:"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Hit%20Radio.png"},
-  {id:3, name_ar:"راديو مارس", name_fr:"Radio Mars", cat_ar:"رياضة", cat_fr:"Sport", city:"الدار البيضاء", lang:"عربية/فرنسية", stream:"https://radiomars.ice.infomaniak.ch/radiomars-128.mp3", logo:"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Radio%20Mars.jpg"},
-  {id:4, name_ar:"شذى FM", name_fr:"Chada FM", cat_ar:"موسيقى", cat_fr:"Musique", city:"الدار البيضاء", lang:"عربية/دارجة", stream:"https://edge19.vedge.infomaniak.com/livecast/ik:chadatv/chunklist_w2053981091.m3u8", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/3/3e/Chada_FM_logo.svg/1200px-Chada_FM_logo.svg.png"},
-  {id:5, name_ar:"أتلانتيك", name_fr:"Atlantic Radio", cat_ar:"أخبار", cat_fr:"Actualités", city:"الدار البيضاء", lang:"فرنسية/دارجة", stream:"https://atlantic-sonic.nindohost.net:9300/stream/1/.mp3", logo:"https://www.atlanticradio.ma/images/logo.png"},
-  {id:6, name_ar:"القناة الدولية", name_fr:"Chaîne Inter", cat_ar:"وطنية", cat_fr:"Nationale", city:"الرباط", lang:"فرنسية", stream:"https://cdn.live.radio.snrt.ma/chaine-inter", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Radio_Quran_logo.svg/1200px-Radio_Quran_logo.svg.png"},
-  {id:7, name_ar:"كاب راديو", name_fr:"Cap Radio", cat_ar:"جهوية", cat_fr:"Régionale", city:"طنجة", lang:"عربية/دارجة", stream:"https://listen.radioking.com/radio/710810/stream/776360", logo:"https://www.capradio.ma/images/logo.png"},
-  {id:8, name_ar:"إم إف إم", name_fr:"MFM Radio", cat_ar:"أخبار", cat_fr:"Actualités", city:"الدار البيضاء", lang:"عربية/دارجة", stream:"https://a5.asurahosting.com:7980/radio.mp3", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/MFM_Radio_logo.svg/1200px-MFM_Radio_logo.svg.png"},
-  {id:9, name_ar:"راديو 2M", name_fr:"Radio 2M", cat_ar:"وطنية", cat_fr:"Nationale", city:"الدار البيضاء", lang:"فرنسية/عربية", stream:"https://d3ctxlq1ktw2nl.cloudfront.net/staging/2021-4-26/401b5514-f59f-7e6c-e5b6-fd72f9a5ade0.mp3", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjwpx9_oGqBWAuNY5ZsX7RwiUf0Fdd7ifwMgrm3cDrv6qwdrdBh5XA7zz&s=10"},
-  {id:10, name_ar:"راديو القرآن", name_fr:"Radio Quran", cat_ar:"دينية", cat_fr:"Religieuse", city:"الرباط", lang:"عربية", stream:"http://s2.voscast.com:12312/;.mp3", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Radio_Quran_logo.svg/1200px-Radio_Quran_logo.svg.png"}
-  // أضف باقي المحطات هنا بنفس النمط
-];
-
-const articles = [
-  {id:1, t_ar:"أفضل 10 إذاعات مغربية للاستماع إليها في 2026", t_fr:"Top 10 des radios marocaines à écouter en 2026", cat_ar:"دليل", cat_fr:"Guide", img:"https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop", body_ar:`<p>في عام 2026، أصبح الاستماع إلى الراديو المغربي أسهل من أي وقت مضى. لكن مع كثرة المحطات، قد يصعب عليك اختيار الأفضل. في هذا الدليل، نستعرض أفضل 10 إذاعات مغربية.</p><h3>1. هيت راديو</h3><p>الوجهة الأولى لعشاق الموسيقى العصرية في المغرب. تقدم مزيجاً من البوب والراب والأغاني العالمية.</p><h3>2. راديو مارس</h3><p>إذا كنت من عشاق الرياضة، فراديو مارس هي محطتك المثالية. تغطي جميع مباريات البطولة المغربية.</p><h3>3. ميدي 1</h3><p>محطة إذاعية عريقة تأسست في طنجة، وتعتبر من أهم المحطات الإخبارية.</p><p>اختيار الإذاعة المثالية يعتمد على اهتماماتك. جرب عدة محطات، واكتشف الصوت الذي يرافقك في يومك.</p>`, body_fr:`<p>En 2026, écouter la radio marocaine est plus facile que jamais. Mais avec autant de stations, il peut être difficile de choisir la meilleure. Dans ce guide, nous vous présentons le top 10.</p><h3>1. Hit Radio</h3><p>La destination numéro un pour les amateurs de musique moderne au Maroc.</p><h3>2. Radio Mars</h3><p>Si vous êtes un passionné de sport, Radio Mars est votre station idéale.</p><p>Le choix de la radio idéale dépend de vos intérêts. Essayez plusieurs stations.</p>`},
-  {id:2, t_ar:"تاريخ الإذاعة المغربية: من البدايات إلى الرقمنة", t_fr:"Histoire de la radio marocaine : des débuts à la numérisation", cat_ar:"تاريخ", cat_fr:"Histoire", img:"https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=800&auto=format&fit=crop", body_ar:`<p>يعود تاريخ الإذاعة في المغرب إلى بدايات القرن العشرين. منذ ذلك الحين، مرت بتحولات كبيرة.</p><h3>البدايات</h3><p>تأسست أول محطة إذاعية في المغرب عام 1928، وكانت تسمى "راديو المغرب".</p><h3>تحرير الموجات</h3><p>في بداية الألفية الثالثة، تم فتح المجال أمام القطاع الخاص، وظهرت محطات مثل هيت راديو وشذى FM.</p><h3>عصر البث الرقمي</h3><p>مع انتشار الإنترنت، انتقلت الإذاعة المغربية إلى البث الرقمي، وأصبح بإمكان المستمعين متابعة محطاتهم من أي مكان.</p>`, body_fr:`<p>L'histoire de la radio au Maroc remonte au début du XXe siècle. Depuis, elle a connu de grandes transformations.</p><h3>Les débuts</h3><p>La première station de radio au Maroc a été fondée en 1928, sous le nom de "Radio Maroc".</p><h3>La libéralisation des ondes</h3><p>Au début des années 2000, le secteur privé a été ouvert, avec l'apparition de stations comme Hit Radio et Chada FM.</p>`},
-  {id:3, t_ar:"كيف تختار الإذاعة المناسبة لسيارتك؟", t_fr:"Comment choisir la radio idéale pour votre voiture ?", cat_ar:"دليل", cat_fr:"Guide", img:"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop", body_ar:`<p>في زحام الحياة اليومية، تلعب الإذاعة دوراً مهماً. لكن مع كثرة المحطات، قد يصعب عليك الاختيار.</p><h3>1. حدد اهتماماتك</h3><p>هل تريد الموسيقى؟ الأخبار؟ الرياضة؟ كل نوع له محطات متخصصة.</p><h3>2. جودة البث</h3><p>تأكد من جودة البث. بعض المحطات تبث بصيغة MP3، وأخرى بصيغة AAC أو HLS.</p><h3>3. التغطية الجغرافية</h3><p>إذا كنت في منطقة نائية، قد تواجه صعوبة في استقبال بعض المحطات.</p>`, body_fr:`<p>Dans la vie quotidienne, la radio joue un rôle important. Mais avec autant de stations, le choix peut être difficile.</p><h3>1. Définissez vos intérêts</h3><p>Voulez-vous de la musique ? Des nouvelles ? Du sport ?</p><h3>2. Qualité de diffusion</h3><p>Assurez-vous de la qualité de la diffusion.</p>`},
-  {id:4, t_ar:"الإذاعات الجهوية المغربية: صوت كل منطقة", t_fr:"Radios régionales marocaines : la voix de chaque région", cat_ar:"جهوية", cat_fr:"Régionale", img:"https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=800&auto=format&fit=crop", body_ar:`<p>في المغرب، تلعب الإذاعات الجهوية دوراً مهماً في تعزيز الهوية المحلية.</p><h3>1. كاب راديو (طنجة)</h3><p>تغطي منطقة شمال المغرب، وتعتبر صوت طنجة وتطوان.</p><h3>2. MFM (الدار البيضاء)</h3><p>تغطي عدة مدن مغربية، وتركز على الأخبار المحلية.</p><h3>3. راديو أزوان (الرباط)</h3><p>محطة أمازيغية تقدم برامج باللغة الأمازيغية.</p>`, body_fr:`<p>Au Maroc, les radios régionales jouent un rôle important dans la promotion de l'identité locale.</p><h3>1. Cap Radio (Tanger)</h3><p>Couvre le nord du Maroc, considérée comme la voix de Tanger et Tétouan.</p>`}
-];
-
-// --- STATIC PAGES CONTENT ---
-const pageContent = {
-  about: { 
-    ar: `<h1>من نحن</h1><p><b>راديو المغرب</b> دليل مستقل يجمع الإذاعات المغربية في مكان واحد ليستمع إليها الزائر مباشرة. بدأ المشروع من حاجة بسيطة: محطات كثيرة، وروابط بث متفرقة، وتجربة استماع غير موحدة على الهاتف.</p><h2>ما الذي نقدمه؟</h2><ul><li>قائمة منظمة بأكثر من 40 محطة حسب النوع: موسيقى، أخبار، رياضة، دينية، جهوية.</li><li>مشغل صوتي مباشر يعمل على الهاتف والحاسوب.</li><li>مقالات تساعدك على اختيار المحطة المناسبة وفهم تقنيات البث.</li><li>تطبيق أندرويد مجاني على <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" rel="noopener">Google Play</a>.</li></ul><h2>منهجنا التحريري</h2><p>نختبر روابط البث دورياً ونزيل المحطات المتوقفة، ونكتب المحتوى بأنفسنا دون نسخه من مصادر أخرى، ونصحح أي خطأ بعد التحقق منه.</p><h2>استقلاليتنا</h2><p>لا نتبع أي محطة إذاعية ولا جهة حكومية. البث يصدر من خوادم المحطات نفسها، ونعرض أسماءها وشعاراتها للتعريف فقط.</p><p>للتواصل: <a href="#" onclick="navigateTo('contact');return false">صفحة اتصل بنا</a>.</p>`,
-    fr: `<h1>À propos</h1><p><b>Radio Maroc</b> est un annuaire indépendant qui rassemble les stations de radio marocaines en un seul endroit.</p><h2>Ce que nous offrons</h2><ul><li>Une liste organisée de plus de 40 stations par genre.</li><li>Un lecteur audio direct.</li><li>Des articles pour vous aider à choisir.</li><li>Une application Android gratuite sur <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" rel="noopener">Google Play</a>.</li></ul><h2>Notre indépendance</h2><p>Nous ne sommes affiliés à aucune station. Les marques appartiennent à leurs propriétaires.</p>` 
-  },
-  privacy: { 
-    ar: `<h1>سياسة الخصوصية</h1><p class="meta">آخر تحديث: 18 نوفمبر 2026</p><p>نحترم خصوصيتك. توضح هذه السياسة ما نجمعه وكيف نستخدمه.</p><h2>1. البيانات التي نجمعها</h2><p>لا نطلب تسجيلاً ولا نجمع أسماء أو أرقام هواتف. قد نتلقى بريدك الإلكتروني فقط إذا راسلتنا.</p><h2>2. التخزين المحلي</h2><p>نحفظ قائمة محطاتك المفضلة داخل متصفحك فقط (localStorage).</p><h2>3. الإعلانات وGoogle AdSense</h2><p>قد نعرض إعلانات Google. تستخدم Google ملفات تعريف الارتباط. يمكنك إدارة الإعلانات من <a href="https://adssettings.google.com" rel="noopener">إعدادات الإعلانات</a>.</p><h2>4. حقوقك</h2><p>يحق لك طلب الاطلاع على بياناتك أو تصحيحها أو حذفها بمراسلتنا.</p>`,
-    fr: `<h1>Politique de confidentialité</h1><p>Nous respectons votre vie privée.</p><h2>1. Données collectées</h2><p>Nous ne demandons pas d'inscription. Nous pouvons recevoir votre email si vous nous contactez.</p><h2>2. Stockage local</h2><p>Vos favoris sont stockés dans votre navigateur (localStorage).</p><h2>3. Publicité et Google AdSense</h2><p>Google peut utiliser des cookies. Gérez vos préférences sur <a href="https://adssettings.google.com" rel="noopener">les paramètres des annonces</a>.</p>`
-  },
-  terms: { 
-    ar: `<h1>شروط الاستخدام</h1><p>باستخدامك الموقع فإنك توافق على الشروط التالية.</p><h2>1. طبيعة الخدمة</h2><p>الموقع دليل يعرض روابط بث إذاعات مغربية. نحن لا ننتج البث ولا نملكه.</p><h2>2. الملكية الفكرية</h2><p>أسماء المحطات وشعاراتها ملك لأصحابها وتُستخدم للتعريف فقط.</p><h2>3. حدود المسؤولية</h2><p>تُقدَّم الخدمة كما هي، ولا نتحمل مسؤولية أي ضرر ناتج عن استخدامها.</p>`,
-    fr: `<h1>Conditions d'utilisation</h1><p>En utilisant ce site, vous acceptez ces conditions.</p><h2>1. Nature du service</h2><p>Nous sommes un annuaire de liens de streaming. Nous ne produisons pas le flux.</p><h2>2. Propriété intellectuelle</h2><p>Les marques et logos appartiennent à leurs propriétaires.</p>`
-  },
-  disclaimer: { 
-    ar: `<h1>إخلاء المسؤولية</h1><p>المحتوى المنشور في راديو المغرب لأغراض معلوماتية وترفيهية فقط.</p><ul><li>البرامج والآراء المذاعة تعبّر عن المحطات وحدها.</li><li>نبذل جهدنا للتأكد من صحة الروابط لكن لا نضمن دقتها.</li><li>الموقع مستقل ولا يرتبط رسمياً بأي محطة.</li></ul>`,
-    fr: `<h1>Avis de non-responsabilité</h1><p>Le contenu est fourni à titre informatif uniquement.</p><ul><li>Les opinions diffusées sont celles des stations.</li><li>Nous ne garantissons pas l'exactitude des liens.</li></ul>`
-  },
-  cookies: { 
-    ar: `<h1>سياسة الكوكيز</h1><p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك.</p><h2>الأنواع</h2><ul><li><b>ضرورية:</b> لحفظ المفضلات.</li><li><b>إعلانية:</b> تضعها Google لعرض إعلانات مناسبة.</li></ul><p>يمكنك التحكم فيها من إعدادات المتصفح.</p>`,
-    fr: `<h1>Politique de cookies</h1><p>Nous utilisons des cookies pour améliorer votre expérience.</p><h2>Types</h2><ul><li><b>Essentiels :</b> pour les favoris.</li><li><b>Publicitaires :</b> par Google.</li></ul><p>Gérez-les dans les paramètres de votre navigateur.</p>`
-  },
-  contact: { 
-    ar: `<h1>اتصل بنا</h1><p>لديك سؤال أو اقتراح أو تصحيح؟ يسعدنا سماعك.</p><p style="background:#f4f2eb;padding:16px;border-radius:12px;text-align:center;font-weight:700">📧 contact@radiomaroc.example</p><p style="font-size:12px;color:#666;text-align:center;">(استبدل هذا البريد ببريدك الحقيقي)</p><h2>راسلنا بخصوص</h2><ul><li>اقتراح محطة جديدة.</li><li>تصحيح معلومة.</li><li>طلبات أصحاب الحقوق.</li></ul><p>نرد خلال 48 إلى 72 ساعة.</p>`,
-    fr: `<h1>Contact</h1><p>Une question, une suggestion ? Écrivez-nous.</p><p style="background:#f4f2eb;padding:16px;border-radius:12px;text-align:center;font-weight:700">📧 contact@radiomaroc.example</p><h2>Nous contacter pour</h2><ul><li>Proposer une station.</li><li>Corriger une information.</li><li>Demandes de droits d'auteur.</li></ul>`
+(()=>{
+'use strict';
+const SOURCE='https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Radiomarocstations.json';
+const MIRROR='https://cdn.jsdelivr.net/gh/Azzeddine786/Radiomoroco@main/Radiomarocstations.json';
+const CACHE='rm-directory-source-v4';
+const $=id=>document.getElementById(id);
+const baseMarkup=new XMLSerializer().serializeToString($('application').cloneNode(true));
+const appScript=document.currentScript.textContent;
+const text={
+ar:{
+skip:'انتقل إلى المحطات',radio:'راديو',morocco:'المغرب',brand:'راديو المغرب',stations:'المحطات',favs:'المفضلة',guide:'دليل المستمع',clock:'توقيت المغرب',heroKicker:'إذاعات المغرب على الإنترنت',hero1:'كل المغرب،',hero2:'على موجة واحدة.',heroBody:'من الموسيقى إلى الأخبار، اكتشف أصوات المغرب واستمع إلى محطتك المفضلة أينما كنت.',listenNow:'استمع الآن',browse:'تصفّح المحطات',directory:'دليل المحطات',myFavs:'محطاتي المفضلة',all:'الكل',search:'ابحث عن محطة إذاعية…',sort:'ترتيب المحطات',sortSource:'ترتيب الدليل',sortName:'حسب الاسم',sortPlays:'الأكثر استماعاً لديّ',more:'عرض المزيد',formats:'كيف يعمل البث المباشر؟',mobile:'استماع أفضل على الهاتف',library:'اصنع قائمة محطاتك',independent:'دليل مستقل للاستماع إلى الإذاعات المغربية',about:'عن الدليل',privacy:'الخصوصية',source:'مصدر المحطات ↗',export:'تنزيل قالب Blogger',player:'مشغّل الراديو',openStream:'فتح رابط البث ↗',volume:'مستوى الصوت',next:'المحطة التالية',stop:'إيقاف وإغلاق المشغّل',close:'إغلاق',listen:'استمع',pause:'إيقاف مؤقت',resume:'استئناف',loading:'جارٍ تحميل دليل المحطات…',connecting:'جارٍ الاتصال بالبث…',playing:'على الهواء الآن',paused:'متوقف مؤقتاً',buffering:'جارٍ تخزين الصوت…',failed:'تعذّر تشغيل البث في المتصفح.',offline:'تحقق من اتصالك بالإنترنت.',insecure:'هذا البث يستخدم اتصال HTTP غير آمن.',ended:'انتهى البث. يمكنك إعادة الاتصال.',retry:'إعادة المحاولة',loadError:'تعذّر تحميل دليل المحطات',loadHint:'تحقق من اتصالك، ثم أعد المحاولة لتحميل المحطات من المصدر.',cached:'نسخة محفوظة',shown:(n,m)=>`عرض ${n} من ${m} محطة`,none:'لم نعثر على محطات مطابقة',noneHint:'جرّب اسماً آخر أو أزل عوامل التصفية.',noFav:'لا توجد محطات مفضلة بعد',noFavHint:'اضغط على القلب بجانب أي محطة لتعود إليها من هنا.',reset:'عرض جميع المحطات',addFav:'أضف إلى المفضلة',removeFav:'إزالة من المفضلة',saved:'أُضيفت المحطة إلى المفضلة',removed:'أُزيلت المحطة من المفضلة',details:'تفاصيل المحطة',country:'المغرب',location:'الموقع',category:'التصنيف',language:'اللغة',official:'موقع المحطة ↗',detailsText:'يُحمّل المشغّل رابط البث من دليل المحطات عند الضغط على الاستماع. يعتمد توفر البث على خادم المحطة واتصالك بالإنترنت.',localPlays:'مرات الاستماع على هذا الجهاز',categories:'التصنيفات',music:'موسيقى',news:'أخبار ورياضة',spiritual:'دين وقرآن',regional:'جهوية',general:'إذاعات عامة',chill:'استرخاء',culture:'ثقافة',talk:'حوار',national:'وطنية',other:'إذاعات أخرى',downloaded:'تم تجهيز قالب Blogger للتنزيل',station:'محطة',languageSwitch:'Passer au français',
+formatsBody:'بعد اختيار محطة، يتصل المتصفح بخادمها لجلب الصوت. يصل بث MP3 أو AAC عادةً كتدفق متواصل، بينما يقسم HLS الصوت إلى مقاطع قصيرة. لا يبدأ أي بث بمجرد فتح الصفحة. إذا توقف خادم المحطة أو لم يدعم متصفحك التنسيق، جرّب إعادة الاتصال أو فتح رابط البث مباشرة.',
+mobileBody:'إذا تقطّع الصوت على الهاتف، جرّب اتصالاً أكثر استقراراً وأغلق التنزيلات الأخرى. يستهلك بث بسرعة 128 كيلوبت في الثانية نحو 58 ميغابايت في الساعة قبل احتساب نفقات الاتصال. استخدم زر الإغلاق في المشغّل لإنهاء الاتصال بالبث، وأزرار جهازك لضبط الصوت.',
+libraryBody:'احفظ المحطة بالضغط على القلب في بطاقتها، ثم اختر المفضلة في أعلى الصفحة. يمكنك البحث داخل قائمتك أو ترتيبها بحسب عدد مرات استماعك. تُحفظ هذه الاختيارات في هذا المتصفح فقط، وقد تُحذف عند مسح بيانات الموقع.',
+aboutBody:'راديو المغرب دليل مستقل يجمع المحطات الواردة في ملف Radiomarocstations.json. تُجلب أسماء المحطات وصورها وروابط البث من الملف عند فتح الصفحة. لا نستضيف الصوت ولا نمثّل الإذاعات المدرجة. الشعارات والأسماء ملك لأصحابها. لإبلاغ مشرف القائمة برابط متوقف أو صورة غير صحيحة، راجع مستودع المصدر.',
+privacyBody:'تُحفظ المفضلة وعدد مرات الاستماع واللغة ونسخة من الدليل محلياً في متصفحك عند توفر التخزين. لا يرسل هذا الموقع سجلّ استماعك إلى خادم خاص به. يتصل المتصفح بمصدر الدليل ومضيفي الصور والخطوط، وعند الاستماع يتصل أيضاً بخادم المحطة. قد تُحمّل مكتبة HLS من شبكة توزيع خارجية عند الحاجة فقط.'
+},
+fr:{
+skip:'Aller aux stations',radio:'Radio',morocco:'Maroc',brand:'Radio Maroc',stations:'Stations',favs:'Favoris',guide:'Guide d’écoute',clock:'Heure du Maroc',heroKicker:'Les radios marocaines en ligne',hero1:'Tout le Maroc,',hero2:'sur une même onde.',heroBody:'Musique, actualité, voix des régions… Trouvez votre station marocaine et écoutez-la où que vous soyez.',listenNow:'Écouter',browse:'Explorer les radios',directory:'Annuaire des radios',myFavs:'Mes radios favorites',all:'Toutes',search:'Rechercher une station…',sort:'Trier les stations',sortSource:'Ordre du répertoire',sortName:'Nom : A → Z',sortPlays:'Mes écoutes',more:'Afficher davantage',formats:'Comment fonctionne le direct ?',mobile:'Mieux écouter sur mobile',library:'Composer ses favoris',independent:'Annuaire indépendant des radios marocaines',about:'À propos',privacy:'Confidentialité',source:'Source des stations ↗',export:'Thème Blogger ↓',player:'Lecteur radio',openStream:'Ouvrir le flux ↗',volume:'Volume',next:'Station suivante',stop:'Arrêter et fermer',close:'Fermer',listen:'Écouter',pause:'Pause',resume:'Reprendre',loading:'Chargement du répertoire…',connecting:'Connexion à la station…',playing:'À l’antenne',paused:'En pause',buffering:'Mise en mémoire tampon…',failed:'Lecture impossible dans ce navigateur.',offline:'Vérifiez votre connexion Internet.',insecure:'Ce flux utilise une connexion HTTP non sécurisée.',ended:'Diffusion terminée. Reconnectez-vous pour réessayer.',retry:'Réessayer',loadError:'Répertoire indisponible',loadHint:'Vérifiez votre connexion puis réessayez de charger les stations depuis la source.',cached:'Copie locale',shown:(n,m)=>`${n} station(s) affichée(s) sur ${m}`,none:'Aucun résultat',noneHint:'Essayez un autre nom ou supprimez les filtres.',noFav:'Pas encore de favoris',noFavHint:'Touchez le cœur d’une station pour la retrouver ici.',reset:'Voir toutes les radios',addFav:'Ajouter aux favoris',removeFav:'Retirer des favoris',saved:'Station ajoutée aux favoris',removed:'Station retirée des favoris',details:'Fiche de la station',country:'Maroc',location:'Lieu',category:'Catégorie',language:'Langue',official:'Site de la station ↗',detailsText:'Le lecteur charge le flux du répertoire à votre demande. Sa disponibilité dépend du diffuseur et de votre connexion Internet.',localPlays:'Écoutes sur cet appareil',categories:'Catégories',music:'Musique',news:'Info & sport',spiritual:'Spiritualité',regional:'Régionales',general:'Généralistes',chill:'Détente',culture:'Culture',talk:'Talk',national:'Nationales',other:'Autres radios',downloaded:'Thème Blogger prêt à télécharger',station:'Station',languageSwitch:'التبديل إلى العربية',
+formatsBody:'Quand vous choisissez une station, le navigateur se connecte à son serveur audio. Les flux MP3 et AAC arrivent généralement en continu ; HLS découpe le son en petits segments. Aucun flux ne démarre à l’ouverture de la page. Si le serveur est hors ligne ou le format incompatible, reconnectez-vous ou ouvrez directement le lien du flux.',
+mobileBody:'En cas de coupures, essayez un réseau plus stable et suspendez les téléchargements en arrière-plan. À 128 kbit/s, une heure d’écoute représente environ 58 Mo, hors surcoût réseau. Fermez le lecteur pour couper la connexion à la station. Sur mobile, les boutons de votre appareil permettent de régler le volume.',
+libraryBody:'Touchez le cœur sur une fiche pour enregistrer la station. Ouvrez ensuite Favoris dans l’en-tête. Recherchez une radio dans votre sélection ou triez-la par nombre d’écoutes. Ces préférences restent dans ce navigateur et peuvent disparaître si vous effacez les données du site.',
+aboutBody:'Radio Maroc est un annuaire indépendant alimenté par Radiomarocstations.json. Les noms, images et adresses des flux proviennent de cette liste, actualisée à l’ouverture de la page. Nous n’hébergeons pas l’audio et ne représentons pas les diffuseurs. Les marques et logos appartiennent à leurs propriétaires. Pour signaler un flux obsolète, consultez le dépôt source.',
+privacyBody:'Les favoris, les compteurs d’écoute, la langue et une copie du répertoire sont conservés localement si votre navigateur autorise ce stockage. Ce site ne transmet pas votre historique d’écoute à un serveur propriétaire. Le navigateur contacte les hébergeurs du répertoire, des images et des polices, puis le serveur de la station à votre demande. La bibliothèque HLS peut être chargée depuis un CDN si nécessaire.'
+}};
+function read(key,defaultValue){try{const v=localStorage.getItem(key);return v===null?defaultValue:JSON.parse(v)}catch{return defaultValue}}
+function write(key,value){try{localStorage.setItem(key,JSON.stringify(value))}catch{/* Storage can be disabled in embedded or private browsing. */}}
+const storedFav=read('rm-station-hearts',[]),storedPlays=read('rm-station-listens',{});
+let lang=read('rm-ui-language','ar')==='fr'?'fr':'ar';
+let favorites=new Set(Array.isArray(storedFav)?storedFav.filter(x=>typeof x==='string'):[]);
+let counts=storedPlays&&typeof storedPlays==='object'&&!Array.isArray(storedPlays)?storedPlays:{};
+let list=[],byId=new Map(),viewFav=false,filter='*',limit=16,loadState='loading',cacheView=false,loadToken=0,dialogKind=null;
+let current=null,media=null,engine=null,playState='paused',session=0,mediaTimeout=0,hlsPromise=null,toastTimeout=0,searchTimer=0;
+const t=k=>text[lang][k]||k;
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ic=k=>`<svg class="i" aria-hidden="true"><use href="#i-${k}"></use></svg>`;
+const fold=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g,'').toLowerCase().replace(/[أإآ]/g,'ا').replace(/ى/g,'ي');
+const keyname=k=>fold(k).replace(/[^\p{L}\p{N}]/gu,'');
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++)h=Math.imul(h^s.charCodeAt(i),16777619);return (h>>>0).toString(36)}
+function toast(message){clearTimeout(toastTimeout);$('toast').textContent=message;$('toast').classList.add('show');toastTimeout=setTimeout(()=>$('toast').classList.remove('show'),2300)}
+function url(value,relative=false){
+ if(typeof value!=='string')return '';
+ let raw=value.trim().replace(/&amp;/g,'&');if(!raw||raw.length>8192||/[\u0000-\u001f<>]/.test(raw))return '';
+ if(!/^https?:\/\//i.test(raw)&&!raw.startsWith('//')){
+  if(/^[\w-]+(?:\.[\w-]+)+(?::\d+)?\//i.test(raw))raw='https://'+raw;
+  else if(!relative||/^[\w+.-]+:/.test(raw))return '';
+ }
+ try{const u=new URL(raw,SOURCE);return /^https?:$/.test(u.protocol)&&!u.username&&!u.password?u.href:''}catch{return ''}
+}
+function imageUrl(value){const u=url(value,true);return u.replace(/^https:\/\/github\.com\/([^/]+)\/([^/]+)\/blob\//i,'https://raw.githubusercontent.com/$1/$2/')}
+const isImage=s=>/\.(?:jpe?g|png|webp|gif|svg|avif|ico|bmp)(?:[?#]|$)/i.test(s);
+const isMedia=s=>/\.(?:mp3|aacp?|m3u8?|ogg|oga|opus|flac|pls|wav)(?:[?#;/]|$)/i.test(s);
+function cleanText(v){
+ if(typeof v==='string'&&!url(v)&&v.trim()&&!/^[{\[]/.test(v.trim()))return v.trim().slice(0,250);
+ if(Array.isArray(v))return v.map(cleanText).filter(Boolean).join(' · ').slice(0,250);
+ if(v&&typeof v==='object')for(const k of ['name','title','label','text','ar','fr','en']){if(typeof v[k]==='string')return cleanText(v[k])}
+ return '';
+}
+function mediaValues(v,depth=0){if(depth>5||v==null)return [];if(typeof v==='string')return [v];if(Array.isArray(v))return v.flatMap(x=>mediaValues(x,depth+1));if(typeof v==='object')return Object.entries(v).filter(([k])=>!/(?:name|title|image|logo|type|mime|format|quality|bitrate|lang|label|description|id$)/i.test(k)).flatMap(([,x])=>mediaValues(x,depth+1));return []}
+const nameKeys=['name','stationname','radioname','title','stationtitle','radiotitle','channelname','channel','label','nom','nomradio','station','radio','namear','namefr','nameen','اسم','اسمالمحطة','الاسم'];
+const streamKeys=['urlresolved','streamurl','radiostreamurl','streamingurl','radiourl','stationurl','audiourl','listenurl','liveurl','broadcasturl','radiolink','streamlink','streaminglink','radiostream','stream','streams','streamurls','streaming','listenlive','listen','audio','playurl','file','source','sources','url','link','live','mp3','hls','lien','lienradio','رابطالبث','البث','رابط','رابطالاذاعة'];
+const logoKeys=['logo','logourl','radiologo','radiologourl','stationlogo','stationlogourl','image','img','imageurl','radiopicture','radioimage','radioimageurl','radioimg','stationimage','picture','pictureurl','thumbnail','thumbnailurl','artwork','cover','icon','iconurl','favicon','photo','radiopic','صورة','شعار','الصورة'];
+function normalize(data){
+ const out=[],seen=new Map();
+ function add(raw,context,categoryHint){
+  const obj=Object.fromEntries(Object.entries(raw).map(([k,v])=>[keyname(k),v]));
+  const field=ks=>{for(const k of ks){let s=cleanText(obj[k]);if(s)return s}return ''};
+  let name=field(nameKeys)||field(Object.keys(obj).filter(k=>/(name|title|^nom)/.test(k)&&!/(genre|category|country|artist|album)/.test(k)));
+  const found=[];
+  function collect(v){for(const rawURL of mediaValues(v)){const u=url(rawURL,isMedia(rawURL));if(u&&!isImage(u)&&!found.includes(u))found.push(u)}}
+  for(const k of streamKeys)if(k in obj)collect(obj[k]);
+  if(!found.length)for(const [k,v] of Object.entries(obj))if(/stream|listen|flux|audiolink|radiopath|broadcast|mediaurl/.test(k))collect(v);
+  if(!found.length)for(const [k,v] of Object.entries(obj))if(typeof v==='string'&&isMedia(v)&&!logoKeys.includes(k))collect(v);
+  if(!found.length&&name){
+   const urls=Object.entries(obj).filter(([k,v])=>typeof v==='string'&&url(v)&&!/(site|homepage|web|social|logo|image|icon|photo|pic|cover|thumb)/.test(k)&&!isImage(v));
+   if(urls.length===1)collect(urls[0][1]);
   }
-};
-
-// --- STATE ---
-let currentLang = 'ar';
-let activeCat = 'all';
-let currentId = null;
-let hls = null;
-let isPlaying = false;
-const audio = new Audio(); audio.preload = "none";
-
-// --- FUNCTIONS ---
-function $(id) { return document.getElementById(id); }
-function toast(m) { let t = $('toast'); t.textContent = m; t.style.opacity = 1; t.style.transform = 'translate(-50%, 0)'; setTimeout(() => { t.style.opacity = 0; t.style.transform = 'translate(-50%, 10px)'; }, 2500); }
-
-function toggleLang() {
-  currentLang = currentLang === 'ar' ? 'fr' : 'ar';
-  document.documentElement.lang = currentLang;
-  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-  $('langBtn').textContent = currentLang === 'ar' ? 'FR' : 'AR';
-  document.querySelectorAll('[data-ar]').forEach(el => {
-    el.textContent = currentLang === 'ar' ? el.getAttribute('data-ar') : el.getAttribute('data-fr');
-  });
-  navigateTo('home');
-  toast(currentLang === 'ar' ? 'تم تفعيل العربية' : 'Français activé');
-}
-
-function navigateTo(page, id = null) {
-  window.scrollTo(0, 0);
-  if (page === 'home') renderHome();
-  else if (page === 'article') renderArticle(id);
-  else renderStaticPage(page);
-}
-
-// --- HOME PAGE ---
-function renderHome() {
-  const t = {
-    badge: currentLang === 'ar' ? 'دليل الإذاعات المغربية' : 'Annuaire des radios marocaines',
-    title1: currentLang === 'ar' ? 'كل المغرب،' : 'Tout le Maroc,',
-    title2: currentLang === 'ar' ? 'على موجة واحدة.' : 'sur une seule onde.',
-    desc: currentLang === 'ar' ? 'من الموسيقى إلى الأخبار، اكتشف أصوات المغرب واستمع إلى محطتك المفضلة أينما كنت.' : 'De la musique aux actualités, découvrez les voix du Maroc et écoutez votre station préférée où que vous soyez.',
-    btn1: currentLang === 'ar' ? 'استمع الآن ▶' : 'Écouter maintenant ▶',
-    btn2: currentLang === 'ar' ? 'تصفح المحطات ↓' : 'Parcourir les stations ↓',
-    dirTitle: currentLang === 'ar' ? 'دليل المحطات' : 'Annuaire des stations',
-    search: currentLang === 'ar' ? 'ابحث عن محطة...' : 'Rechercher une station...',
-    listen: currentLang === 'ar' ? 'استمع' : 'Écouter',
-    appTitle: currentLang === 'ar' ? 'تجربة أفضل على هاتفك' : 'Meilleure expérience sur mobile',
-    appDesc: currentLang === 'ar' ? 'تطبيق راديو المغرب — مجاناً على Google Play.' : 'Application Radio Maroc — Gratuit sur Google Play.',
-    appBtn: currentLang === 'ar' ? 'تحميل' : 'Télécharger',
-    articlesTitle: currentLang === 'ar' ? 'مقالات مميزة' : 'Articles en vedette',
-    all: currentLang === 'ar' ? 'الكل' : 'Tout'
-  };
-
-  const cats = [
-    { id: 'all', ar: 'الكل', fr: 'Tout' },
-    { id: 'music', ar: 'موسيقى', fr: 'Musique' },
-    { id: 'news', ar: 'أخبار', fr: 'Actualités' },
-    { id: 'sport', ar: 'رياضة', fr: 'Sport' },
-    { id: 'religious', ar: 'دينية', fr: 'Religieux' }
-  ];
-
-  $('app').innerHTML = `
-    <section class="wrap hero">
-      <div class="hero-content">
-        <div class="hero-badge"><span style="width:6px;height:6px;background:#f39c7d;border-radius:50%;display:inline-block;"></span> ${t.badge}</div>
-        <h1>${t.title1}<br/><strong>${t.title2}</strong></h1>
-        <p>${t.desc}</p>
-        <div class="hero-actions">
-          <button onclick="playStation(1)" class="btn btn-ivory">${t.btn1}</button>
-          <button onclick="document.getElementById('radios').scrollIntoView()" class="btn btn-ghost">${t.btn2}</button>
-        </div>
-        
-        <!-- Interactive Radio Art -->
-        <div class="radio-art">
-          <div class="radio-inner">
-            <div class="radio-dial"></div>
-            <div class="radio-freq">
-              <div class="freq-num" id="heroFreq">88.9</div>
-              <div class="freq-unit">MHz</div>
-              <div class="radio-station-name" id="heroStationName">Radio Maroc</div>
-            </div>
-            <div style="width:60px;"></div>
-          </div>
-          <div class="radio-bar">
-            <div class="radio-bar-fill" id="heroBar"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="radios" class="wrap directory">
-      <div class="section-head">
-        <h2>${t.dirTitle}</h2>
-        <div class="search-wrap">
-          <span>🔍</span>
-          <input id="searchInput" placeholder="${t.search}" oninput="renderStations()" />
-        </div>
-      </div>
-      <div class="filter-row" id="pillRow">
-        ${cats.map(c => `<button onclick="setCat('${c.id}')" class="chip ${activeCat === c.id ? 'active' : ''}">${currentLang === 'ar' ? c.ar : c.fr}</button>`).join('')}
-      </div>
-      <div class="grid" id="stationGrid"></div>
-    </section>
-
-    <section class="wrap" style="margin-top: 25px;">
-      <div class="app-card">
-        <img src="https://play-lh.googleusercontent.com/1R8p7u5e9x5aX6y7z8w9v0b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1g2h3i4j5k6l7m8n9o0p1q2r3s4t5u6v7w8x9y0z" alt="App"/>
-        <div>
-          <b>${t.appTitle}</b>
-          <span>${t.appDesc}</span>
-        </div>
-        <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" target="_blank" class="app-btn">${t.appBtn}</a>
-      </div>
-    </section>
-
-    <section class="wrap" style="margin-top: 25px;">
-      <div class="section-head"><h2>${t.articlesTitle}</h2></div>
-      <div class="grid" id="articleGrid"></div>
-    </section>
-  `;
-  renderStations();
-  renderArticles();
-}
-
-// --- RENDER STATIONS ---
-function setCat(c) { activeCat = c; renderHome(); }
-function renderStations() {
-  const q = ($('searchInput')?.value || '').toLowerCase();
-  const list = stations.filter(s => {
-    const name = currentLang === 'ar' ? s.name_ar : s.name_fr;
-    const cat = currentLang === 'ar' ? s.cat_ar : s.cat_fr;
-    const matchQ = name.toLowerCase().includes(q) || cat.toLowerCase().includes(q);
-    const matchCat = activeCat === 'all' || 
-                     (activeCat === 'music' && (cat.includes('موسيقى') || cat.includes('Musique'))) ||
-                     (activeCat === 'news' && (cat.includes('أخبار') || cat.includes('Actualité'))) ||
-                     (activeCat === 'sport' && (cat.includes('رياضة') || cat.includes('Sport'))) ||
-                     (activeCat === 'religious' && (cat.includes('دينية') || cat.includes('Religieux')));
-    return matchQ && matchCat;
-  });
-
-  $('stationGrid').innerHTML = list.map(s => {
-    const name = currentLang === 'ar' ? s.name_ar : s.name_fr;
-    const cat = currentLang === 'ar' ? s.cat_ar : s.cat_fr;
-    return `<div class="station">
-      <div class="tile-top">
-        <div class="station-logo"><img src="${s.logo}" alt="${name}" onerror="this.style.display='none';this.parentElement.textContent='${name[0]}'"/></div>
-      </div>
-      <h3>${name}</h3>
-      <div class="station-meta">${s.city} • ${cat}</div>
-      <button onclick="playStation(${s.id})" class="play-link">▶ ${currentLang === 'ar' ? 'استمع' : 'Écouter'}</button>
-    </div>`;
-  }).join('');
-}
-
-function renderArticles() {
-  $('articleGrid').innerHTML = articles.map(a => {
-    const title = currentLang === 'ar' ? a.t_ar : a.t_fr;
-    const cat = currentLang === 'ar' ? a.cat_ar : a.cat_fr;
-    return `<div class="article-card" onclick="navigateTo('article', ${a.id})">
-      <img src="${a.img}" alt="${title}"/>
-      <div>
-        <span>${cat}</span>
-        <h3>${title}</h3>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function renderArticle(id) {
-  const a = articles.find(x => x.id == id);
-  if (!a) return navigateTo('home');
-  const title = currentLang === 'ar' ? a.t_ar : a.t_fr;
-  const body = currentLang === 'ar' ? a.body_ar : a.body_fr;
-  $('app').innerHTML = `
-    <div class="wrap page-content">
-      <button onclick="navigateTo('home')" style="background:none;border:none;color:var(--red);font-weight:bold;cursor:pointer;margin-bottom:15px;">← ${currentLang === 'ar' ? 'رجوع' : 'Retour'}</button>
-      <img src="${a.img}" style="width:100%;height:250px;object-fit:cover;border-radius:12px;margin-bottom:20px;"/>
-      <h1>${title}</h1>
-      <div>${body}</div>
-    </div>`;
-}
-
-function renderStaticPage(key) {
-  const content = currentLang === 'ar' ? pageContent[key].ar : pageContent[key].fr;
-  $('app').innerHTML = `
-    <div class="wrap page-content">
-      <button onclick="navigateTo('home')" style="background:none;border:none;color:var(--red);font-weight:bold;cursor:pointer;margin-bottom:15px;">← ${currentLang === 'ar' ? 'رجوع' : 'Retour'}</button>
-      ${content}
-    </div>`;
-}
-
-// --- PLAYER ---
-function playStation(id) {
-  const s = stations.find(x => x.id === id); if (!s) return;
-  if (currentId === id && !audio.paused) { togglePlay(); return; }
-  
-  currentId = id;
-  const bar = $('playerBar'); bar.classList.add('open');
-  const name = currentLang === 'ar' ? s.name_ar : s.name_fr;
-  
-  $('pName').textContent = name;
-  $('pStatus').textContent = currentLang === 'ar' ? 'جاري التحميل...' : 'Chargement...';
-  $('pLogo').innerHTML = `<img src="${s.logo}" onerror="this.style.display='none';this.parentElement.textContent='${name[0]}'"/>`;
-  
-  // Update Hero Radio Art
-  if ($('heroStationName')) $('heroStationName').textContent = name;
-  if ($('heroFreq')) $('heroFreq').textContent = (80 + Math.random() * 20).toFixed(1);
-
-  if (hls) { hls.destroy(); hls = null; }
-  audio.pause(); audio.removeAttribute('src'); audio.load();
-  
-  if (s.stream.includes('.m3u8') && window.Hls && Hls.isSupported()) {
-    hls = new Hls(); hls.loadSource(s.stream); hls.attachMedia(audio);
-    hls.on(Hls.Events.MANIFEST_PARSED, () => audio.play().catch(onAudioError));
-    hls.on(Hls.Events.ERROR, (e, d) => { if (d.fatal) onAudioError(); });
-  } else {
-    audio.src = s.stream;
-    audio.play().catch(onAudioError);
+  if(!found.length)return false;
+  if(!name&&!/^(?:\d+|data|stations?|radios?|items?|channels?|list|results?|payload|streams?|sources?|records?|collection)?$/i.test(context))name=context;
+  if(!name){try{name=new URL(found[0]).hostname.replace(/^www\./,'')}catch{return false}}
+  const logos=[];
+  for(const k of [...logoKeys,...Object.keys(obj).filter(k=>/logo|image|thumb|artwork|favicon|picture|photo|icon|cover/.test(k))]){
+   if(!(k in obj))continue;
+   const val=obj[k];const candidates=typeof val==='object'&&val?Object.values(val).flatMap(x=>mediaValues(x)):mediaValues(val);
+   for(const v of candidates){if(!url(v)&&!/[/.]/.test(v))continue;const u=imageUrl(v);if(u&&!logos.includes(u))logos.push(u)}
   }
+  if(!logos.length)for(const v of Object.values(obj))if(typeof v==='string'&&isImage(v))logos.push(imageUrl(v));
+  const city=field(['city','ville','cityname','region','المدينة']),language=field(['language','languages','lang','langue','اللغة']);
+  const category=field(['category','categoryname','radiocategory','genre','genres','tags','categorie','style','type','التصنيف','النوع'])||categoryHint||'';
+  const site=url(obj.homepage||obj.website||obj.officialwebsite||obj.site||obj.web);
+  const id='s'+hash(fold(name)+'|'+found[0]);
+  if(seen.has(id))return true;
+  const s={id,name:name.slice(0,220),urls:found,logos:logos.filter(Boolean),city,language,category,site,mime:field(['mime','mimetype','codec','format','streamtype']),index:out.length+1};
+  seen.set(id,s);out.push(s);return true;
+ }
+ function walk(v,context='',hint='',depth=0){
+  if(depth>22||v==null)return;
+  if(Array.isArray(v)){for(const item of v)walk(item,context,hint,depth+1);return}
+  if(typeof v!=='object')return;
+  // A grouping node may have its own name and URL, but its children are the stations.
+  const children=Object.entries(v).filter(([k,x])=>x&&typeof x==='object'&&/^(?:stations?|radios?|radiolist|stationslist|channels?|items|results|categories|data|records|groups|radiostations)$/i.test(keyname(k)));
+  if(children.length&&children.some(([,x])=>Array.isArray(x)&&x.some(y=>y&&typeof y==='object'))){
+   const nextHint=cleanText(v.category)||cleanText(v.genre)||hint;
+   for(const [k,x] of children)walk(x,k,nextHint,depth+1);return;
+  }
+  if(add(v,context,hint))return;
+  for(const [k,x] of Object.entries(v)){
+   if(x&&typeof x==='object')walk(x,k,hint,depth+1);
+   else if(typeof x==='string'&&isMedia(x)&&url(x)&&!isImage(x))add({name:k,stream:x},k,hint);
+  }
+ }
+ walk(data);return out;
 }
-
-function onAudioError() {
-  $('pStatus').textContent = currentLang === 'ar' ? 'البث غير متوفر' : 'Flux indisponible';
-  $('playBtn').textContent = '▶';
-  isPlaying = false;
-  toast(currentLang === 'ar' ? 'تعذر تشغيل هذا البث.' : 'Impossible de lire ce flux.');
+const catIcons={music:'music',news:'waves',regional:'pin',spiritual:'book',culture:'book',general:'radio',national:'signal',chill:'headphones',talk:'waves',other:'radio'};
+function category(s){
+ const tag=fold(s.category),name=fold(s.name);
+ const tests=[['spiritual',/qur.?an|coran|relig|islam|spirit|mohammed vi|assadissa|قران|ديني|السادسة|محمد السادس/],['news',/news|info|sport|economic|actualit|medi ?1|radio ?mars|atlantic|اخبار|رياضة|اقتصاد/],['chill',/chill|relax|lounge|استرخاء/],['culture',/culture|ثقافة/],['talk',/talk|debat|حوار/],['music',/music|musique|hits?|chada|chaabi|tarab|dance|jazz|rock|rap\b|rai\b|pop\b|oriental|歌曲|موسيقى|شدى|طرب|اغاني|شعبي|هيت راديو/],['regional',/region|local|cap radio|جهوي|محلي/],['national',/national|وطنية/],['general',/general|عامة/]];
+ for(const [k,re] of tests)if(re.test(tag))return k;
+ if(tag&&!/^(mp3|aac|aacp|hls|audio.*|radio|unknown|null|none|morocco|maroc|\d+|-)$/.test(tag))return 'tag:'+s.category.split(/[,;|]/)[0].trim().slice(0,45);
+ for(const [k,re] of tests)if(re.test(name))return k;
+ return 'general';
 }
-
-function togglePlay() {
-  if (!currentId) return playStation(1);
-  if (audio.paused) audio.play().catch(onAudioError);
-  else audio.pause();
+function catName(k){return k.startsWith('tag:')?k.slice(4):t(k)}
+function installList(items){list=items;byId=new Map();for(const s of list){s.group=category(s);s.search=fold([s.name,s.category,s.city,s.language,catName(s.group),text.ar[s.group],text.fr[s.group]].join(' '));byId.set(s.id,s)}if(filter!=='*'&&!list.some(s=>s.group===filter))filter='*'}
+async function fetchData(src){
+ const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),12000);
+ try{const res=await fetch(src,{mode:'cors',credentials:'omit',signal:ctrl.signal,cache:'no-cache'});if(!res.ok)throw Error('HTTP '+res.status);const data=JSON.parse((await res.text()).replace(/^\uFEFF/,''));const items=normalize(data);if(!items.length)throw Error('No stream records');return {data,items}}finally{clearTimeout(timer)}
 }
-
-function stopPlayer() {
-  audio.pause(); if (hls) { hls.destroy(); hls = null; }
-  audio.removeAttribute('src'); audio.load();
-  currentId = null; isPlaying = false;
-  $('playerBar').classList.remove('open');
-  if ($('heroBar')) $('heroBar').style.width = '0%';
-  if ($('heroStationName')) $('heroStationName').textContent = 'Radio Maroc';
+async function load(){
+ const token=++loadToken;
+ if(!list.length){try{const cached=read(CACHE,null);if(cached&&cached.data){const items=normalize(cached.data);if(items.length){installList(items);cacheView=true}}}catch{/* Try the live source instead. */}}
+ loadState=list.length?'ready':'loading';render();
+ for(const endpoint of [SOURCE,MIRROR]){
+  try{const {data,items}=await fetchData(endpoint);if(token!==loadToken)return;installList(items);loadState='ready';cacheView=false;write(CACHE,{data,at:Date.now()});render();return}catch{if(token!==loadToken)return}
+ }
+ cacheView=!!list.length;loadState=cacheView?'ready':'error';render();
 }
-
-// Audio Events
-audio.addEventListener('playing', () => {
-  isPlaying = true;
-  $('pStatus').textContent = currentLang === 'ar' ? 'مباشر' : 'En direct';
-  $('playBtn').textContent = '❚❚';
-  if ($('heroBar')) $('heroBar').style.width = '70%';
+function logo(s){
+ const colors=[['#f1e5d7','#865b3e'],['#e5ece4','#426555'],['#f2e1df','#8a494a'],['#e9e5ec','#695373'],['#e4e9ef','#485f77']];
+ const [bg,fg]=colors[(s.index-1)%colors.length];
+ const monogram=s.name.replace(/^(radio|راديو|إذاعة)\s+/i,'').trim().split(/\s+/).slice(0,2).map(x=>Array.from(x)[0]).join('').toUpperCase();
+ return `<span class="station-logo" style="--logo-bg:${bg};--logo-fg:${fg}"><span aria-hidden="true">${esc(monogram)}</span>${s.logos[0]?`<img src="${esc(s.logos[0])}" alt="${esc(s.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-logo="${s.id}" data-index="0">`:''}</span>`;
+}
+$('application').addEventListener('error',e=>{const img=e.target;if(img.tagName!=='IMG'||!img.dataset.logo)return;const s=byId.get(img.dataset.logo)||(current?.id===img.dataset.logo?current:null);const next=Number(img.dataset.index)+1;if(s?.logos[next]){img.dataset.index=String(next);img.src=s.logos[next]}else img.hidden=true},true);
+function playCount(id){return Math.max(0,Number(counts[id])||0)}
+function visible(){
+ const query=fold($('search').value.trim()),words=query.split(/\s+/).filter(Boolean);
+ const a=list.filter(s=>(!viewFav||favorites.has(s.id))&&(filter==='*'||s.group===filter)&&words.every(w=>s.search.includes(w)));
+ if($('sort').value==='name')a.sort((a,b)=>a.name.localeCompare(b.name,lang,{numeric:true,sensitivity:'base'}));
+ if($('sort').value==='plays')a.sort((a,b)=>playCount(b.id)-playCount(a.id)||a.index-b.index);
+ return a;
+}
+function activeAudio(){return !!current&&['playing','connecting','buffering'].includes(playState)}
+function card(s){
+ const selected=current?.id===s.id,active=selected&&activeAudio(),saved=favorites.has(s.id);
+ return `<article class="station${selected?' selected':''}" data-card="${s.id}"><div class="tile-top">${logo(s)}<div class="tile-code"><span class="mono">STN ${String(s.index).padStart(3,'0')}</span><button class="circle-btn${saved?' saved':''}" data-act="heart" data-id="${s.id}" aria-pressed="${saved}" aria-label="${esc(t(saved?'removeFav':'addFav')+' — '+s.name)}">${ic('heart')}</button></div></div><h3><button class="station-title" data-act="details" data-id="${s.id}"><bdi>${esc(s.name)}</bdi></button></h3><p class="station-meta">${ic('pin')}<bdi>${esc(s.city||t('country'))}</bdi><span aria-hidden="true">·</span><bdi>${esc(catName(s.group))}</bdi></p><div class="tile-foot"><button class="play-link" data-act="play" data-id="${s.id}" aria-label="${esc(t(active?'pause':'listen')+' — '+s.name)}"><span class="play-disc">${ic(active?'pause':'play')}</span><span>${esc(t(active?'pause':'listen'))}</span></button><span class="mono">WEB RADIO</span></div></article>`;
+}
+function renderChips(){
+ const base=viewFav?list.filter(x=>favorites.has(x.id)):list;
+ const groups=[...new Set(base.map(s=>s.group))];if(filter!=='*'&&!groups.includes(filter))filter='*';
+ const html=['*',...groups].map(k=>`<button class="chip${filter===k?' active':''}" data-act="filter" data-key="${esc(k)}" aria-pressed="${filter===k}">${ic(k==='*'?'grid':catIcons[k]||'radio')}<span>${esc(k==='*'?t('all'):catName(k))}</span></button>`).join('');
+ if($('chips').innerHTML!==html)$('chips').innerHTML=html;
+}
+function render(){
+ const favCount=list.filter(s=>favorites.has(s.id)).length;
+ $('heroPlay').disabled=!list.length;$('directoryTitle').textContent=t(viewFav?'myFavs':'directory');$('stationCount').textContent=list.length?String(viewFav?favCount:list.length):'—';
+ for(const id of ['navFav','mobileFav']){$(id).classList.toggle('on',viewFav);$(id).setAttribute('aria-pressed',viewFav)}
+ $('navAll').classList.toggle('on',!viewFav);$('navAll').setAttribute('aria-pressed',!viewFav);
+ renderChips();const matches=visible(),display=matches.slice(0,limit),loading=loadState==='loading'&&!list.length;
+ $('stationGrid').setAttribute('aria-busy',loading?'true':'false');
+ $('stationGrid').innerHTML=loading?'<div class="skeleton" aria-hidden="true"></div>'.repeat(4):display.map(card).join('');
+ $('more').hidden=matches.length<=display.length;$('emptyState').hidden=loading||!!display.length;
+ $('resultInfo').textContent=loading?t('loading'):loadState==='error'?t('loadError'):(cacheView?t('cached')+' · ':'')+text[lang].shown(display.length,matches.length);
+ if(!$('emptyState').hidden){const error=loadState==='error',emptyFav=viewFav&&!favCount;
+ $('emptyState').innerHTML=`${ic(error?'signal':emptyFav?'heart':'search')}<h3>${esc(t(error?'loadError':emptyFav?'noFav':'none'))}</h3><p>${esc(t(error?'loadHint':emptyFav?'noFavHint':'noneHint'))}</p><button class="btn btn-line" data-act="${error?'retry':'all'}">${esc(t(error?'retry':'reset'))}</button>`}
+}
+function syncPlayCards(){
+ document.querySelectorAll('[data-card]').forEach(el=>{const id=el.dataset.card,selected=current?.id===id,active=selected&&activeAudio(),btn=el.querySelector('.play-link'),s=byId.get(id);el.classList.toggle('selected',selected);if(!s)return;btn.setAttribute('aria-label',t(active?'pause':'listen')+' — '+s.name);btn.querySelector('use').setAttribute('href','#i-'+(active?'pause':'play'));btn.lastElementChild.textContent=t(active?'pause':'listen')});
+}
+function updatePlayer(){
+ $('player').hidden=!current;document.body.classList.toggle('player-open',!!current);
+ if(current){$('playerName').textContent=current.name;$('playerStatus').textContent=t(playState);$('player').classList.toggle('is-playing',playState==='playing');$('playerToggle').innerHTML=ic(activeAudio()?'pause':'play');$('playerToggle').setAttribute('aria-label',t(activeAudio()?'pause':'resume'));$('externalStream').hidden=!['failed','offline','insecure','ended'].includes(playState);$('externalStream').href=current.urls[0]}
+ syncPlayCards();
+}
+function dispose(){
+ ++session;clearTimeout(mediaTimeout);
+ if(engine){try{engine.destroy()}catch{}engine=null}
+ if(media){media.pause();media.removeAttribute('src');media.load();media=null}
+}
+function setPlayerState(value){playState=value;updatePlayer()}
+function hlsLib(){
+ if(window.Hls)return Promise.resolve(window.Hls);
+ if(!hlsPromise)hlsPromise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/hls.js@1.6.13/dist/hls.light.min.js';s.async=true;s.onload=()=>window.Hls?resolve(window.Hls):reject(Error('HLS unavailable'));s.onerror=()=>reject(Error('HLS unavailable'));document.head.appendChild(s)}).catch(e=>{hlsPromise=null;throw e});
+ return hlsPromise;
+}
+function start(s){
+ if(!s)return;
+ dispose();current=s;$('playerLogo').innerHTML=logo(s);setPlayerState('connecting');
+ let counted=false;
+ function attempt(index,forceHls=false){
+  dispose();const token=session,u=s.urls[index],a=new Audio();media=a;a.preload='none';a.volume=Number($('volume').value);
+  let dead=false,configuredHls=false;
+  const valid=()=>session===token&&!dead;
+  const hlsUrl=/\.m3u8(?:$|[#?;/])/i.test(u)||/mpegurl|\bhls\b/i.test(s.mime);
+  const nativeHls=!!a.canPlayType('application/vnd.apple.mpegurl');
+  function fail(){
+   if(!valid())return;
+   dead=true;clearTimeout(mediaTimeout);
+   if(index+1<s.urls.length){attempt(index+1);return}
+   if(!configuredHls&&!forceHls&&!hlsUrl&&!isMedia(u)&&!nativeHls&&navigator.onLine!==false&&!(location.protocol==='https:'&&u.startsWith('http:'))){attempt(index,true);return}
+   dispose();setPlayerState(navigator.onLine===false?'offline':location.protocol==='https:'&&u.startsWith('http:')?'insecure':'failed');
+  }
+  function arm(){clearTimeout(mediaTimeout);mediaTimeout=setTimeout(fail,23000)}
+  function play(){if(!valid())return;const p=a.play();if(p)p.catch(e=>{if(!valid())return;if(e.name==='NotAllowedError'){dispose();setPlayerState('paused')}else if(e.name!=='AbortError')fail()})}
+  a.addEventListener('playing',()=>{if(!valid())return;clearTimeout(mediaTimeout);if(!counted){counted=true;counts[s.id]=playCount(s.id)+1;write('rm-station-listens',counts);if($('sort').value==='plays')render()}setPlayerState('playing')});
+  for(const event of ['waiting','stalled'])a.addEventListener(event,()=>{if(valid()&&!a.paused){setPlayerState('buffering');arm()}});
+  a.addEventListener('ended',()=>{if(valid()){dispose();setPlayerState('ended')}});
+  a.addEventListener('error',fail);
+  arm();
+  if((hlsUrl||forceHls)&&!nativeHls){
+   configuredHls=true;hlsLib().then(H=>{if(!valid())return;if(!H.isSupported()){fail();return}
+    engine=new H({enableWorker:true,lowLatencyMode:false});
+    engine.on(H.Events.ERROR,(_,d)=>{if(d.fatal)fail()});
+    engine.on(H.Events.MEDIA_ATTACHED,()=>{if(valid())engine.loadSource(u)});
+    engine.on(H.Events.MANIFEST_PARSED,play);engine.attachMedia(a);
+   }).catch(fail);
+  }else{a.src=u;play()}
+ }
+ attempt(0);
+ if('mediaSession' in navigator&&typeof MediaMetadata!=='undefined')try{navigator.mediaSession.metadata=new MediaMetadata({title:s.name,artist:'Radio Maroc',artwork:s.logos.slice(0,1).map(src=>({src}))})}catch{}
+}
+function pause(){if(current){dispose();setPlayerState('paused')}}
+function toggle(){if(!current)return;activeAudio()?pause():start(current)}
+function stop(){dispose();current=null;playState='paused';updatePlayer();if('mediaSession' in navigator)try{navigator.mediaSession.metadata=null}catch{}}
+function next(){const matches=visible(),arr=matches.length?matches:list;if(arr.length)start(arr[(arr.findIndex(s=>s.id===current?.id)+1)%arr.length])}
+if('mediaSession' in navigator){for(const [action,cb] of [['play',()=>current&&start(current)],['pause',pause],['stop',stop],['nexttrack',next]])try{navigator.mediaSession.setActionHandler(action,cb)}catch{}}
+function note(k){
+ if(!['about','privacy','library','mobile','formats'].includes(k))return;
+ dialogKind={type:'note',key:k};$('modalBody').innerHTML=`<h2 id="modalTitle">${esc(t(k))}</h2><p>${esc(t(k+'Body'))}</p>${k==='about'?`<a class="btn btn-line" href="${SOURCE}" target="_blank" rel="noopener noreferrer">${esc(t('source'))}</a>`:''}`;openModal();
+}
+function details(s){
+ if(!s)return;dialogKind={type:'station',key:s.id};
+ $('modalBody').innerHTML=`${logo(s)}<h2 id="modalTitle"><bdi>${esc(s.name)}</bdi></h2><div class="meta-box"><p>${esc(t('location'))}: <bdi>${esc(s.city||t('country'))}</bdi> · ${esc(t('category'))}: <bdi>${esc(catName(s.group))}</bdi></p>${s.language?`<p>${esc(t('language'))}: <bdi>${esc(s.language)}</bdi></p>`:''}<p>${esc(t('localPlays'))}: ${playCount(s.id)}</p></div><p>${esc(t('detailsText'))}</p><button class="btn btn-red" data-act="modalPlay" data-id="${s.id}">${ic('play')}${esc(t('listenNow'))}</button>${s.site?`<a class="btn btn-line" href="${esc(s.site)}" target="_blank" rel="noopener noreferrer">${esc(t('official'))}</a>`:''}`;openModal();
+}
+function openModal(){if(!$('modal').open)$('modal').showModal()}
+function language(){
+ document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.title=lang==='ar'?'راديو المغرب | محطات الراديو المغربية مباشرة':'Radio Maroc | Radios marocaines en direct';
+ document.querySelectorAll('[data-t]').forEach(e=>e.textContent=t(e.dataset.t));
+ document.querySelectorAll('[data-label]').forEach(e=>{e.setAttribute('aria-label',t(e.dataset.label));if(e.tagName==='BUTTON')e.title=t(e.dataset.label)});
+ $('search').placeholder=t('search');$('langText').textContent=lang==='ar'?'FR':'عربي';$('langButton').setAttribute('aria-label',t('languageSwitch'));$('chips').setAttribute('aria-label',t('categories'));$('langButton').title=t('languageSwitch');
+ render();updatePlayer();
+ if($('modal').open&&dialogKind){dialogKind.type==='note'?note(dialogKind.key):details(byId.get(dialogKind.key))}
+}
+function setView(fav){viewFav=fav;filter='*';$('search').value='';limit=16;render();$('directory').scrollIntoView({block:'start'})}
+function exportTheme(){
+ // Keep the directory and its JSON loader in the theme; Blogger still renders posts on post pages.
+ const cdata=s=>'<!'+'[CDATA['+s.replace(/\]\]>/g,']]]]><![CDATA[>')+']]'+'>';
+ const css=$('siteStyles').textContent;
+ const xml=`<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" b:version="2" lang="ar" dir="rtl">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title><data:blog.pageTitle/></title><b:include data="blog" name="all-head-content"/><b:skin id="siteStyles">${cdata(css)}</b:skin></head>
+<body><b:if cond="data:blog.url == data:blog.homepageUrl">${baseMarkup}<script type="text/javascript">${cdata(appScript)}<\/script><b:else/><header class="top"><div class="wrap top-inner"><a class="brand-name" expr:href="data:blog.homepageUrl">راديو المغرب</a></div></header></b:if>
+<b:section id="blogposts" class="wrap" showaddelement="yes"><b:widget id="Blog1" locked="true" title="Articles" type="Blog"><b:includable id="main"><b:if cond="data:blog.url != data:blog.homepageUrl"><b:loop values="data:posts" var="post"><article><h1><a expr:href="data:post.url"><data:post.title/></a></h1><data:post.body/></article></b:loop><b:if cond="data:olderPageUrl"><a expr:href="data:olderPageUrl">Articles précédents</a></b:if></b:if></b:includable></b:widget></b:section></body></html>`;
+ const a=document.createElement('a'),u=URL.createObjectURL(new Blob([xml],{type:'application/xml;charset=utf-8'}));a.href=u;a.download='radio-maroc-blogger.xml';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);toast(t('downloaded'));
+}
+$('application').addEventListener('click',e=>{
+ const b=e.target.closest('[data-act]');if(!b||b.disabled)return;const k=b.dataset.key,s=byId.get(b.dataset.id);
+ switch(b.dataset.act){
+ case 'lang':lang=lang==='ar'?'fr':'ar';write('rm-ui-language',lang);language();break;
+ case 'all':setView(false);break;
+ case 'favView':setView(!viewFav);break;
+ case 'filter':filter=k;limit=16;render();break;
+ case 'more':{const old=limit;limit+=24;render();const newButton=$('stationGrid').children[old]?.querySelector('.station-title');if(newButton)newButton.focus({preventScroll:true});break}
+ case 'retry':load();break;
+ case 'heart':if(s){const had=favorites.has(s.id);had?favorites.delete(s.id):favorites.add(s.id);write('rm-station-hearts',[...favorites]);render();const target=$('stationGrid').querySelector(`[data-act="heart"][data-id="${s.id}"]`);if(target)target.focus({preventScroll:true});toast(t(had?'removed':'saved'))}break;
+ case 'play':if(s){current?.id===s.id?toggle():start(s)}break;
+ case 'heroPlay':if(list.length)start(current||list.find(x=>/^hit radio(?: maroc)?$/i.test(x.name.trim()))||list[0]);break;
+ case 'toggle':toggle();break;
+ case 'stop':stop();break;
+ case 'next':next();break;
+ case 'details':details(s);break;
+ case 'modalPlay':$('modal').close();start(s);break;
+ case 'note':note(k);break;
+ case 'close':$('modal').close();break;
+ case 'export':exportTheme();break;
+ }
 });
-
-audio.addEventListener('pause', () => {
-  isPlaying = false;
-  if (currentId) $('pStatus').textContent = currentLang === 'ar' ? 'متوقف' : 'En pause';
-  $('playBtn').textContent = '▶';
-  if ($('heroBar')) $('heroBar').style.width = '0%';
-});
-
-// Init
-navigateTo('home');
+$('modal').addEventListener('click',e=>{if(e.target===$('modal')){const r=$('modal').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('modal').close()}});
+$('modal').addEventListener('close',()=>{dialogKind=null});
+$('search').addEventListener('input',()=>{limit=16;clearTimeout(searchTimer);searchTimer=setTimeout(render,80)});
+$('sort').addEventListener('change',()=>{limit=16;render()});
+$('volume').addEventListener('input',()=>{if(media)media.volume=Number($('volume').value);write('rm-radio-volume',Number($('volume').value))});
+const vol=read('rm-radio-volume',.85);if(typeof vol==='number'&&vol>=0&&vol<=1)$('volume').value=String(vol);
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!$('modal').open&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName)){e.preventDefault();$('search').focus()}});
+function clock(){try{$('clockTime').textContent=new Intl.DateTimeFormat('en-GB',{timeZone:'Africa/Casablanca',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date())}catch{$('clockTime').parentElement.hidden=true}}
+window.addEventListener('pagehide',()=>{if(current)pause()});clock();setInterval(clock,30000);
+language();load();
+})();
 </script>
 </body>
 </html>
