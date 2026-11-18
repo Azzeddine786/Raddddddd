@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Radio Maroc – Radios Marocaines en Direct | Écouter la Radio Marocaine</title>
+<meta name="description" content="Radio Maroc : écoutez les meilleures radios marocaines en direct. Hit Radio, Radio Mars, Chada FM, Medi 1, SNRT, Atlantic, Aswat et plus. Annuaire éditorial, articles originaux et lecteur audio accessible."/>
+<link rel="canonical" href="https://www.radiomaroc.example/"/>
+<meta property="og:title" content="Radio Maroc – Radios Marocaines en Direct"/>
+<meta property="og:description" content="Écoutez les meilleures radios marocaines en direct."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=1200&auto=format&fit=crop"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{navy:{900:'#060D24',800:'#0A1633',700:'#12245A',600:'#1A357E'},brand:'#E30613',gold:'#C9A86A'},fontFamily:{sans:['Plus Jakarta Sans','sans-serif'],ar:['Amiri','serif']},boxShadow:{soft:'0 20px 50px rgba(6,13,36,.14)',card:'0 10px 30px rgba(6,13,36,.09)'}}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Radio Maroc","alternateName":"Radios Marocaines en Direct","url":"https://www.radiomaroc.example/","inLanguage":["fr","ar"],"potentialAction":{"@type":"SearchAction","target":"https://www.radiomaroc.example/?s={query}","query-input":"required name=query"}}
+</script>
+<style>
+*{-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{font-family:'Plus Jakarta Sans',sans-serif;background:#F6F7FB;color:#0A1633}
+.pattern{background-image:radial-gradient(circle at 1px 1px,rgba(255,255,255,.16) 1px,transparent 0);background-size:22px 22px}
+.zellige{background-image:linear-gradient(45deg,rgba(255,255,255,.06) 25%,transparent 25%),linear-gradient(-45deg,rgba(255,255,255,.06) 25%,transparent 25%),linear-gradient(45deg,transparent 75%,rgba(255,255,255,.06) 75%),linear-gradient(-45deg,transparent 75%,rgba(255,255,255,.06) 75%);background-size:28px 28px;background-position:0 0,0 14px,14px -14px,-14px 0}
+.card{transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(6,13,36,.13)}
+.eq{display:flex;gap:3px;align-items:flex-end;height:18px}.eq span{width:4px;background:#E30613;border-radius:99px;height:6px}.playing .eq span{animation:eq 0.8s infinite ease-in-out}.playing .eq span:nth-child(2){animation-delay:.15s}.playing .eq span:nth-child(3){animation-delay:.3s}.playing .eq span:nth-child(4){animation-delay:.45s}@keyframes eq{0%,100%{height:6px}50%{height:18px}}
+.spin{width:18px;height:18px;border:3px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:s .7s linear infinite}@keyframes s{to{transform:rotate(360deg)}}
+.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{scrollbar-width:none}
+pre{white-space:pre-wrap;word-break:break-word}
+.adbox{background:repeating-linear-gradient(45deg,#fff,#fff 10px,#F8FAFF 10px,#F8FAFF 20px)}
+dialog::backdrop{background:rgba(3,7,20,.68);backdrop-filter:blur(4px)}
+input[type=range]{accent-color:#E30613}
+.rtl .flip{transform:scaleX(-1)}
+</style>
+</head>
+<body class="pb-28">
+
+<!-- TOP -->
+<div class="bg-navy-900 text-white text-xs">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between gap-3">
+    <div class="flex items-center gap-2"><span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span><span class="font-bold tracking-widest">EN DIRECT • MAROC</span><span class="hidden md:inline text-white/60" id="dateNow"></span></div>
+    <div class="flex items-center gap-2">
+      <button onclick="toggleRTL()" class="px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 font-bold" aria-label="Basculer arabe RTL">عربي / RTL</button>
+      <button onclick="openPage('about')" class="hidden sm:block px-3 py-1 rounded-full bg-white/10">À propos</button>
+      <button onclick="scrollToId('xml-studio')" class="px-3 py-1 rounded-full bg-brand font-bold">Blogger XML ↓</button>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-2xl bg-navy-800 relative overflow-hidden grid place-items-center shadow-soft">
+        <div class="absolute inset-0 zellige"></div>
+        <svg class="w-7 h-7 relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.2" fill="#E30613"/><path d="M7.5 7.5a6.4 6.4 0 000 9M16.5 7.5a6.4 6.4 0 010 9M4.8 4.8a10.2 10.2 0 000 14.4M19.2 4.8a10.2 10.2 0 010 14.4" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+      <div><div class="font-black text-xl leading-none tracking-tight">RADIO <span class="text-brand">MAROC</span></div><div class="text-[11px] tracking-[.14em] text-slate-500 font-bold mt-1" id="tagline">RADIOS MAROCAINES EN DIRECT</div></div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1 text-sm font-bold">
+      <a href="#radios" class="px-3 py-2 rounded-full hover:bg-slate-100">Radios</a>
+      <a href="#categories" class="px-3 py-2 rounded-full hover:bg-slate-100">Catégories</a>
+      <a href="#articles" class="px-3 py-2 rounded-full hover:bg-slate-100">Articles</a>
+      <a href="#editorial" class="px-3 py-2 rounded-full hover:bg-slate-100">Éditorial</a>
+      <button onclick="openPage('contact')" class="px-3 py-2 rounded-full hover:bg-slate-100">Contact</button>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button onclick="toggleFavs()" id="favBtn" class="px-3 py-2 rounded-full border font-bold text-sm">♥ Favoris</button>
+      <a href="#xml-studio" class="hidden md:block bg-navy-800 text-white px-4 py-2.5 rounded-full text-sm font-bold">Thème Blogger 2026</a>
+    </div>
+  </div>
+</header>
+
+<!-- AD HEADER -->
+<div class="max-w-7xl mx-auto px-4 mt-4">
+  <div class="adbox border-2 border-dashed border-slate-300 rounded-2xl p-3 text-center">
+    <div class="text-[10px] tracking-[.25em] font-black text-slate-400">PUBLICITÉ — EMPLACEMENT ADSENSE HEADER</div>
+    <div class="text-sm font-bold text-slate-600 mt-1">728×90 / Responsive • Collez ici votre code réel <span class="text-brand">après approbation Google</span> — Aucun ID fictif inclus</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="max-w-7xl mx-auto px-4 mt-4">
+  <div class="relative overflow-hidden rounded-[28px] bg-navy-800 text-white shadow-soft">
+    <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=1800&auto=format&fit=crop" alt="Studio radio professionnel" class="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-800/90 to-navy-800/30"></div><div class="absolute inset-0 pattern"></div>
+    <div class="relative p-6 md:p-10 lg:p-12 grid lg:grid-cols-[1.25fr_.75fr] gap-8 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1.5 rounded-full text-xs font-black tracking-widest"><span class="w-2 h-2 bg-brand rounded-full"></span> ANNUAIRE ÉDITORIAL • FR / AR • 2026</div>
+        <h1 id="heroTitle" class="text-4xl md:text-6xl font-black leading-[.95] mt-5">Écoutez les meilleures<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-gold">radios marocaines</span><br/>en direct.</h1>
+        <p id="heroSub" class="text-white/75 mt-4 max-w-xl leading-relaxed">Musique, information, sport, culture et radios régionales — de Casablanca à Tanger, Rabat, Agadir et Marrakech. Un lecteur sobre, rapide, sans autoplay, pensé pour les auditeurs et conforme aux règles AdSense.</p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <div class="flex-1 flex bg-white rounded-full p-1.5 shadow-soft">
+            <input id="heroSearch" placeholder="Rechercher une radio : Hit Radio, Mars, Medi 1…" class="flex-1 px-4 outline-none text-slate-800 text-sm font-semibold min-w-0"/>
+            <button onclick="applyHeroSearch()" class="bg-brand text-white px-5 py-3 rounded-full font-black text-sm">Rechercher</button>
+          </div>
+          <button onclick="playStation(1)" class="bg-white text-navy-900 px-5 py-3.5 rounded-full font-black text-sm">▶ Écouter Hit Radio</button>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-5 text-xs font-bold">
+          <span class="bg-white/10 px-3 py-1.5 rounded-full">✓ Preload = none</span><span class="bg-white/10 px-3 py-1.5 rounded-full">✓ Aucun autoplay sonore</span><span class="bg-white/10 px-3 py-1.5 rounded-full">✓ HLS.js si nécessaire</span><span class="bg-white/10 px-3 py-1.5 rounded-full">✓ Logos à remplacer par versions autorisées</span>
+        </div>
+      </div>
+      <!-- Featured -->
+      <div class="bg-white text-slate-900 rounded-[22px] p-5 shadow-soft">
+        <div class="flex justify-between items-center"><span class="text-[10px] tracking-[.2em] font-black text-brand">À LA UNE</span><span class="text-[10px] bg-red-50 text-brand px-2 py-1 rounded-full font-black">● LIVE WEB</span></div>
+        <div class="flex gap-4 mt-4">
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-red-600 to-navy-800 grid place-items-center text-white font-black text-2xl shrink-0">HIT</div>
+          <div><h3 class="font-black text-xl leading-tight">Hit Radio Maroc</h3><p class="text-sm text-slate-500 leading-snug mt-1">Le rendez-vous pop, urbain et jeunes talents du Maroc. Émissions interactives, nouveautés et culture.</p></div>
+        </div>
+        <div class="flex gap-2 mt-4 text-[11px] font-bold"><span class="bg-slate-100 px-2.5 py-1 rounded-full">Casablanca / National</span><span class="bg-slate-100 px-2.5 py-1 rounded-full">FR • Darija</span><span class="bg-slate-100 px-2.5 py-1 rounded-full">Musicale</span></div>
+        <div class="grid grid-cols-2 gap-2 mt-5">
+          <button onclick="playStation(1)" class="bg-brand text-white py-3 rounded-full font-black text-sm">▶ Écouter</button>
+          <button onclick="openStation(1)" class="border-2 py-3 rounded-full font-black text-sm">Fiche complète</button>
+        </div>
+        <p class="text-[11px] text-slate-400 mt-3 leading-relaxed">Identité visuelle stylisée pour la démo. Sur Blogger, remplacez-la uniquement par un logo officiel dont vous avez l’autorisation d’usage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="max-w-7xl mx-auto px-4 mt-10">
+  <div class="flex items-end justify-between gap-4"><div><div class="text-brand font-black tracking-[.2em] text-xs">CATÉGORIES</div><h2 class="text-2xl md:text-3xl font-black mt-1">Trouvez votre radio par univers</h2></div><select id="sortSel" onchange="renderStations()" class="border rounded-full px-3 py-2 text-sm font-bold bg-white"><option value="feat">Sélection éditoriale</option><option value="az">A → Z</option><option value="plays">Mes écoutes</option></select></div>
+  <div id="catGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 mt-5"></div>
+</section>
+
+<!-- RADIOS -->
+<section id="radios" class="max-w-7xl mx-auto px-4 mt-10">
+  <div class="bg-white rounded-[24px] shadow-card p-5 md:p-7">
+    <div class="flex flex-col md:flex-row md:items-center gap-4 justify-between">
+      <div><h2 class="text-2xl font-black">Annuaire des radios</h2><p class="text-sm text-slate-500"><span id="countTxt"></span> • Descriptions originales • Cliquez sur ▶ pour charger le flux uniquement à la demande.</p></div>
+      <div class="flex gap-2"><input id="mainSearch" oninput="renderStations()" placeholder="🔍 Rechercher…" class="border rounded-full px-4 py-2.5 text-sm font-semibold outline-none focus:border-brand w-56"/><button onclick="clearFilters()" class="px-4 py-2.5 rounded-full bg-slate-100 font-bold text-sm">Réinitialiser</button></div>
+    </div>
+    <div id="pillRow" class="flex gap-2 mt-5 overflow-x-auto no-scrollbar pb-1"></div>
+    <div id="stationGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-5"></div>
+    <div id="emptyBox" class="hidden text-center py-12"><div class="text-4xl">📻</div><h3 class="font-black mt-2">Aucune radio trouvée</h3><p class="text-sm text-slate-500">Essayez un autre mot-clé ou une autre catégorie.</p></div>
+  </div>
+</section>
+
+<!-- AD + EDITORIAL -->
+<section id="editorial" class="max-w-7xl mx-auto px-4 mt-8 grid lg:grid-cols-[1fr_340px] gap-5">
+  <article class="bg-navy-800 text-white rounded-[24px] overflow-hidden relative">
+    <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?q=80&w=1400&auto=format&fit=crop" alt="Architecture marocaine" class="absolute inset-0 w-full h-full object-cover opacity-25" loading="lazy"/>
+    <div class="relative p-6 md:p-8">
+      <div class="text-gold font-black tracking-[.2em] text-xs">ÉDITORIAL ORIGINAL</div>
+      <h2 class="text-3xl font-black mt-2 max-w-xl">La radio marocaine, une voix du quotidien</h2>
+      <p class="text-white/75 leading-relaxed mt-3 max-w-2xl">Au Maroc, la radio accompagne les trajets du matin, les souks, les cafés, les ateliers et les longues routes entre les régions. Les stations nationales portent l’information et le service public, les radios musicales révèlent chaque saison de nouveaux artistes, tandis que les antennes régionales donnent la parole aux dialectes, aux traditions et à l’actualité locale. Radio Maroc a été conçu comme un annuaire éditorial — pas comme une simple liste de flux : chaque fiche doit expliquer qui parle, à qui, dans quelle langue et avec quel type de programmes, afin d’aider l’auditeur à choisir en confiance.</p>
+      <div class="grid sm:grid-cols-3 gap-3 mt-6 text-center">
+        <div class="bg-white/10 rounded-2xl p-4"><div class="font-black text-xl">6</div><div class="text-xs text-white/60 font-bold">Catégories éditoriales</div></div>
+        <div class="bg-white/10 rounded-2xl p-4"><div class="font-black text-xl">FR + AR</div><div class="text-xs text-white/60 font-bold">Interface bilingue / RTL</div></div>
+        <div class="bg-white/10 rounded-2xl p-4"><div class="font-black text-xl">0</div><div class="text-xs text-white/60 font-bold">Autoplay • Faux chiffres</div></div>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-6"><button onclick="openPage('about')" class="bg-white text-navy-900 px-4 py-2.5 rounded-full font-black text-sm">Notre mission</button><button onclick="openPage('copyright')" class="bg-white/10 px-4 py-2.5 rounded-full font-black text-sm">Droits & retraits</button></div>
+    </div>
+  </article>
+  <aside class="space-y-4">
+    <div class="adbox border-2 border-dashed border-slate-300 rounded-[22px] p-5 text-center bg-white"><div class="text-[10px] tracking-[.25em] font-black text-slate-400">PUBLICITÉ — SIDEBAR</div><div class="font-black mt-2">300×250 Responsive</div><p class="text-xs text-slate-500 mt-1">Ne jamais placer près du bouton Play. Étiquette “Publicité” toujours visible.</p></div>
+    <div class="bg-white rounded-[22px] p-5 shadow-card"><h3 class="font-black">🔥 Populaires sur cet appareil</h3><p class="text-[11px] text-slate-400">Basé uniquement sur vos écoutes locales — aucune statistique inventée.</p><div id="popularList" class="mt-3 space-y-2"></div></div>
+    <div class="bg-white rounded-[22px] p-5 shadow-card"><h3 class="font-black">Pages essentielles</h3><div class="grid grid-cols-2 gap-2 mt-3 text-sm font-bold"><button onclick="openPage('privacy')" class="bg-slate-100 rounded-xl py-2.5">Confidentialité</button><button onclick="openPage('terms')" class="bg-slate-100 rounded-xl py-2.5">Conditions</button><button onclick="openPage('disclaimer')" class="bg-slate-100 rounded-xl py-2.5">Disclaimer</button><button onclick="openPage('contact')" class="bg-slate-100 rounded-xl py-2.5">Contact</button></div></div>
+  </aside>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles" class="max-w-7xl mx-auto px-4 mt-10">
+  <div class="flex justify-between items-end"><div><div class="text-brand font-black tracking-[.2em] text-xs">MAGAZINE RADIO</div><h2 class="text-2xl md:text-3xl font-black mt-1">Derniers articles originaux</h2></div><span class="hidden md:block text-sm font-bold text-slate-500">Contenu éditorial utile — indispensable pour AdSense</span></div>
+  <div id="articleGrid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-5"></div>
+</section>
+
+<!-- XML STUDIO -->
+<section id="xml-studio" class="max-w-7xl mx-auto px-4 mt-12">
+  <div class="bg-navy-900 text-white rounded-[26px] overflow-hidden shadow-soft">
+    <div class="p-6 md:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-5 border-b border-white/10">
+      <div><div class="inline-block bg-brand px-3 py-1 rounded-full text-[11px] font-black tracking-widest">LIVRABLE PRINCIPAL</div><h2 class="text-3xl font-black mt-3">Thème Blogger XML — Radio Maroc 2026</h2><p class="text-white/65 text-sm mt-2 max-w-2xl">Template valide avec <code>b:skin</code>, <code>b:section</code>, <code>b:widget</code>, widget Blog principal, labels, recherche, pagination, pages statiques, lecteur HLS et zones AdSense étiquetées. Copiez-le ou téléchargez le fichier <b>.xml</b> puis importez-le via Blogger → Thème → Restaurer.</p></div>
+      <div class="flex gap-2 shrink-0"><button onclick="copyXML()" class="bg-brand px-5 py-3 rounded-full font-black text-sm">📋 Copier le XML</button><button onclick="downloadXML()" class="bg-white text-navy-900 px-5 py-3 rounded-full font-black text-sm">⬇ Télécharger .xml</button></div>
+    </div>
+    <div class="grid lg:grid-cols-[280px_1fr]">
+      <div class="p-4 flex lg:flex-col gap-2 overflow-x-auto no-scrollbar bg-white/5">
+        <button data-tab="xml" onclick="showTab('xml')" class="tabBtn bg-white text-navy-900 px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap">1. Code XML</button>
+        <button data-tab="install" onclick="showTab('install')" class="tabBtn bg-white/10 px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap">2. Installation</button>
+        <button data-tab="stations" onclick="showTab('stations')" class="tabBtn bg-white/10 px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap">3. Ajouter une radio</button>
+        <button data-tab="adsense" onclick="showTab('adsense')" class="tabBtn bg-white/10 px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap">4. AdSense & SEO</button>
+        <button data-tab="check" onclick="showTab('check')" class="tabBtn bg-white/10 px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap">5. Checklist finale</button>
+      </div>
+      <div class="p-5 md:p-6 min-h-[420px]">
+        <div id="tab-xml"><div class="flex justify-between items-center mb-3"><span class="text-xs font-black tracking-widest text-white/50">APERÇU DU TEMPLATE (INTÉGRAL VIA COPIE / TÉLÉCHARGEMENT)</span><span id="xmlMeta" class="text-xs bg-white/10 px-2 py-1 rounded-full font-bold"></span></div><pre id="xmlPreview" class="bg-black/40 border border-white/10 rounded-2xl p-4 text-[11px] leading-relaxed text-emerald-100 max-h-[520px] overflow-auto"></pre></div>
+        <div id="tab-install" class="hidden prose prose-invert max-w-none text-sm leading-relaxed text-white/80"><h3 class="text-white font-black text-lg">Installation Blogger</h3><ol class="list-decimal ml-5 space-y-2 mt-3"><li>Créez votre blog sur <b>blogger.com</b> puis reliez votre domaine personnalisé dans Paramètres → Publier.</li><li>Téléchargez le XML ci-contre, allez dans <b>Thème → Personnaliser (flèche) → Restaurer</b> et importez le fichier.</li><li>Dans <b>Mise en page</b>, vérifiez les sections : Header, Navigation, Ad-Header, Main (Blog1), Sidebar, Footer.</li><li>Créez les pages statiques : À propos, Contact, Confidentialité, Conditions, Disclaimer, Copyright (textes fournis dans cette démo, boutons ci-dessus).</li><li>Activez HTTPS, ajoutez la description du blog et le favicon, puis testez sur mobile.</li></ol><p class="mt-3 bg-white/10 p-3 rounded-xl">Domaine : ajoutez les DNS fournis par Blogger (2 CNAME + A records), attendez la propagation, activez “Rediriger le domaine nu” et forcez HTTPS.</p></div>
+        <div id="tab-stations" class="hidden text-sm leading-relaxed text-white/80"><h3 class="text-white font-black text-lg">Ajouter une radio (1 article = 1 station)</h3><ol class="list-decimal ml-5 space-y-2 mt-3"><li><b>Nouvel article Blogger</b> avec un titre unique : ex. “Hit Radio Maroc – Écouter en Direct”.</li><li>Rédigez 400–700 mots originaux : présentation, histoire vérifiée, programmes, langues, public, site officiel.</li><li>Ajoutez le lecteur avec : <code class="bg-black/40 px-2 py-1 rounded">&lt;button class="rm-play" data-stream="URL_OFFICIELLE" data-name="Nom"&gt;▶ Écouter&lt;/button&gt;</code></li><li>Ajoutez <b>un seul label de catégorie</b> (Musicales, Nationales…) + la ville en label secondaire si pertinent.</li><li>Logo : uniquement officiel et autorisé. Sinon, utilisez une vignette éditoriale libre de droits avec alt descriptif.</li></ol><p class="mt-3 text-amber-200 bg-amber-500/10 p-3 rounded-xl">Flux : utilisez uniquement une URL MP3/AAC/HLS fournie publiquement par la station ou licenciée pour intégration. Ne contournez jamais DRM, géoblocage ou authentification. Testez, documentez la source, retirez en cas de demande.</p></div>
+        <div id="tab-adsense" class="hidden text-sm leading-relaxed text-white/80"><h3 class="text-white font-black text-lg">AdSense (après approbation uniquement)</h3><ul class="list-disc ml-5 space-y-2 mt-3"><li>Dans Mise en page, ouvrez chaque widget HTML “ADSENSE-…” et collez <b>votre</b> code (data-ad-client / slot réels). Ne modifiez jamais les clics.</li><li>Gardez l’étiquette “Publicité”, une distance avec le lecteur et les boutons Play, aucun format déguisé en navigation.</li><li>SEO : titres uniques, méta description par article, canonical automatique Blogger, images lazy-load, sitemap natif <code>/sitemap.xml</code>, robots.txt natif, Search Console + envoi du sitemap.</li><li>Publiez d’abord 15–25 fiches/articles substantiels et les 6 pages légales avant de postuler. Aucune garantie d’acceptation n’est promise.</li></ul></div>
+        <div id="tab-check" class="hidden"><h3 class="font-black text-lg">Checklist pré-soumission AdSense</h3><div class="w-full bg-white/10 rounded-full h-3 mt-4 overflow-hidden"><div id="checkBar" class="bg-brand h-full rounded-full transition-all" style="width:0%"></div></div><p id="checkTxt" class="text-xs font-bold mt-2 text-white/60">0% complété</p><div id="checkList" class="grid md:grid-cols-2 gap-2 mt-4"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="max-w-7xl mx-auto px-4 mt-10">
+  <div class="adbox border-2 border-dashed border-slate-300 rounded-2xl p-3 text-center mb-5 bg-white"><span class="text-[10px] tracking-[.25em] font-black text-slate-400">PUBLICITÉ — FOOTER RESPONSIVE</span><div class="text-sm font-bold text-slate-600">Emplacement séparé du contenu • Aucun clic encouragé • Aucune redirection forcée</div></div>
+  <div class="bg-navy-900 text-white rounded-[24px] p-7 md:p-9 grid md:grid-cols-4 gap-7">
+    <div><div class="font-black text-xl">RADIO <span class="text-brand">MAROC</span></div><p class="text-sm text-white/60 mt-2 leading-relaxed">Annuaire éditorial indépendant des radios marocaines. Projet de démonstration du thème Blogger XML 2026.</p></div>
+    <div><h4 class="font-black mb-3">Navigation</h4><div class="space-y-2 text-sm text-white/65"><a href="#radios" class="block">Toutes les radios</a><a href="#articles" class="block">Articles</a><a href="#xml-studio" class="block">Thème Blogger XML</a></div></div>
+    <div><h4 class="font-black mb-3">Pages légales</h4><div class="space-y-2 text-sm text-white/65"><button onclick="openPage('about')" class="block">À propos</button><button onclick="openPage('privacy')" class="block">Politique de confidentialité</button><button onclick="openPage('terms')" class="block">Conditions d’utilisation</button><button onclick="openPage('copyright')" class="block">Copyright & retrait</button></div></div>
+    <div><h4 class="font-black mb-3">Transparence</h4><p class="text-sm text-white/60 leading-relaxed">Radio Maroc n’est affilié à aucune station sauf mention contraire. Les marques et logos appartiennent à leurs détenteurs. Retrait sur simple demande vérifiée.</p><button onclick="openPage('contact')" class="mt-3 bg-brand px-4 py-2 rounded-full text-sm font-black">Nous contacter</button></div>
+  </div>
+  <p class="text-center text-xs text-slate-400 py-5">© 2026 Radio Maroc — Contenu éditorial original. Aucune approbation Google AdSense n’est garantie.</p>
+</footer>
+
+<!-- PLAYER -->
+<div id="playerBar" class="fixed bottom-0 left-0 right-0 z-50 translate-y-[120%] transition-transform duration-300">
+  <div class="max-w-7xl mx-auto px-3 pb-3"><div id="playerCard" class="bg-navy-900 text-white rounded-[22px] shadow-soft p-3 md:p-4 flex items-center gap-3 md:gap-4 border border-white/10">
+    <div id="pAvatar" class="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-600 to-blue-800 grid place-items-center font-black shrink-0">RM</div>
+    <div class="min-w-0 flex-1"><div class="flex items-center gap-2"><span class="bg-brand text-[10px] px-2 py-0.5 rounded-full font-black">LIVE</span><div class="eq" id="eq"><span></span><span></span><span></span><span></span></div><span id="pStatus" class="text-[11px] font-bold text-white/60">Prêt</span></div><div id="pName" class="font-black truncate mt-0.5">Aucune station</div><div id="pMeta" class="text-xs text-white/50 truncate">Sélectionnez une radio</div></div>
+    <label class="hidden md:flex items-center gap-2 text-xs font-bold">🔊 <input id="vol" type="range" min="0" max="1" step="0.05" value="0.9" class="w-24" aria-label="Volume"/></label>
+    <button id="playBtn" onclick="togglePlay()" class="w-14 h-14 rounded-full bg-brand grid place-items-center font-black text-xl shrink-0 shadow-soft" aria-label="Lecture ou pause">▶</button>
+    <button onclick="stopPlayer()" class="w-10 h-10 rounded-full bg-white/10 font-black shrink-0" aria-label="Arrêter et fermer">✕</button>
+  </div></div>
+</div>
+
+<!-- STATION MODAL -->
+<dialog id="stationModal" class="rounded-[24px] p-0 w-[min(680px,92vw)] shadow-soft"><div id="stationModalContent"></div></dialog>
+<!-- PAGE MODAL -->
+<dialog id="pageModal" class="rounded-[24px] p-0 w-[min(760px,94vw)] shadow-soft"><div class="p-6 md:p-8 max-h-[84vh] overflow-auto"><div class="flex justify-between items-start gap-4"><h2 id="pageTitle" class="text-2xl font-black"></h2><button onclick="document.getElementById('pageModal').close()" class="w-9 h-9 rounded-full bg-slate-100 font-black shrink-0">✕</button></div><div id="pageBody" class="text-sm leading-relaxed text-slate-600 mt-4 space-y-3"></div></div></dialog>
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-28 z-[60] bg-navy-900 text-white px-5 py-3 rounded-full font-bold text-sm shadow-soft opacity-0 pointer-events-none transition"></div>
+
+<script>
+const stations=[
+{id:1,name:"Hit Radio",cat:"Musicales",city:"National • Casablanca",lang:"Français • Darija",grad:"from-red-600 to-navy-800",init:"HIT",stream:"https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3",site:"https://www.hitradio.ma",desc:"La référence pop et urbaine des jeunes auditeurs marocains, entre nouveautés internationales, talents locaux et rendez-vous interactifs.",history:"Lancée dans le paysage radiophonique libéralisé marocain, Hit Radio s'est imposée par un ton direct, une programmation musicale actuelle et une forte présence événementielle auprès de la jeunesse.",programs:"Matinales interactives, classements, nouveautés pop/rap/R&B, interviews d'artistes, jeux auditeurs et événements en direct."},
+{id:2,name:"Radio Mars",cat:"Information",city:"Casablanca • National",lang:"Français • Arabe • Darija",grad:"from-emerald-600 to-navy-800",init:"MARS",stream:"https://radiomars.ice.infomaniak.ch/radiomars-64.aac",site:"https://www.radiomars.ma",desc:"La radio sport du Maroc : football national et international, débats, résultats et passion des supporters, toute la journée.",history:"Radio Mars s'est construit une identité forte autour du sport marocain, en accompagnant les grands rendez-vous des clubs, des Lions de l'Atlas et des compétitions internationales.",programs:"Débats sportifs, directs de matchs, analyses tactiques, appels d'auditeurs et journaux de sport."},
+{id:3,name:"Chada FM",cat:"Musicales",city:"Casablanca • National",lang:"Arabe • Darija • Français",grad:"from-fuchsia-600 to-navy-800",init:"CHD",stream:"https://stream.chadafm.net/chadafm.mp3",site:"https://www.chadafm.net",desc:"Musique marocaine et arabe, divertissement et proximité : Chada FM mise sur la bonne humeur et les voix connues des auditeurs.",history:"Chada FM fait partie des stations privées qui ont animé la nouvelle vague radiophonique marocaine avec un format généraliste et musical ancré dans la culture populaire.",programs:"Variétés marocaines et orientales, émissions de proximité, dédicaces, humour et rendez-vous familiaux."},
+{id:4,name:"Medi 1 Radio",cat:"Information",city:"Tanger • Maghreb",lang:"Arabe • Français",grad:"from-blue-600 to-navy-900",init:"M1",stream:"https://live.medi1.com/medi1-radio.mp3",site:"https://www.medi1.com",desc:"Information continue, analyses maghrébines et internationales, culture et débats — une voix historique du nord du Maroc.",history:"Née à Tanger avec une vocation maghrébine, Medi 1 Radio est reconnue pour ses journaux bilingues et son traitement de l'actualité régionale et internationale.",programs:"Journaux, magazines d'actualité, économie, culture, santé et grands entretiens."},
+{id:5,name:"SNRT Al Watania",cat:"Nationales",city:"Rabat • National",lang:"Arabe",grad:"from-amber-600 to-navy-800",init:"SNR",stream:"https://cdn.live.radio.snrt.ma/watania",site:"https://www.snrt.ma",desc:"Chaîne nationale de service public : information, culture, éducation et couverture des événements officiels et régionaux.",history:"Al Watania est l'une des voix historiques de la radiodiffusion publique marocaine, héritière de décennies d'accompagnement radiophonique du Royaume.",programs:"Journaux nationaux, programmes culturels, émissions éducatives, retransmissions et magazines de société."},
+{id:6,name:"Chaîne Inter",cat:"Francophones",city:"Rabat • National",lang:"Français",grad:"from-cyan-600 to-navy-800",init:"INT",stream:"https://cdn.live.radio.snrt.ma/chaine-inter",site:"https://www.snrt.ma",desc:"La chaîne francophone de la SNRT : actualité, culture, francophonie et ouverture internationale depuis Rabat.",history:"Chaîne Inter porte la voix francophone du service public marocain et s'adresse aussi aux Marocains du monde et au public francophone du Maghreb.",programs:"Information francophone, culture, livres, cinéma, débats et magazines thématiques."},
+{id:7,name:"Atlantic Radio",cat:"Information",city:"Casablanca",lang:"Français • Darija",grad:"from-sky-600 to-navy-800",init:"ATL",stream:"https://atlanticradio.ice.infomaniak.ch/atlanticradio-128.mp3",site:"https://www.atlanticradio.ma",desc:"Économie, entreprise, société et actualité casablancaise avec un ton clair et des rendez-vous business reconnus.",history:"Atlantic Radio s'est positionnée sur l'information économique et urbaine, au cœur de la capitale économique du Royaume.",programs:"Matinale info, économie, entrepreneuriat, immobilier, société et interviews de décideurs."},
+{id:8,name:"Aswat Radio",cat:"Nationales",city:"Casablanca • National",lang:"Arabe • Darija",grad:"from-orange-600 to-navy-800",init:"ASW",stream:"https://aswat.ice.infomaniak.ch/aswat-64.aac",site:"https://www.aswat.ma",desc:"Proximité, société et accompagnement du quotidien : Aswat donne largement la parole aux auditeurs partout au Maroc.",history:"Aswat a développé un format chaleureux centré sur la vie quotidienne, la famille, la santé et les questions sociales des Marocains.",programs:"Émissions sociales, santé, famille, conseils pratiques, dédicaces et musique."},
+{id:9,name:"Cap Radio",cat:"Régionales",city:"Tanger • Région Nord",lang:"Arabe • Darija • Espagnol",grad:"from-teal-600 to-navy-800",init:"CAP",stream:"https://capradio.ice.infomaniak.ch/capradio-128.mp3",site:"https://www.capradio.ma",desc:"La voix du Nord : Tanger, Tétouan et le détroit, entre actualité régionale, culture méditerranéenne et musique.",history:"Cap Radio accompagne le développement rapide de la région Tanger-Tétouan-Al Hoceïma et son ouverture sur la Méditerranée.",programs:"Actualité du Nord, port et économie régionale, culture, musique et proximité."},
+{id:10,name:"MFM Radio",cat:"Régionales",city:"Casablanca • Multi-villes",lang:"Arabe • Darija",grad:"from-violet-600 to-navy-800",init:"MFM",stream:"https://mfmradio.ice.infomaniak.ch/mfmradio-64.mp3",site:"https://www.mfm.ma",desc:"Réseau de proximité présent dans plusieurs villes, MFM mêle information locale, talk et divertissement populaire.",history:"MFM a construit un modèle de radios de proximité décliné selon les bassins d'écoute, avec des programmes adaptés à chaque région.",programs:"Talk local, actualité de proximité, sport, musique populaire et interactions auditeurs."},
+{id:11,name:"Radio Mohammed VI",cat:"Religieuses",city:"Rabat • National",lang:"Arabe",grad:"from-emerald-700 to-navy-900",init:"﷽",stream:"https://cdn.live.radio.snrt.ma/assadissa",site:"https://www.snrt.ma",desc:"Chaîne publique dédiée au Saint Coran, aux sciences religieuses et à la spiritualité, dans le respect du référentiel marocain.",history:"La Radio Mohammed VI du Saint Coran relève du service public et accompagne la diffusion d'un islam du juste milieu propre au Maroc.",programs:"Récitations coraniques, exégèse, hadith, conférences religieuses et programmes spirituels."},
+{id:12,name:"Radio 2M",cat:"Nationales",city:"Casablanca • National",lang:"Français • Arabe • Darija",grad:"from-rose-600 to-navy-800",init:"2M",stream:"https://radio2m.ice.infomaniak.ch/radio2m-128.mp3",site:"https://www.2m.ma",desc:"Le prolongement radiophonique de l'univers 2M : divertissement, musique, société et rendez-vous proches du public.",history:"Adossée à une marque audiovisuelle marocaine très connue, Radio 2M prolonge à l'antenne ses thématiques de divertissement et de proximité.",programs:"Musique, divertissement, société, culture pop et émissions interactives."}
+];
+const articles=[
+{t:"Comment choisir sa radio marocaine selon son humeur et son trajet",c:"Guide",img:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=900&auto=format&fit=crop",alt:"Casque audio",e:"Matin pressé, route du week-end ou soirée en famille : nos critères simples pour alterner info, musique et radios régionales sans se perdre.",time:"6 min"},
+{t:"De la radio publique aux antennes privées : repères sur l'histoire radiophonique du Maroc",c:"Histoire",img:"https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=900&auto=format&fit=crop",alt:"Microphone de studio vintage",e:"Des premières voix de Rabat à la libéralisation des ondes, retour éditorial sur les étapes qui ont façonné le paysage actuel.",time:"9 min"},
+{t:"Streaming radio : MP3, AAC ou HLS, lequel choisir sur mobile au Maroc ?",c:"Tech",img:"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=900&auto=format&fit=crop",alt:"Smartphone en main",e:"Débit, stabilité, consommation data : comprendre les formats d'écoute pour profiter de vos stations avec une connexion moyenne.",time:"5 min"},
+{t:"Radios régionales : pourquoi la proximité reste la force du média radio",c:"Société",img:"https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=900&auto=format&fit=crop",alt:"Rue colorée au Maroc",e:"Langues locales, services, météo, routes et culture : ce que les antennes régionales apportent et que les plateformes mondiales ne remplacent pas.",time:"7 min"}
+];
+const cats=["Toutes","Musicales","Information","Nationales","Régionales","Religieuses","Francophones"];
+const catDesc={"Musicales":"Pop, chaâbi, rap & nouveautés","Information":"Info, éco & sport en continu","Nationales":"Couverture tout le Royaume","Régionales":"La voix de votre région","Religieuses":"Coran & spiritualité","Francophones":"En langue française"};
+let activeCat="Toutes",favOnly=false,currentId=null,hls=null,isPlaying=false;
+const audio=new Audio(); audio.preload="none";
+let favs=new Set(JSON.parse(localStorage.getItem('rm_favs')||'[]')); let plays=JSON.parse(localStorage.getItem('rm_plays')||'{}');
+
+function $(id){return document.getElementById(id)}
+function toast(m){let t=$('toast');t.textContent=m;t.style.opacity=1;setTimeout(()=>t.style.opacity=0,2600)}
+function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function saveFavs(){localStorage.setItem('rm_favs',JSON.stringify([...favs]))}
+function heart(id){return favs.has(id)?'♥':'♡'}
+
+function renderCats(){
+ $('catGrid').innerHTML=cats.slice(1).map(c=>{let n=stations.filter(s=>s.cat===c).length;return `<button onclick="setCat('${c}')" class="text-left bg-white rounded-2xl p-4 shadow-card card border ${activeCat===c?'border-brand ring-2 ring-red-100':''}"><div class="text-2xl">${c==='Musicales'?'🎵':c==='Information'?'📰':c==='Nationales'?'🇲🇦':c==='Régionales'?'📍':c==='Religieuses'?'🕌':'🇫🇷'}</div><div class="font-black mt-2 text-sm">${c}</div><div class="text-[11px] text-slate-500 font-semibold">${catDesc[c]}</div><div class="text-[11px] font-black text-brand mt-2">${n} radio${n>1?'s':''} référencée${n>1?'s':''} →</div></button>`}).join('');
+ $('pillRow').innerHTML=cats.map(c=>`<button onclick="setCat('${c}')" class="px-4 py-2 rounded-full text-sm font-black whitespace-nowrap ${activeCat===c?'bg-navy-800 text-white':'bg-slate-100'}">${c}</button>`).join('');
+}
+function setCat(c){activeCat=c;renderCats();renderStations()}
+function clearFilters(){$('mainSearch').value='';$('heroSearch').value='';activeCat="Toutes";favOnly=false;$('favBtn').classList.remove('bg-red-50','text-brand');renderCats();renderStations()}
+function toggleFavs(){favOnly=!favOnly;$('favBtn').classList.toggle('bg-red-50',favOnly);$('favBtn').classList.toggle('text-brand',favOnly);renderStations()}
+function applyHeroSearch(){$('mainSearch').value=$('heroSearch').value;renderStations();scrollToId('radios')}
+
+function filtered(){
+ let q=($('mainSearch').value||'').toLowerCase().trim();
+ let list=stations.filter(s=>(activeCat==='Toutes'||s.cat===activeCat)&&(!favOnly||favs.has(s.id))&&(!q||(s.name+' '+s.cat+' '+s.city+' '+s.lang+' '+s.desc).toLowerCase().includes(q)));
+ let sort=$('sortSel').value; if(sort==='az')list.sort((a,b)=>a.name.localeCompare(b.name)); if(sort==='plays')list.sort((a,b)=>(plays[b.id]||0)-(plays[a.id]||0));
+ return list;
+}
+function renderStations(){
+ renderCats();
+ let list=filtered(); $('countTxt').textContent=list.length+" radio(s) affichée(s) sur "+stations.length;
+ $('emptyBox').classList.toggle('hidden',list.length>0);
+ $('stationGrid').innerHTML=list.map(s=>`<article class="card bg-slate-50 border rounded-[20px] p-4 flex flex-col">
+   <div class="flex items-start justify-between"><div class="w-16 h-16 rounded-2xl bg-gradient-to-br ${s.grad} grid place-items-center text-white font-black shadow-card">${s.init}</div><button onclick="toggleFav(${s.id},event)" aria-label="Ajouter aux favoris" class="w-9 h-9 rounded-full bg-white shadow text-brand font-black">${heart(s.id)}</button></div>
+   <h3 class="font-black text-lg mt-3 leading-tight">${s.name}</h3><p class="text-[13px] text-slate-500 leading-snug mt-1 flex-1">${s.desc}</p>
+   <div class="flex flex-wrap gap-1.5 mt-3 text-[10px] font-black"><span class="bg-white px-2 py-1 rounded-full border">📍 ${s.city}</span><span class="bg-white px-2 py-1 rounded-full border">${s.lang}</span><span class="bg-red-50 text-brand px-2 py-1 rounded-full">${s.cat}</span></div>
+   ${plays[s.id]?`<div class="text-[11px] font-bold text-slate-400 mt-2">▶ ${plays[s.id]} écoute(s) sur cet appareil</div>`:''}
+   <div class="grid grid-cols-[1fr_auto] gap-2 mt-4"><button onclick="playStation(${s.id})" class="bg-navy-800 hover:bg-brand transition text-white py-3 rounded-full font-black text-sm">${currentId===s.id&&isPlaying?'❚❚ En cours':'▶ Écouter'}</button><button onclick="openStation(${s.id})" class="px-4 rounded-full border-2 font-black text-sm bg-white">Détails</button></div>
+ </article>`).join('');
+ renderPopular();
+}
+function toggleFav(id,e){e.stopPropagation();favs.has(id)?favs.delete(id):favs.add(id);saveFavs();renderStations();toast(favs.has(id)?'Ajouté aux favoris':'Retiré des favoris')}
+function renderPopular(){
+ let top=[...stations].sort((a,b)=>(plays[b.id]||0)-(plays[a.id]||0)).slice(0,4);
+ $('popularList').innerHTML=top.map(s=>`<button onclick="playStation(${s.id})" class="w-full flex items-center gap-3 bg-slate-50 hover:bg-red-50 rounded-xl p-2.5 text-left"><span class="w-9 h-9 rounded-lg bg-gradient-to-br ${s.grad} grid place-items-center text-white text-[10px] font-black shrink-0">${s.init}</span><span class="flex-1 min-w-0"><span class="block font-black text-sm truncate">${s.name}</span><span class="block text-[11px] text-slate-400">${plays[s.id]||0} écoute(s) locale(s)</span></span><span class="text-brand font-black">▶</span></button>`).join('');
+}
+function renderArticles(){
+ $('articleGrid').innerHTML=articles.map(a=>`<article class="bg-white rounded-[20px] overflow-hidden shadow-card card"><img src="${a.img}" alt="${a.alt}" loading="lazy" class="w-full h-40 object-cover"/><div class="p-4"><span class="text-[10px] font-black bg-red-50 text-brand px-2 py-1 rounded-full">${a.c.toUpperCase()} • ${a.time}</span><h3 class="font-black leading-snug mt-3">${a.t}</h3><p class="text-[13px] text-slate-500 leading-relaxed mt-2">${a.e}</p><button onclick="toast('Article complet : créez-le comme article Blogger lié à cette carte dans le thème XML')" class="font-black text-sm text-navy-800 mt-3">Lire l’article →</button></div></article>`).join('');
+}
+function openStation(id){
+ let s=stations.find(x=>x.id===id); if(!s)return;
+ let rel=stations.filter(x=>x.cat===s.cat&&x.id!==id).slice(0,3);
+ $('stationModalContent').innerHTML=`<div class="p-6 md:p-8 max-h-[86vh] overflow-auto">
+  <div class="flex justify-between gap-4"><div class="flex gap-4"><div class="w-20 h-20 rounded-2xl bg-gradient-to-br ${s.grad} grid place-items-center text-white font-black text-xl shrink-0">${s.init}</div><div><span class="text-[10px] font-black bg-red-50 text-brand px-2 py-1 rounded-full">${s.cat.toUpperCase()}</span><h2 class="text-2xl font-black mt-2 leading-none">${s.name}</h2><p class="text-sm text-slate-500 mt-1">📍 ${s.city} • ${s.lang}</p></div></div><button onclick="document.getElementById('stationModal').close()" class="w-9 h-9 rounded-full bg-slate-100 font-black shrink-0">✕</button></div>
+  <p class="mt-5 leading-relaxed text-slate-600">${s.desc}</p>
+  <h3 class="font-black mt-5">Repères historiques (à vérifier avant publication définitive)</h3><p class="text-sm text-slate-600 leading-relaxed mt-1">${s.history}</p>
+  <h3 class="font-black mt-5">Types de programmes</h3><p class="text-sm text-slate-600 leading-relaxed mt-1">${s.programs}</p>
+  <div class="grid sm:grid-cols-2 gap-2 mt-5 text-sm font-bold"><a href="${s.site}" target="_blank" rel="noopener nofollow" class="bg-slate-100 rounded-xl py-3 text-center">🌐 Site officiel ↗</a><button onclick="toggleFav(${s.id},event);openStation(${s.id})" class="bg-slate-100 rounded-xl py-3">${heart(s.id)} Favori</button></div>
+  <button onclick="playStation(${s.id})" class="w-full bg-brand text-white py-4 rounded-full font-black mt-4">▶ Écouter ${s.name} en direct</button>
+  <p class="text-[11px] text-slate-400 mt-3">Flux chargé uniquement après clic (preload=none). Source publique indiquée par l’éditeur — vérifiez l’autorisation d’intégration et retirez-la en cas de demande du détenteur.</p>
+  ${rel.length?`<h3 class="font-black mt-6">Radios liées</h3><div class="flex flex-wrap gap-2 mt-2">${rel.map(r=>`<button onclick="openStation(${r.id})" class="bg-navy-800 text-white px-3 py-2 rounded-full text-xs font-black">${r.name}</button>`).join('')}</div>`:''}
+ </div>`; $('stationModal').showModal();
+}
+
+/* PLAYER */
+function setStatus(t,loading=false){$('pStatus').innerHTML=loading?'<span class="inline-block spin align-middle"></span> '+t:t}
+function destroyHls(){if(hls){try{hls.destroy()}catch(e){} hls=null}}
+function playStation(id){
+ let s=stations.find(x=>x.id===id); if(!s)return;
+ if(currentId===id && !audio.paused){togglePlay();return}
+ currentId=id; plays[id]=(plays[id]||0)+1; localStorage.setItem('rm_plays',JSON.stringify(plays));
+ $('playerBar').style.transform='translateY(0)'; $('pName').textContent=s.name; $('pMeta').textContent=s.city+' • '+s.lang+' • '+s.cat; $('pAvatar').textContent=s.init; $('pAvatar').className='w-14 h-14 rounded-2xl grid place-items-center font-black shrink-0 text-white bg-gradient-to-br '+s.grad;
+ destroyHls(); audio.pause(); audio.removeAttribute('src'); audio.load(); setStatus('Chargement du flux…',true); $('playBtn').textContent='…'; $('playerCard').classList.remove('playing');
+ let url=s.stream;
+ if(url.includes('.m3u8') && window.Hls && Hls.isSupported()){hls=new Hls();hls.loadSource(url);hls.attachMedia(audio);hls.on(Hls.Events.MANIFEST_PARSED,()=>audio.play().catch(onAudioError));hls.on(Hls.Events.ERROR,(e,d)=>{if(d.fatal)onAudioError()});}
+ else{audio.src=url; audio.volume=parseFloat($('vol').value); audio.play().catch(onAudioError)}
+ renderStations();
+}
+function onAudioError(){setStatus('Flux indisponible — réessayez ou visitez le site officiel');$('playBtn').textContent='▶';$('playerCard').classList.remove('playing');isPlaying=false;toast('Impossible de lire ce flux pour le moment.')}
+function togglePlay(){if(!currentId){playStation(1);return} if(audio.paused){audio.play().catch(onAudioError)}else{audio.pause()}}
+function stopPlayer(){audio.pause();destroyHls();audio.removeAttribute('src');audio.load();currentId=null;isPlaying=false;$('playerBar').style.transform='translateY(120%)';renderStations()}
+audio.addEventListener('playing',()=>{isPlaying=true;setStatus('En direct — lecture en cours');$('playBtn').textContent='❚❚';$('playerCard').classList.add('playing');renderStations()});
+audio.addEventListener('pause',()=>{isPlaying=false;if(currentId)setStatus('En pause');$('playBtn').textContent='▶';$('playerCard').classList.remove('playing');renderStations()});
+audio.addEventListener('waiting',()=>setStatus('Mise en mémoire tampon…',true));
+audio.addEventListener('error',()=>{if(currentId)onAudioError()});
+$('vol').addEventListener('input',e=>audio.volume=parseFloat(e.target.value));
+
+/* LEGAL PAGES */
+const pages={
+about:{t:"À propos de Radio Maroc",b:`<p><b>Radio Maroc – Radios Marocaines en Direct</b> est un annuaire éditorial indépendant qui aide les auditeurs à découvrir les radios du Royaume selon leur langue, leur région et leurs centres d’intérêt.</p><p>Notre travail consiste à rédiger des fiches originales, à classer les stations par univers (nationales, musicales, information, régionales, religieuses, francophones) et à proposer un lecteur sobre qui ne démarre jamais sans votre action.</p><p>Radio Maroc n’est affilié à aucune station sauf mention explicite. Les noms, marques et éventuels logos appartiennent à leurs détenteurs respectifs. Texte éditable dans Blogger → Pages.</p>`},
+contact:{t:"Contactez-nous",b:`<p>Une correction sur une fiche, une demande de retrait, une suggestion de radio ou une question technique ? Écrivez-nous :</p><p class="bg-slate-100 p-4 rounded-xl font-bold">contact@radiomaroc.example<br/><span class="font-normal text-slate-500">Remplacez cette adresse par votre adresse réelle dans Blogger → Pages → Contact.</span></p><p>Merci d’indiquer l’URL de la page concernée et, pour toute question de droits, les éléments permettant de vérifier votre qualité. Nous répondons aux demandes légitimes dans un délai raisonnable.</p><p>Formulaire Blogger : activez le gadget “Formulaire de contact” dans Mise en page si vous souhaitez recevoir les messages directement.</p>`},
+privacy:{t:"Politique de confidentialité",b:`<p><i>Texte modèle à faire relire et à adapter à votre situation réelle avant publication. Il ne constitue pas un conseil juridique.</i></p><h3 class="font-black text-slate-800">1. Données traitées</h3><p>Ce site peut traiter des données techniques (pages consultées, type d’appareil, navigateur) via les outils de la plateforme Blogger/Google. Les favoris et compteurs d’écoute de la démo restent stockés localement dans votre navigateur.</p><h3 class="font-black text-slate-800">2. Cookies et publicité Google AdSense</h3><p>Après approbation, Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces, mesurer leur performance et, selon vos choix, les personnaliser. Vous pouvez gérer la personnalisation sur les paramètres d’annonces Google et via les outils de consentement applicables à votre audience.</p><h3 class="font-black text-slate-800">3. Technologies tierces</h3><p>Les flux radio sont fournis par les stations ou leurs hébergeurs ; leur lecture peut entraîner un échange technique avec ces tiers. Les liens externes relèvent de la politique de leurs sites respectifs.</p><h3 class="font-black text-slate-800">4. Vos droits</h3><p>Selon la réglementation applicable, vous pouvez demander l’accès, la rectification ou la suppression des données vous concernant via la page Contact. Indiquez précisément votre demande afin que nous puissions la traiter.</p><h3 class="font-black text-slate-800">5. Contact</h3><p>Responsable de publication : à compléter dans Blogger. Dernière mise à jour : à dater à chaque modification.</p>`},
+terms:{t:"Conditions d’utilisation",b:`<p>En utilisant Radio Maroc, vous acceptez les présentes conditions, éditables par l’éditeur du site.</p><p>Le service propose un annuaire et un lecteur de flux publiquement accessibles. La disponibilité d’un flux dépend de la station et de son hébergeur ; aucune écoute hors ligne, aucun contournement de restriction et aucun enregistrement non autorisé ne sont proposés.</p><p>Les contenus éditoriaux sont fournis à titre informatif. Malgré nos vérifications, une information peut évoluer : signalez toute erreur via Contact. L’éditeur peut modifier, corriger ou retirer une fiche à tout moment, notamment à la demande d’un ayant droit.</p>`},
+disclaimer:{t:"Disclaimer — Avis de non-responsabilité",b:`<p>Radio Maroc est un annuaire indépendant. La présence d’une station ne signifie ni affiliation, ni partenariat, ni approbation par cette station, sauf mention écrite contraire.</p><p>Les descriptions sont rédigées par notre rédaction à partir de sources publiques et doivent être vérifiées avant tout usage commercial. Les fréquences FM, grilles de programmes et flux peuvent changer sans préavis : référez-vous toujours au site officiel de la station.</p><p>Les annonces éventuellement diffusées par Google AdSense sont identifiées comme publicité et relèvent de leurs annonceurs respectifs.</p>`},
+copyright:{t:"Copyright & procédure de retrait",b:`<p>Les textes originaux publiés sur Radio Maroc sont protégés. Les marques, noms de stations, logos et flux appartiennent à leurs détenteurs.</p><h3 class="font-black text-slate-800">Demande de retrait</h3><p>Si vous êtes titulaire de droits et souhaitez le retrait ou la correction d’un élément, écrivez via la page Contact en précisant : votre identité et qualité, l’URL exacte, l’élément concerné et la justification de votre demande.</p><p>Après vérification, l’élément litigieux sera retiré ou corrigé dans un délai raisonnable. Cette procédure de bonne foi ne préjuge pas des voies de recours prévues par la loi applicable.</p>`}
+};
+function openPage(k){let p=pages[k];if(!p)return;$('pageTitle').textContent=p.t;$('pageBody').innerHTML=p.b;$('pageModal').showModal()}
+
+/* RTL */
+let rtl=false;
+function toggleRTL(){rtl=!rtl;document.documentElement.dir=rtl?'rtl':'ltr';document.documentElement.lang=rtl?'ar':'fr';document.body.classList.toggle('rtl',rtl);
+ $('heroTitle').innerHTML=rtl?'استمع إلى أفضل<br/><span class="text-brand">الإذاعات المغربية</span><br/>مباشرة.':'Écoutez les meilleures<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-gold">radios marocaines</span><br/>en direct.';
+ $('heroSub').textContent=rtl?'موسيقى، أخبار، رياضة وثقافة من الدار البيضاء إلى طنجة والرباط وأكادير — مشغّل بسيط بدون تشغيل تلقائي.':'Musique, information, sport, culture et radios régionales — de Casablanca à Tanger, Rabat, Agadir et Marrakech. Un lecteur sobre, rapide, sans autoplay, pensé pour les auditeurs et conforme aux règles AdSense.';
+ $('tagline').textContent=rtl?'الإذاعات المغربية مباشرة':'RADIOS MAROCAINES EN DIRECT'; toast(rtl?'Mode arabe RTL activé':'Mode français LTR activé')}
+
+/* TABS + CHECKLIST */
+function showTab(name){['xml','install','stations','adsense','check'].forEach(x=>$('tab-'+x).classList.toggle('hidden',x!==name));document.querySelectorAll('.tabBtn').forEach(b=>{let on=b.dataset.tab===name;b.className='tabBtn px-4 py-3 rounded-xl font-black text-sm text-left whitespace-nowrap '+(on?'bg-white text-navy-900':'bg-white/10')})}
+const checks=["Domaine personnalisé + HTTPS actif","6 pages légales publiées et liées au footer","15–25 fiches radios originales (400+ mots)","Aucun logo / flux sans autorisation vérifiable","Lecteur sans autoplay, preload=none","Zones publicitaires étiquetées “Publicité”","Aucun ID AdSense fictif, aucun clic encouragé","Titres et descriptions uniques par page","Images compressées, alt descriptifs, lazy-load","Sitemap envoyé dans Search Console","Test mobile complet (lecture, recherche, menu)","Formulaire de contact fonctionnel"];
+$('checkList').innerHTML=checks.map((c,i)=>`<label class="flex gap-3 bg-white/5 hover:bg-white/10 rounded-xl p-3 cursor-pointer text-sm font-semibold"><input type="checkbox" onchange="updateCheck()" class="checkItem mt-0.5 w-4 h-4 shrink-0"/><span>${c}</span></label>`).join('');
+function updateCheck(){let all=document.querySelectorAll('.checkItem'),done=[...all].filter(x=>x.checked).length,p=Math.round(done/all.length*100);$('checkBar').style.width=p+'%';$('checkTxt').textContent=p+'% complété — '+done+'/'+all.length+' points'}
+
+/* BLOGGER XML TEMPLATE */
+const BLOGGER_XML=`<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta charset='utf-8'/><meta content='width=device-width,initial-scale=1' name='viewport'/>
+<title><data:blog.pageTitle/></title>
+<link expr:href='data:blog.url' rel='canonical'/>
+<b:if cond='data:blog.metaDescription'><meta expr:content='data:blog.metaDescription' name='description'/></b:if>
+<meta content='website' property='og:type'/><meta expr:content='data:blog.pageTitle' property='og:title'/>
+<meta expr:content='data:blog.url' property='og:url'/><meta content='summary_large_image' name='twitter:card'/>
+<!-- SEO: titres/metas dynamiques Blogger, canonical, OG/Twitter. Sitemap natif /sitemap.xml -->
+<b:skin><![CDATA[
+:root{--navy:#0A1633;--red:#E30613;--bg:#F6F7FB}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--navy)}a{color:var(--navy);text-decoration:none}
+header.rm{background:var(--navy);color:#fff;padding:22px 16px;text-align:center}header.rm h1{margin:0;font-size:30px}header.rm h1 a{color:#fff}header.rm p{color:#CBD5E1;margin:6px 0 0}
+nav.rm{background:#fff;border-bottom:1px solid #E5E7EB;padding:10px;text-align:center;position:sticky;top:0;z-index:9}nav.rm a{font-weight:bold;margin:0 10px;font-size:14px}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}.hero{background:var(--navy);color:#fff;border-radius:18px;padding:28px;margin:16px 0}.hero h2{margin:0 0 8px;font-size:28px}
+.ad{border:2px dashed #CBD5E1;background:#fff;border-radius:14px;padding:14px;text-align:center;font-size:12px;color:#64748B;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}.card{background:#fff;border-radius:16px;padding:16px;border:1px solid #E5E7EB}.card h3{margin:0 0 6px}
+.rm-play{background:var(--red);color:#fff;border:0;border-radius:999px;padding:11px 18px;font-weight:bold;cursor:pointer}
+main article.post{background:#fff;border-radius:16px;padding:20px;margin:0 0 16px;border:1px solid #E5E7EB}main article.post img{max-width:100%;height:auto;border-radius:10px}
+.pager{display:flex;justify-content:space-between;margin:16px 0}.sidebar .widget,.footer .widget{background:#fff;border-radius:14px;padding:14px;margin:0 0 14px;border:1px solid #E5E7EB}
+#rm-player{position:fixed;left:12px;right:12px;bottom:12px;background:var(--navy);color:#fff;border-radius:16px;padding:12px;display:none;align-items:center;gap:10px;z-index:50}
+@media(max-width:640px){.hero h2{font-size:22px}header.rm h1{font-size:24px}}
+]]></b:skin>
+</head>
+<body>
+<header class='rm'>
+<b:section class='header' id='header' maxwidgets='1' showaddelement='no'>
+<b:widget id='Header1' locked='true' title='Radio Maroc (Header)' type='Header'><b:includable id='main'><h1><a expr:href='data:blog.homepageUrl'><data:title/></a></h1><p>Écoutez les meilleures radios marocaines en direct</p></b:includable></b:widget>
+</b:section>
+</header>
+<nav class='rm'><a expr:href='data:blog.homepageUrl'>Accueil</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Musicales&quot;'>Musicales</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Information&quot;'>Information</a><a expr:href='data:blog.homepageUrl + &quot;search/label/Nationales&quot;'>Nationales</a><a expr:href='data:blog.homepageUrl + &quot;p/a-propos.html&quot;'>À propos</a><a expr:href='data:blog.homepageUrl + &quot;p/contact.html&quot;'>Contact</a>
+<form expr:action='data:blog.homepageUrl + &quot;search&quot;' method='get' style='display:inline'><input aria-label='Rechercher une radio' name='q' placeholder='Rechercher...' type='search'/></form></nav>
+
+<b:section class='ad-header' id='ad-header' maxwidgets='1' showaddelement='yes'>
+<b:widget id='HTML901' locked='false' title='ADSENSE - Header (après approbation)' type='HTML'><b:includable id='main'><div class='ad'>PUBLICITÉ — Collez ici votre code AdSense réel après approbation. Aucun ID fictif.</div><data:content/></b:includable></b:widget>
+</b:section>
+
+<div class='wrap'>
+<b:if cond='data:blog.url == data:blog.homepageUrl'><section class='hero'><h2>Radios Marocaines en Direct</h2><p>Musique, information, sport et radios régionales du Maroc. Cliquez sur Écouter : le flux ne se charge jamais automatiquement.</p></section></b:if>
+<div style='display:grid;grid-template-columns:1fr 300px;gap:16px' class='layout'>
+<main>
+<b:section class='main' id='main' showaddelement='no'>
+<b:widget id='Blog1' locked='true' title='Articles du blog' type='Blog'>
+<b:includable id='main'>
+<b:if cond='data:blog.searchLabel'><p>Résultats pour : <data:blog.searchLabel/></p></b:if>
+<b:loop values='data:posts' var='post'>
+<article class='post'><h2><a expr:href='data:post.url'><data:post.title/></a></h2>
+<b:if cond='data:post.firstImageUrl'><img expr:alt='data:post.title' expr:src='data:post.firstImageUrl' loading='lazy'/></b:if>
+<div><data:post.body/></div>
+<p><b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a> </b:loop></p>
+<a expr:href='data:post.url'>Lire la fiche complète</a></article>
+</b:loop>
+<div class='pager'><b:if cond='data:newerPageUrl'><a expr:href='data:newerPageUrl'>Plus récent</a></b:if><b:if cond='data:olderPageUrl'><a expr:href='data:olderPageUrl'>Plus ancien</a></b:if></div>
+</b:includable>
+<b:includable id='post' var='post'><article class='post'><h1><data:post.title/></h1><div><data:post.body/></div></article></b:includable>
+</b:widget>
+</b:section>
+<b:section class='ad-article' id='ad-article' maxwidgets='1' showaddelement='yes'><b:widget id='HTML902' locked='false' title='ADSENSE - Article (après approbation)' type='HTML'><b:includable id='main'><div class='ad'>PUBLICITÉ<data:content/></div></b:includable></b:widget></b:section>
+</main>
+<aside class='sidebar'>
+<b:section class='sidebar' id='sidebar' showaddelement='yes'>
+<b:widget id='Label1' locked='false' title='Catégories' type='Label'><b:includable id='main'><h3>Catégories</h3><ul><b:loop values='data:labels' var='label'><li><a expr:href='data:label.url'><data:label.name/> (<data:label.count/>)</a></li></b:loop></ul></b:includable></b:widget>
+<b:widget id='HTML903' locked='false' title='ADSENSE - Sidebar (après approbation)' type='HTML'><b:includable id='main'><div class='ad'>PUBLICITÉ — Sidebar responsive<data:content/></div></b:includable></b:widget>
+</b:section>
+</aside>
+</div></div>
+
+<footer class='footer' style='background:#0A1633;color:#fff;padding:24px 16px;margin-top:20px'>
+<b:section class='footer' id='footer' showaddelement='yes'><b:widget id='HTML904' locked='false' title='Footer' type='HTML'><b:includable id='main'><p><b>Radio Maroc</b> — Annuaire indépendant. Pages : À propos • Contact • Confidentialité • Conditions • Disclaimer • Copyright.</p><data:content/></b:includable></b:widget></b:section>
+<p style='font-size:12px;color:#94A3B8'>Insérez ici breadcrumbs/pages statiques via Mise en page. Aucune approbation AdSense garantie.</p>
+</footer>
+
+<div id='rm-player'><span id='rm-name'>Radio</span><button class='rm-play' id='rm-toggle' type='button'>Pause</button><button id='rm-close' type='button'>Fermer</button></div>
+<audio id='rm-audio' preload='none'></audio>
+<script src='https://cdn.jsdelivr.net/npm/hls.js@1'><\/script>
+<script>
+var a=document.getElementById('rm-audio'),bar=document.getElementById('rm-player'),nm=document.getElementById('rm-name'),hls=null;
+document.addEventListener('click',function(e){var b=e.target.closest('.rm-play[data-stream]');if(!b)return;var u=b.getAttribute('data-stream');nm.textContent=b.getAttribute('data-name')||'Radio';bar.style.display='flex';if(hls){hls.destroy();hls=null}a.pause();a.removeAttribute('src');a.load();
+if(u.indexOf('.m3u8')>-1&&window.Hls&&Hls.isSupported()){hls=new Hls();hls.loadSource(u);hls.attachMedia(a);hls.on(Hls.Events.MANIFEST_PARSED,function(){a.play()})}else{a.src=u;a.play()}});
+document.getElementById('rm-toggle').onclick=function(){a.paused?a.play():a.pause()};
+document.getElementById('rm-close').onclick=function(){a.pause();bar.style.display='none'};
+a.onerror=function(){nm.textContent='Flux indisponible, réessayez plus tard.'};
+<\/script>
+</body>
+</html>`;
+$('xmlPreview').textContent=BLOGGER_XML;
+$('xmlMeta').textContent=BLOGGER_XML.length.toLocaleString('fr-FR')+' caractères • XML + b:skin + Blog1';
+function copyXML(){navigator.clipboard.writeText(BLOGGER_XML).then(()=>toast('Thème Blogger XML copié ✔')).catch(()=>{let ta=document.createElement('textarea');ta.value=BLOGGER_XML;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();toast('Thème Blogger XML copié ✔')})}
+function downloadXML(){let blob=new Blob([BLOGGER_XML],{type:'text/xml;charset=utf-8'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='radio-maroc-2026-blogger-theme.xml';a.click();URL.revokeObjectURL(a.href);toast('Fichier radio-maroc-2026-blogger-theme.xml téléchargé')}
+
+/* INIT */
+$('dateNow').textContent=new Date().toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+$('heroSearch').addEventListener('keydown',e=>{if(e.key==='Enter')applyHeroSearch()});
+$('heroSearch').addEventListener('input',e=>{$('mainSearch').value=e.target.value});
+renderCats();renderStations();renderArticles();updateCheck();
+</script>
+</body>
+      </html>
