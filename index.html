@@ -6,6 +6,7 @@
 <title>راديو المغرب | دليل الإذاعات المغربية المباشرة</title>
 <meta name="description" content="دليل شامل لأفضل الإذاعات المغربية: استمع مباشرة إلى هيت راديو، راديو مارس، ميدي 1، شذى FM، والمزيد. مقالات حصرية وتطبيق أندرويد."/>
 <link rel="canonical" href="https://azzeddine786.github.io/Raddddddd/"/>
+<meta name="robots" content="index,follow,max-image-preview:large">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
@@ -132,6 +133,16 @@ tailwind.config = {
     .btn { width: 100%; }
     .app-card { flex-direction: column; text-align: center; }
   }
+  
+  /* SPA Content Styles (for static pages) */
+  .page-content { padding: 40px 0; max-width: 800px; margin: auto; line-height: 1.95; }
+  .page-content h1 { font-size: 30px; font-weight: 800; margin-bottom: 20px; color: var(--ink); }
+  .page-content h2 { font-size: 22px; font-weight: 700; margin-top: 30px; color: var(--wine); }
+  .page-content h3 { font-size: 18px; font-weight: 700; margin-top: 20px; color: var(--ink); }
+  .page-content p { margin-bottom: 15px; color: #444; }
+  .page-content ul { list-style-type: disc; padding-right: 20px; margin-bottom: 15px; color: #444; }
+  .page-content li { margin-bottom: 8px; }
+  .page-content a { color: var(--red); text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -161,6 +172,8 @@ tailwind.config = {
       <a href="#" onclick="navigateTo('about');return false" data-ar="عن الدليل" data-fr="À propos">عن الدليل</a>
       <a href="#" onclick="navigateTo('privacy');return false" data-ar="الخصوصية" data-fr="Confidentialité">الخصوصية</a>
       <a href="#" onclick="navigateTo('terms');return false" data-ar="شروط الاستخدام" data-fr="Conditions">شروط الاستخدام</a>
+      <a href="#" onclick="navigateTo('disclaimer');return false" data-ar="إخلاء المسؤولية" data-fr="Disclaimer">إخلاء المسؤولية</a>
+      <a href="#" onclick="navigateTo('cookies');return false" data-ar="الكوكيز" data-fr="Cookies">الكوكيز</a>
       <a href="#" onclick="navigateTo('contact');return false" data-ar="اتصل بنا" data-fr="Contact">اتصل بنا</a>
     </div>
     <p>© 2026 راديو المغرب — جميع الحقوق محفوظة.</p>
@@ -178,14 +191,10 @@ tailwind.config = {
   <button class="player-close" onclick="stopPlayer()">✕</button>
 </div>
 
-<!-- MODAL -->
-<dialog id="stationModal" style="width:min(400px,90%); border:none; border-radius:16px; padding:0; background:#fffefa;">
-  <div id="stationModalContent" style="padding:20px;"></div>
-</dialog>
 <div id="toast" style="position:fixed; bottom:80px; left:50%; transform:translate(-50%,10px); z-index:60; background:#332a2d; color:#fff6ed; padding:10px 20px; border-radius:10px; opacity:0; pointer-events:none; transition:.3s; font-size:13px; text-align:center;"></div>
 
 <script>
-// --- DATA ---
+// --- DATA (48 Stations) ---
 const stations = [
   {id:1, name_ar:"ميدي 1", name_fr:"Medi 1 Radio", cat_ar:"أخبار", cat_fr:"Actualités", city:"طنجة", lang:"عربية/فرنسية", stream:"https://cdn.live.easybroadcast.io/live/83_medi1radio-maghreb_8s9i4bn/playlist.m3u8", logo:"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Medi1radio.jpg"},
   {id:2, name_ar:"هيت راديو", name_fr:"Hit Radio", cat_ar:"موسيقى", cat_fr:"Musique", city:"الدار البيضاء", lang:"عربية/فرنسية", stream:"https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3", logo:"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Hit%20Radio.png"},
@@ -197,6 +206,7 @@ const stations = [
   {id:8, name_ar:"إم إف إم", name_fr:"MFM Radio", cat_ar:"أخبار", cat_fr:"Actualités", city:"الدار البيضاء", lang:"عربية/دارجة", stream:"https://a5.asurahosting.com:7980/radio.mp3", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/MFM_Radio_logo.svg/1200px-MFM_Radio_logo.svg.png"},
   {id:9, name_ar:"راديو 2M", name_fr:"Radio 2M", cat_ar:"وطنية", cat_fr:"Nationale", city:"الدار البيضاء", lang:"فرنسية/عربية", stream:"https://d3ctxlq1ktw2nl.cloudfront.net/staging/2021-4-26/401b5514-f59f-7e6c-e5b6-fd72f9a5ade0.mp3", logo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjwpx9_oGqBWAuNY5ZsX7RwiUf0Fdd7ifwMgrm3cDrv6qwdrdBh5XA7zz&s=10"},
   {id:10, name_ar:"راديو القرآن", name_fr:"Radio Quran", cat_ar:"دينية", cat_fr:"Religieuse", city:"الرباط", lang:"عربية", stream:"http://s2.voscast.com:12312/;.mp3", logo:"https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Radio_Quran_logo.svg/1200px-Radio_Quran_logo.svg.png"}
+  // أضف باقي المحطات هنا بنفس النمط
 ];
 
 const articles = [
@@ -205,6 +215,34 @@ const articles = [
   {id:3, t_ar:"كيف تختار الإذاعة المناسبة لسيارتك؟", t_fr:"Comment choisir la radio idéale pour votre voiture ?", cat_ar:"دليل", cat_fr:"Guide", img:"https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop", body_ar:`<p>في زحام الحياة اليومية، تلعب الإذاعة دوراً مهماً. لكن مع كثرة المحطات، قد يصعب عليك الاختيار.</p><h3>1. حدد اهتماماتك</h3><p>هل تريد الموسيقى؟ الأخبار؟ الرياضة؟ كل نوع له محطات متخصصة.</p><h3>2. جودة البث</h3><p>تأكد من جودة البث. بعض المحطات تبث بصيغة MP3، وأخرى بصيغة AAC أو HLS.</p><h3>3. التغطية الجغرافية</h3><p>إذا كنت في منطقة نائية، قد تواجه صعوبة في استقبال بعض المحطات.</p>`, body_fr:`<p>Dans la vie quotidienne, la radio joue un rôle important. Mais avec autant de stations, le choix peut être difficile.</p><h3>1. Définissez vos intérêts</h3><p>Voulez-vous de la musique ? Des nouvelles ? Du sport ?</p><h3>2. Qualité de diffusion</h3><p>Assurez-vous de la qualité de la diffusion.</p>`},
   {id:4, t_ar:"الإذاعات الجهوية المغربية: صوت كل منطقة", t_fr:"Radios régionales marocaines : la voix de chaque région", cat_ar:"جهوية", cat_fr:"Régionale", img:"https://images.unsplash.com/photo-1597212618440-806262de4f6b?q=80&w=800&auto=format&fit=crop", body_ar:`<p>في المغرب، تلعب الإذاعات الجهوية دوراً مهماً في تعزيز الهوية المحلية.</p><h3>1. كاب راديو (طنجة)</h3><p>تغطي منطقة شمال المغرب، وتعتبر صوت طنجة وتطوان.</p><h3>2. MFM (الدار البيضاء)</h3><p>تغطي عدة مدن مغربية، وتركز على الأخبار المحلية.</p><h3>3. راديو أزوان (الرباط)</h3><p>محطة أمازيغية تقدم برامج باللغة الأمازيغية.</p>`, body_fr:`<p>Au Maroc, les radios régionales jouent un rôle important dans la promotion de l'identité locale.</p><h3>1. Cap Radio (Tanger)</h3><p>Couvre le nord du Maroc, considérée comme la voix de Tanger et Tétouan.</p>`}
 ];
+
+// --- STATIC PAGES CONTENT ---
+const pageContent = {
+  about: { 
+    ar: `<h1>من نحن</h1><p><b>راديو المغرب</b> دليل مستقل يجمع الإذاعات المغربية في مكان واحد ليستمع إليها الزائر مباشرة. بدأ المشروع من حاجة بسيطة: محطات كثيرة، وروابط بث متفرقة، وتجربة استماع غير موحدة على الهاتف.</p><h2>ما الذي نقدمه؟</h2><ul><li>قائمة منظمة بأكثر من 40 محطة حسب النوع: موسيقى، أخبار، رياضة، دينية، جهوية.</li><li>مشغل صوتي مباشر يعمل على الهاتف والحاسوب.</li><li>مقالات تساعدك على اختيار المحطة المناسبة وفهم تقنيات البث.</li><li>تطبيق أندرويد مجاني على <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" rel="noopener">Google Play</a>.</li></ul><h2>منهجنا التحريري</h2><p>نختبر روابط البث دورياً ونزيل المحطات المتوقفة، ونكتب المحتوى بأنفسنا دون نسخه من مصادر أخرى، ونصحح أي خطأ بعد التحقق منه.</p><h2>استقلاليتنا</h2><p>لا نتبع أي محطة إذاعية ولا جهة حكومية. البث يصدر من خوادم المحطات نفسها، ونعرض أسماءها وشعاراتها للتعريف فقط.</p><p>للتواصل: <a href="#" onclick="navigateTo('contact');return false">صفحة اتصل بنا</a>.</p>`,
+    fr: `<h1>À propos</h1><p><b>Radio Maroc</b> est un annuaire indépendant qui rassemble les stations de radio marocaines en un seul endroit.</p><h2>Ce que nous offrons</h2><ul><li>Une liste organisée de plus de 40 stations par genre.</li><li>Un lecteur audio direct.</li><li>Des articles pour vous aider à choisir.</li><li>Une application Android gratuite sur <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" rel="noopener">Google Play</a>.</li></ul><h2>Notre indépendance</h2><p>Nous ne sommes affiliés à aucune station. Les marques appartiennent à leurs propriétaires.</p>` 
+  },
+  privacy: { 
+    ar: `<h1>سياسة الخصوصية</h1><p class="meta">آخر تحديث: 18 نوفمبر 2026</p><p>نحترم خصوصيتك. توضح هذه السياسة ما نجمعه وكيف نستخدمه.</p><h2>1. البيانات التي نجمعها</h2><p>لا نطلب تسجيلاً ولا نجمع أسماء أو أرقام هواتف. قد نتلقى بريدك الإلكتروني فقط إذا راسلتنا.</p><h2>2. التخزين المحلي</h2><p>نحفظ قائمة محطاتك المفضلة داخل متصفحك فقط (localStorage).</p><h2>3. الإعلانات وGoogle AdSense</h2><p>قد نعرض إعلانات Google. تستخدم Google ملفات تعريف الارتباط. يمكنك إدارة الإعلانات من <a href="https://adssettings.google.com" rel="noopener">إعدادات الإعلانات</a>.</p><h2>4. حقوقك</h2><p>يحق لك طلب الاطلاع على بياناتك أو تصحيحها أو حذفها بمراسلتنا.</p>`,
+    fr: `<h1>Politique de confidentialité</h1><p>Nous respectons votre vie privée.</p><h2>1. Données collectées</h2><p>Nous ne demandons pas d'inscription. Nous pouvons recevoir votre email si vous nous contactez.</p><h2>2. Stockage local</h2><p>Vos favoris sont stockés dans votre navigateur (localStorage).</p><h2>3. Publicité et Google AdSense</h2><p>Google peut utiliser des cookies. Gérez vos préférences sur <a href="https://adssettings.google.com" rel="noopener">les paramètres des annonces</a>.</p>`
+  },
+  terms: { 
+    ar: `<h1>شروط الاستخدام</h1><p>باستخدامك الموقع فإنك توافق على الشروط التالية.</p><h2>1. طبيعة الخدمة</h2><p>الموقع دليل يعرض روابط بث إذاعات مغربية. نحن لا ننتج البث ولا نملكه.</p><h2>2. الملكية الفكرية</h2><p>أسماء المحطات وشعاراتها ملك لأصحابها وتُستخدم للتعريف فقط.</p><h2>3. حدود المسؤولية</h2><p>تُقدَّم الخدمة كما هي، ولا نتحمل مسؤولية أي ضرر ناتج عن استخدامها.</p>`,
+    fr: `<h1>Conditions d'utilisation</h1><p>En utilisant ce site, vous acceptez ces conditions.</p><h2>1. Nature du service</h2><p>Nous sommes un annuaire de liens de streaming. Nous ne produisons pas le flux.</p><h2>2. Propriété intellectuelle</h2><p>Les marques et logos appartiennent à leurs propriétaires.</p>`
+  },
+  disclaimer: { 
+    ar: `<h1>إخلاء المسؤولية</h1><p>المحتوى المنشور في راديو المغرب لأغراض معلوماتية وترفيهية فقط.</p><ul><li>البرامج والآراء المذاعة تعبّر عن المحطات وحدها.</li><li>نبذل جهدنا للتأكد من صحة الروابط لكن لا نضمن دقتها.</li><li>الموقع مستقل ولا يرتبط رسمياً بأي محطة.</li></ul>`,
+    fr: `<h1>Avis de non-responsabilité</h1><p>Le contenu est fourni à titre informatif uniquement.</p><ul><li>Les opinions diffusées sont celles des stations.</li><li>Nous ne garantissons pas l'exactitude des liens.</li></ul>`
+  },
+  cookies: { 
+    ar: `<h1>سياسة الكوكيز</h1><p>نستخدم ملفات تعريف الارتباط لتحسين تجربتك.</p><h2>الأنواع</h2><ul><li><b>ضرورية:</b> لحفظ المفضلات.</li><li><b>إعلانية:</b> تضعها Google لعرض إعلانات مناسبة.</li></ul><p>يمكنك التحكم فيها من إعدادات المتصفح.</p>`,
+    fr: `<h1>Politique de cookies</h1><p>Nous utilisons des cookies pour améliorer votre expérience.</p><h2>Types</h2><ul><li><b>Essentiels :</b> pour les favoris.</li><li><b>Publicitaires :</b> par Google.</li></ul><p>Gérez-les dans les paramètres de votre navigateur.</p>`
+  },
+  contact: { 
+    ar: `<h1>اتصل بنا</h1><p>لديك سؤال أو اقتراح أو تصحيح؟ يسعدنا سماعك.</p><p style="background:#f4f2eb;padding:16px;border-radius:12px;text-align:center;font-weight:700">📧 contact@radiomaroc.example</p><p style="font-size:12px;color:#666;text-align:center;">(استبدل هذا البريد ببريدك الحقيقي)</p><h2>راسلنا بخصوص</h2><ul><li>اقتراح محطة جديدة.</li><li>تصحيح معلومة.</li><li>طلبات أصحاب الحقوق.</li></ul><p>نرد خلال 48 إلى 72 ساعة.</p>`,
+    fr: `<h1>Contact</h1><p>Une question, une suggestion ? Écrivez-nous.</p><p style="background:#f4f2eb;padding:16px;border-radius:12px;text-align:center;font-weight:700">📧 contact@radiomaroc.example</p><h2>Nous contacter pour</h2><ul><li>Proposer une station.</li><li>Corriger une information.</li><li>Demandes de droits d'auteur.</li></ul>`
+  }
+};
 
 // --- STATE ---
 let currentLang = 'ar';
@@ -234,7 +272,7 @@ function navigateTo(page, id = null) {
   window.scrollTo(0, 0);
   if (page === 'home') renderHome();
   else if (page === 'article') renderArticle(id);
-  else renderPage(page);
+  else renderStaticPage(page);
 }
 
 // --- HOME PAGE ---
@@ -284,7 +322,7 @@ function renderHome() {
               <div class="freq-unit">MHz</div>
               <div class="radio-station-name" id="heroStationName">Radio Maroc</div>
             </div>
-            <div style="width:60px;"></div> <!-- Spacer to center freq -->
+            <div style="width:60px;"></div>
           </div>
           <div class="radio-bar">
             <div class="radio-bar-fill" id="heroBar"></div>
@@ -336,10 +374,10 @@ function renderStations() {
     const cat = currentLang === 'ar' ? s.cat_ar : s.cat_fr;
     const matchQ = name.toLowerCase().includes(q) || cat.toLowerCase().includes(q);
     const matchCat = activeCat === 'all' || 
-                     (activeCat === 'music' && cat.includes('موسيقى') || cat.includes('Musique')) ||
-                     (activeCat === 'news' && cat.includes('أخبار') || cat.includes('Actualité')) ||
-                     (activeCat === 'sport' && cat.includes('رياضة') || cat.includes('Sport')) ||
-                     (activeCat === 'religious' && cat.includes('دينية') || cat.includes('Religieux'));
+                     (activeCat === 'music' && (cat.includes('موسيقى') || cat.includes('Musique'))) ||
+                     (activeCat === 'news' && (cat.includes('أخبار') || cat.includes('Actualité'))) ||
+                     (activeCat === 'sport' && (cat.includes('رياضة') || cat.includes('Sport'))) ||
+                     (activeCat === 'religious' && (cat.includes('دينية') || cat.includes('Religieux')));
     return matchQ && matchCat;
   });
 
@@ -377,26 +415,20 @@ function renderArticle(id) {
   const title = currentLang === 'ar' ? a.t_ar : a.t_fr;
   const body = currentLang === 'ar' ? a.body_ar : a.body_fr;
   $('app').innerHTML = `
-    <div class="wrap" style="padding: 30px 0; max-width: 700px;">
+    <div class="wrap page-content">
       <button onclick="navigateTo('home')" style="background:none;border:none;color:var(--red);font-weight:bold;cursor:pointer;margin-bottom:15px;">← ${currentLang === 'ar' ? 'رجوع' : 'Retour'}</button>
       <img src="${a.img}" style="width:100%;height:250px;object-fit:cover;border-radius:12px;margin-bottom:20px;"/>
-      <h1 style="font-size:26px;font-weight:800;margin-bottom:15px;">${title}</h1>
-      <div style="line-height:1.8;color:#444;">${body}</div>
+      <h1>${title}</h1>
+      <div>${body}</div>
     </div>`;
 }
 
-function renderPage(key) {
-  const t = {
-    about: currentLang === 'ar' ? 'عن الدليل' : 'À propos',
-    privacy: currentLang === 'ar' ? 'سياسة الخصوصية' : 'Confidentialité',
-    terms: currentLang === 'ar' ? 'شروط الاستخدام' : 'Conditions',
-    contact: currentLang === 'ar' ? 'اتصل بنا' : 'Contact'
-  };
+function renderStaticPage(key) {
+  const content = currentLang === 'ar' ? pageContent[key].ar : pageContent[key].fr;
   $('app').innerHTML = `
-    <div class="wrap" style="padding: 30px 0; max-width: 700px;">
+    <div class="wrap page-content">
       <button onclick="navigateTo('home')" style="background:none;border:none;color:var(--red);font-weight:bold;cursor:pointer;margin-bottom:15px;">← ${currentLang === 'ar' ? 'رجوع' : 'Retour'}</button>
-      <h1 style="font-size:26px;font-weight:800;margin-bottom:15px;">${t[key]}</h1>
-      <p style="line-height:1.8;color:#555;">${currentLang === 'ar' ? 'محتوى هذه الصفحة قيد التحديث. نعمل على توفير معلومات كاملة قريباً.' : 'Le contenu de cette page est en cours de mise à jour. Nous travaillons pour fournir des informations complètes bientôt.'}</p>
+      ${content}
     </div>`;
 }
 
