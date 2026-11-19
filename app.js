@@ -42,6 +42,24 @@
     });
   }
 
+  /* ---------- article: reading progress + copy link ---------- */
+  var bar2 = $('#progress'), prose = $('.prose');
+  if (bar2 && prose) {
+    var onScroll = function () {
+      var r = prose.getBoundingClientRect(), total = r.height - window.innerHeight * 0.6;
+      var pct = Math.min(100, Math.max(0, (-r.top / Math.max(total, 1)) * 100));
+      bar2.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  }
+  $$('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var u = b.getAttribute('data-copy');
+      var done = function () { toast('تم نسخ الرابط'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(done, done); else done();
+    });
+  });
+
   /* ---------- home: directory + player ---------- */
   var grid = $('#stationGrid');
   if (!grid) return;
