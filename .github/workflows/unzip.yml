@@ -2,7 +2,7 @@ name: Unzip site
 on:
   workflow_dispatch:
   push:
-    paths: ['radiomaroc-github-2.zip']
+    paths: ['radiomaroc-github-1.zip']
 permissions:
   contents: write
 jobs:
@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          unzip -o radiomaroc-github-2.zip -x radiomaroc-github-2.zip
-          rm radiomaroc-github-2.zip
+          unzip -o radiomaroc-github-1.zip -x radiomaroc-github-1.zip
+          rm radiomaroc-github-1.zip
           git config user.name github-actions
           git config user.email actions@github.com
           git add -A
