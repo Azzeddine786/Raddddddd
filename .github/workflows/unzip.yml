@@ -15,7 +15,7 @@ jobs:
 
       - name: Extract ZIP
         run: |
-          ZIP_FILE="radio-maroc-upload-phone (1).zip"
+          ZIP_FILE=radiomaroc-site.zip"
 
           if [ ! -f "$ZIP_FILE" ]; then
             echo "ZIP file not found"
