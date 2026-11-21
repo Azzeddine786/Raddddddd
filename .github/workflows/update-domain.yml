@@ -92,4 +92,4 @@ jobs:
           fi
 
           git commit -m "Update all website URLs to radiomaroc.live"
-          git push
+          git push origin HEAD:main --force
