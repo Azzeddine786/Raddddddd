@@ -1,11 +1,48 @@
-unzip -o "$ZIP_FILE" -d .
-rm -f "$ZIP_FILE"
+name: Unzip Radio Maroc
 
-# هذه الخطوة لنقل محتويات المجلد إلى الجذر
-mv radiomaroc-site/* . 
-mv radiomaroc-site/.* . 2>/dev/null || true
-rmdir radiomaroc-site
+on:
+  workflow_dispatch:
 
-git add -A
-git commit -m "Extract Radio Maroc website"
-git push
+permissions:
+  contents: write
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract ZIP
+        run: |
+          # اسم الملف المضغوط
+          ZIP_FILE="radiomaroc-site.zip"
+
+          if [ ! -f "$ZIP_FILE" ]; then
+            echo "ZIP file not found"
+            exit 1
+          fi
+
+          # فك الضغط في المجلد الحالي
+          unzip -o "$ZIP_FILE" -d .
+          
+          # حذف الملف المضغوط بعد فك الضغط
+          rm -f "$ZIP_FILE"
+
+          # --- نقل الملفات من المجلد الفرعي إلى الجذر ---
+          # نقل الملفات العادية
+          if [ -d "radiomaroc-site" ]; then
+            mv radiomaroc-site/* . 2>/dev/null || true
+            # نقل الملفات المخفية (مثل .nojekyll)
+            mv radiomaroc-site/.* . 2>/dev/null || true
+            # حذف المجلد الفارغ
+            rmdir radiomaroc-site 2>/dev/null || true
+          fi
+          
+          # إعدادات Git
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # إضافة كل التغييرات ورفعها
+          git add -A
+          git commit -m "Extract Radio Maroc website and move to root" || echo "No changes to commit"
+          git push
