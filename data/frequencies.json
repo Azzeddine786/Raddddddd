@@ -1,0 +1,5 @@
+{
+ "_help": "Add verified FM frequencies here, then run: python3 tools/build.py . ./out . Each entry: station = directory id, city = Arabic city name as in the directory, mhz = number as text, verified = YYYY-MM-DD, source = URL of the official source (not shown on the page). Leave entries empty until a number is verified.",
+ "last_verified": "",
+ "entries": []
+}
