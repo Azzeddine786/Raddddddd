@@ -13,38 +13,36 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # ضروري لعملية الـ Push
 
       - name: Replace old URLs everywhere
         run: |
           python3 - <<'PY'
+          import re
           from pathlib import Path
 
-          root = Path(".")
-          replacements = [
-              ("https://azzeddine786.github.io/Raddddddd", "https://radiomaroc.live"),
-              ("http://azzeddine786.github.io/Raddddddd", "https://radiomaroc.live"),
-              ("https://radiomaroc.live/Raddddddd/", "https://radiomaroc.live/"),
-              ("http://radiomaroc.live/Raddddddd/", "https://radiomaroc.live/"),
-              ("/Raddddddd/", "/")
+          skip_ext = {".zip", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico",
+                      ".woff", ".woff2", ".ttf", ".mp3", ".mp4", ".pdf"}
+          patterns = [
+              (re.compile(r"https?://azzeddine786\.github\.io/Raddddddd/?", re.I), "https://radiomaroc.live/"),
+              (re.compile(r"https?://radiomaroc\.live/Raddddddd/?", re.I), "https://radiomaroc.live/"),
+              (re.compile(r"(?<![\w.])/Raddddddd/"), "/"),
           ]
 
           changed = 0
-          for path in root.rglob("*"):
-              if not path.is_file() or ".git" in path.parts:
+          for path in Path(".").rglob("*"):
+              if not path.is_file():
                   continue
-              if path.suffix.lower() in {".zip", ".png", ".jpg", ".jpeg", ".webp", ".gif", ".ico", ".svg", ".woff", ".woff2", ".ttf", ".mp3", ".mp4", ".pdf"}:
+              if ".git" in path.parts or ".github" in path.parts:   # <-- الإصلاح
+                  continue
+              if path.name == "CNAME" or path.suffix.lower() in skip_ext:
                   continue
               try:
                   content = path.read_text(encoding="utf-8")
               except (UnicodeDecodeError, OSError):
                   continue
-
               original = content
-              for old, new in replacements:
-                  content = content.replace(old, new)
-
+              for rx, new in patterns:
+                  content = rx.sub(new, content)
               if content != original:
                   path.write_text(content, encoding="utf-8")
                   print("Updated:", path)
@@ -56,13 +54,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
           git add -A
-          
-          # التحقق مما إذا كانت هناك تغييرات
-          if git diff-index --quiet HEAD; then
-            echo "No changes to commit. All files are already updated."
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
           else
             git commit -m "Update all website URLs to radiomaroc.live"
-            git push origin main --force
+            git push origin main
           fi
