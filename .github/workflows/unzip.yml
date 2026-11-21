@@ -1,38 +1,11 @@
-name: Unzip Radio Maroc
+unzip -o "$ZIP_FILE" -d .
+rm -f "$ZIP_FILE"
 
-on:
-  workflow_dispatch:
+# هذه الخطوة لنقل محتويات المجلد إلى الجذر
+mv radiomaroc-site/* . 
+mv radiomaroc-site/.* . 2>/dev/null || true
+rmdir radiomaroc-site
 
-permissions:
-  contents: write
-
-jobs:
-  unzip:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Extract ZIP
-        run: |
-          # تم تصحيح هذا السطر بإزالة علامة التنصيص الزائدة
-          ZIP_FILE="radiomaroc-site.zip"
-
-          if [ ! -f "$ZIP_FILE" ]; then
-            echo "ZIP file not found"
-            exit 1
-          fi
-
-          # فك الضغط
-          unzip -o "$ZIP_FILE" -d .
-          
-          # حذف الملف المضغوط بعد فك الضغط
-          rm -f "$ZIP_FILE"
-
-          # إعدادات Git
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # إضافة التغييرات ورفعها
-          git add -A
-          git commit -m "Extract Radio Maroc website"
-          git push
+git add -A
+git commit -m "Extract Radio Maroc website"
+git push
