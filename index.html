@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="ar_MA">
 <meta property="og:type" content="website">
 <meta property="og:title" content="راديو المغرب | استمع إلى الإذاعات المغربية مباشرة">
-<meta property="og:description" content="دليل الإذاعات المغربية: استمع مباشرة إلى ميدي 1 وهيت راديو وراديو مارس وشذى FM وأكثر من 40 محطة، مع أدلة ومقالات تساعدك على الاختيار.">
+<meta property="og:description" content="دليل الإذاعات المغربية: استمع مباشرة إلى ميدي 1 وهيت راديو وراديو مارس وشذى FM وأكثر من 40 محطة.">
 <meta property="og:url" content="https://radiomaroc.live/">
 <meta property="og:image" content="https://radiomaroc.live/og-home.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="alternate" hreflang="ar" href="https://radiomaroc.live/?lang=ar">
 <link rel="alternate" hreflang="fr" href="https://radiomaroc.live/?lang=fr">
-<link rel="alternate" hreflang="en" href="https://radiomaroc.live/?lang=en">
 <link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="alternate" type="application/rss+xml" title="راديو المغرب" href="/feed.xml">
 <link rel="stylesheet" href="/style.css">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://radiomaroc.live/#website","url":"https://radiomaroc.live/","name":"راديو المغرب","description":"دليل الإذاعات المغربية","inLanguage":["ar","fr","en"],"publisher":{"@id":"https://radiomaroc.live/#org"}},{"@type":"Organization","@id":"https://radiomaroc.live/#org","name":"راديو المغرب","url":"https://radiomaroc.live/","logo":{"@type":"ImageObject","url":"https://radiomaroc.live/app-icon.png","width":512,"height":512}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://radiomaroc.live/#website","url":"https://radiomaroc.live/","name":"راديو المغرب","description":"دليل الإذاعات المغربية","inLanguage":["ar","fr"],"publisher":{"@id":"https://radiomaroc.live/#org"}},{"@type":"Organization","@id":"https://radiomaroc.live/#org","name":"راديو المغرب","url":"https://radiomaroc.live/","logo":{"@type":"ImageObject","url":"https://radiomaroc.live/app-icon.png","width":512,"height":512}}]}</script>
 
 <style>
 /* ============ التصميم الداكن الفاخر المدمج ============ */
@@ -80,7 +79,7 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .header-actions{display:flex;align-items:center;gap:12px}
 .clock{color:var(--muted);white-space:nowrap;font-size:11px}
 .clock time{margin-inline-start:5px;color:var(--cream);font:700 12px var(--latin)}
-.lang,.menu-button{border:1px solid var(--line);background:#ffffff08;border-radius:9px;padding:6px 11px;font:800 12px var(--latin);min-height:36px}
+.lang,.menu-button{border:1px solid var(--line);background:#ffffff08;border-radius:9px;padding:6px 11px;font:800 12px var(--latin);min-height:36px;cursor:pointer}
 .lang:hover,.menu-button:hover{border-color:var(--gold)}
 .menu-button{display:none;padding:7px}
 
@@ -88,7 +87,7 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .hero h1{font-size:clamp(32px,4.5vw,56px);line-height:1.15;margin:12px 0 18px;letter-spacing:-.03em}
 .hero h1 strong{color:var(--gold)}
 .hero p{color:#d2c5bd;font-size:16px;max-width:48ch;margin:0 0 26px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border-radius:11px;background:var(--gold);color:#1d1417;font-weight:800;font-size:14px;border:1px solid transparent;transition:.2s}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border-radius:11px;background:var(--gold);color:#1d1417;font-weight:800;font-size:14px;border:1px solid transparent;transition:.2s;cursor:pointer}
 .btn:hover{background:var(--gold-light);transform:translateY(-1px)}
 .btn-ghost{background:#ffffff0a;color:var(--cream);border-color:#ffffff2b}
 .btn-ghost:hover{background:#ffffff14;border-color:var(--gold)}
@@ -103,21 +102,21 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .station{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:16px;display:flex;flex-direction:column;transition:.2s}
 .station:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 24px #0003}
 .tile-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-.logo{width:52px;height:52px;border-radius:12px;background:var(--surface-3);display:grid;place-items:center;overflow:hidden;font:800 14px var(--latin);color:var(--gold);border:1px solid #ffffff0a}
-.logo img{width:100%;height:100%;object-fit:contain}
+.logo{width:52px;height:52px;border-radius:12px;background:var(--surface-3);display:grid;place-items:center;overflow:hidden;font:800 14px var(--latin);color:var(--gold);border:1px solid #ffffff0a;position:relative}
+.logo img{width:100%;height:100%;object-fit:contain;background:white;padding:4px;position:absolute;inset:0}
 .fav{background:none;border:1px solid var(--line);border-radius:8px;width:30px;height:30px;display:grid;place-items:center;color:var(--muted);transition:.2s}
 .fav:hover,.fav[aria-pressed="true"]{color:var(--gold);border-color:var(--gold);background:#d8b67815}
-.station h3{font-size:15px;margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.station h3{font-size:15px;margin:0 0 3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--cream)}
 .meta{font-size:11.5px;color:var(--muted);margin:0 0 14px}
 .tile-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
-.play{display:inline-flex;align-items:center;gap:6px;background:#ffffff0a;border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;transition:.2s}
+.play{display:inline-flex;align-items:center;gap:6px;background:#ffffff0a;border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:12px;font-weight:700;transition:.2s;color:var(--cream);cursor:pointer}
 .play:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
 .play .disc{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--bg)}
 .play:hover .disc{background:var(--bg);color:var(--gold)}
 .tag{font-size:10px;font-weight:700;color:var(--muted);background:var(--surface-3);padding:3px 7px;border-radius:5px}
 
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
-.chip{background:#ffffff08;border:1px solid var(--line);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;transition:.2s}
+.chip{background:#ffffff08;border:1px solid var(--line);border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;transition:.2s;color:var(--cream);cursor:pointer}
 .chip:hover{border-color:var(--gold)}
 .chip[aria-pressed="true"]{background:var(--gold);color:var(--bg);border-color:var(--gold)}
 
@@ -125,14 +124,14 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .search input{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px 10px 38px;color:var(--cream);font-size:13px}
 .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);width:16px;height:16px}
 
-.player{position:fixed;bottom:0;left:0;right:0;z-index:40;background:var(--surface);border-top:1px solid var(--line);transform:translateY(100%);transition:.3s;box-shadow:0 -10px 30px #0005}
+.player{position:fixed;bottom:0;left:0;right:0;z-index:40;background:var(--surface);border-top:2px solid var(--gold);transform:translateY(100%);transition:.3s;box-shadow:0 -10px 30px #0005}
 .player.open{transform:translateY(0)}
 .player-in{display:flex;align-items:center;gap:16px;padding-block:12px}
 .pid{flex:1}
 .pid b{display:block;font-size:14px}
 .pstat{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);margin-top:2px}
 .dot{width:8px;height:8px;border-radius:50%}
-.pbtn,.pstop{background:var(--gold);color:var(--bg);border:0;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;transition:.2s}
+.pbtn,.pstop{background:var(--gold);color:var(--bg);border:0;border-radius:50%;width:44px;height:44px;display:grid;place-items:center;transition:.2s;cursor:pointer}
 .pstop{background:#ffffff0a;color:var(--cream);width:36px;height:36px}
 .pbtn:hover{background:var(--gold-light)}
 
@@ -198,19 +197,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
     <div class="header-actions">
       <div class="clock"><time id="clock"></time></div>
-      <!-- زر تغيير اللغة -->
       <button class="lang" id="langToggle" onclick="toggleLang()">AR</button>
-      <button class="menu-button" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
-        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
     </div>
   </div>
 </header>
-
-<div class="promo" id="promo" style="display:none;background:linear-gradient(90deg,#2a1a24,#4a2432);text-align:center;padding:10px;font-size:13px">
-  <b data-i18n="promo_text">تطبيق راديو المغرب متاح الآن - استماع مباشر أسرع</b>
-  <a href="https://play.google.com/store/apps/details?id=com.maradioazdhj.radiomoroccoandab" target="_blank" rel="noopener" class="btn" style="min-height:28px;padding:0 12px;font-size:11px;margin-inline-start:10px" data-i18n="btn_download">تحميل</a>
-</div>
 
 <main id="main">
   <section class="wrap hero" aria-labelledby="h1">
@@ -245,13 +235,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <button class="chip" data-filter="cat:موسيقى" data-i18n="filter_music">موسيقى</button>
       <button class="chip" data-filter="cat:أخبار" data-i18n="filter_news">أخبار</button>
       <button class="chip" data-filter="cat:رياضة" data-i18n="filter_sport">رياضة</button>
+      <button class="chip" data-filter="cat:دينية" data-i18n="filter_religious">دينية</button>
       <button class="chip" data-filter="fav" data-i18n="filter_fav">⭐ المفضلة</button>
     </div>
 
     <div class="grid" id="stationGrid">
-      <!-- سيتم توليد المحطات هنا بواسطة app.js -->
+      <!-- سيتم توليد المحطات هنا بواسطة السكريبت -->
     </div>
-    <div class="empty" id="emptyBox" hidden data-i18n="empty_text">لا توجد محطات مطابقة. جرّب كلمة أخرى.</div>
+    <div class="empty" id="emptyBox" hidden data-i18n="empty_text" style="text-align:center;padding:20px">لا توجد محطات مطابقة. جرّب كلمة أخرى.</div>
   </section>
 
   <!-- ============ بانر إعلاني ============ -->
@@ -311,49 +302,99 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite" style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--bg);padding:8px 20px;border-radius:8px;font-weight:700;font-size:13px;opacity:0;transition:.3s;pointer-events:none;z-index:100"></div>
 
-<script type="application/json" id="stations-data">[{"id":1,"name":"Medi 1 Radio","init":"M1","stream":"https://cdn.live.easybroadcast.io/live/83_medi1radio-maghreb_8s9i4bn/playlist.m3u8","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Medi1radio.jpg"},{"id":2,"name":"Medi 1 Andalouse","init":"AND","stream":"https://cdn.live.easybroadcast.io/medi1radio/Andalouse","logo":"https://bridge.medi1.com/images/webradios/new/andalouse.jpg?123"},{"id":3,"name":"Medi 1 Soufi","init":"SOU","stream":"https://cdn.live.easybroadcast.io/medi1radio/Soufi","logo":"https://bridge.medi1.com/images/webradios/new/soufi.jpg?123"},{"id":4,"name":"Medi 1 Nayda","init":"NAY","stream":"https://cdn.live.easybroadcast.io/medi1radio/Nayda","logo":"https://bridge.medi1.com/images/webradios/new/nayda.jpg?123"},{"id":5,"name":"Medi 1 Tarab","init":"TAR","stream":"https://cdn.live.easybroadcast.io/medi1radio/Tarab","logo":"https://bridge.medi1.com/images/webradios/new/tarab.jpg?123"},{"id":6,"name":"Medi 1 Classique","init":"CLA","stream":"https://cdn.live.easybroadcast.io/medi1radio/Classique","logo":"https://bridge.medi1.com/images/webradios/new/classique.jpg?123"},{"id":7,"name":"Medi 1 Acoustic","init":"ACO","stream":"https://cdn.live.easybroadcast.io/medi1radio/Acoustic","logo":"https://bridge.medi1.com/images/webradios/new/acoustic.jpg?123"},{"id":8,"name":"Medi 1 Latino","init":"LAT","stream":"https://cdn.live.easybroadcast.io/medi1radio/Latino","logo":"https://bridge.medi1.com/images/webradios/new/latino.jpg?123"},{"id":9,"name":"Medi 1 Lounge","init":"LOU","stream":"https://cdn.live.easybroadcast.io/medi1radio/Lounge","logo":"https://bridge.medi1.com/images/webradios/new/lounge.jpg?123"},{"id":10,"name":"Medi 1 Hits","init":"HIT","stream":"https://cdn.live.easybroadcast.io/medi1radio/Hits","logo":"https://bridge.medi1.com/images/webradios/new/hits.jpg?123"},{"id":11,"name":"Medi 1 Jazz","init":"JAZ","stream":"https://cdn.live.easybroadcast.io/medi1radio/Jazz","logo":"https://bridge.medi1.com/images/webradios/new/jazz.jpg?123"},{"id":12,"name":"Medi 1 Française","init":"FRA","stream":"https://cdn.live.easybroadcast.io/medi1radio/Francaise","logo":"https://bridge.medi1.com/images/webradios/new/chanson%20fran%C3%A7aise.jpg?123"},{"id":13,"name":"Medi 1 DJ","init":"DJ","stream":"https://cdn.live.easybroadcast.io/medi1radio/Dj","logo":"https://bridge.medi1.com/images/webradios/new/dj.jpg?123"},{"id":14,"name":"Hit Radio","init":"HIT","stream":"https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Hit%20Radio.png"},{"id":15,"name":"Radio Mars","init":"MARS","stream":"https://radiomars.ice.infomaniak.ch/radiomars-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Radio%20Mars.jpg"},{"id":16,"name":"Med Radio","init":"MED","stream":"https://medradio.ice.infomaniak.ch/medradio-128.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/4/48/Med_Radio_logo.svg/1200px-Med_Radio_logo.svg.png"},{"id":17,"name":"Chada FM","init":"CHD","stream":"https://edge19.vedge.infomaniak.com/livecast/ik:chadatv/chunklist_w2053981091.m3u8","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/3/3e/Chada_FM_logo.svg/1200px-Chada_FM_logo.svg.png"},{"id":18,"name":"MFM Radio","init":"MFM","stream":"https://a5.asurahosting.com:7980/radio.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/MFM_Radio_logo.svg/1200px-MFM_Radio_logo.svg.png"},{"id":19,"name":"Radio Aswat","init":"ASW","stream":"https://aswat.ice.infomaniak.ch/aswat-high.mp3","logo":"https://www.radioaswat.com/images/logo.png"},{"id":20,"name":"Atlantic Radio","init":"ATL","stream":"https://atlantic-sonic.nindohost.net:9300/stream/1/.mp3","logo":"https://www.atlanticradio.ma/images/logo.png"},{"id":21,"name":"Medina FM","init":"MED","stream":"https://medinafm.ice.infomaniak.ch/medinafm-64.mp3","logo":"https://www.medinafm.ma/images/logo.png"},{"id":22,"name":"Cap Radio","init":"CAP","stream":"https://listen.radioking.com/radio/710810/stream/776360","logo":"https://www.capradio.ma/images/logo.png"},{"id":23,"name":"Radio Quran","init":"QR","stream":"http://s2.voscast.com:12312/;.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Radio_Quran_logo.svg/1200px-Radio_Quran_logo.svg.png"},{"id":24,"name":"URADIO","init":"URA","stream":"https://uradio-aac.ice.infomaniak.ch/uradio.aac","logo":"https://www.uradio.ma/images/logo.png"},{"id":25,"name":"Radio 2M","init":"2M","stream":"https://d3ctxlq1ktw2nl.cloudfront.net/staging/2021-4-26/401b5514-f59f-7e6c-e5b6-fd72f9a5ade0.mp3","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjwpx9_oGqBWAuNY5ZsX7RwiUf0Fdd7ifwMgrm3cDrv6qwdrdBh5XA7zz&s=10"},{"id":26,"name":"Zine Bladi","init":"ZB","stream":"https://asmaki.ma:8000/radio.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/zine%20bladi.png"},{"id":27,"name":"Radio Yabiladi","init":"YAB","stream":"http://media.yabiladi.com:8000/stream","logo":"https://www.yabiladi.com/images/logo.png"},{"id":28,"name":"Radio Atbir","init":"ATB","stream":"https://radioatbir.radioca.st/stream","logo":"https://cdn.instant.audio/images/logos/radio-co-ma/atbir.png"},{"id":29,"name":"Radio Plus","init":"PLS","stream":"https://radioplus.ice.infomaniak.ch/radioplus-high.mp3","logo":"https://www.radioplus.ma/images/logo.png"},{"id":30,"name":"Skyrock Casablanca","init":"SKY","stream":"https://icecast.skyrock.net/s/casa_aac_128k?tvr_name=radiofr&tvr_section1=64aac","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/skyrockcasablanca.webp"},{"id":31,"name":"Radio Sawa","init":"SAW","stream":"https://montecarlodoualiya128k.ice.infomaniak.ch/mc-doualiya.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/Radio%20sawa.png"},{"id":32,"name":"Rim Radio","init":"RIM","stream":"https://streaming.rimradio.ma/live.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/Radio-Rim-logo.png"},{"id":33,"name":"Radio Tangermed","init":"TNG","stream":"https://radiotangermed-22.ice.infomaniak.ch/radiotangermed-22-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/radiotangermed.png"},{"id":34,"name":"Radio Azawan","init":"AZA","stream":"https://az-maroc.ice.infomaniak.ch/az-maroc-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/radio_azawan_logo.jpeg"},{"id":35,"name":"أضواء FM","init":"ADW","stream":"https://stream.zeno.fm/5bxh2nh0x1zuv","logo":"https://adwaafm.com/wp-content/uploads/2023/11/adwaalogo.png"},{"id":36,"name":"أضواء FM 2","init":"AD2","stream":"https://stream.zeno.fm/vrrtqsh0x1zuv","logo":"https://static.mytuner.mobi/media/tvos_radios/sax28w3r9x4a.png"},{"id":37,"name":"أضواء FM 3","init":"AD3","stream":"https://stream.zeno.fm/x4451xh0x1zuv","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQOUVHszFsriAQC0zumT-wFJZuRlHZsTjhh1KYbKJELwfYr-JTObfbTs&s=10"},{"id":38,"name":"أضواء FM 4","init":"AD4","stream":"https://stream.zeno.fm/8wrs2bh0x1zuv","logo":"https://static.mytuner.mobi/media/tvos_radios/nwanbpafczez.png"},{"id":39,"name":"أضواء FM 5","init":"AD5","stream":"https://stream.zeno.fm/ezxx195gq2zuv","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM21lSWNXBYKLQckCr9khdOijwuo9iIkJFGucul-gIpg&s=10"},{"id":40,"name":"أضواء FM 6","init":"AD6","stream":"https://stream.zeno.fm/tvxvud2kpm0uv","logo":"https://radio-maroc-live.com/storage/radios/23446/64451/conversions/EPJ8UXYZsa7Cx3fMWPId7ZvuBzWg16-metaYWR3YWFmbTYucG5n--lg.webp"},{"id":41,"name":"HIT RADIO Burkina Faso","init":"HBF","stream":"https://hr-burkina.ice.infomaniak.ch/hr-burkina-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/new_burkinafaso-2.c813f412.png"},{"id":42,"name":"HIT RADIO Centrafrique","init":"HCA","stream":"https://hr-rca.ice.infomaniak.ch/hr-rca-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_centrafrique-2.c1117e39.png"},{"id":43,"name":"HIT RADIO Congo","init":"HCO","stream":"https://hr-congobrazza.ice.infomaniak.ch/hr-congobrazza-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/congo.d79d6f80.png"},{"id":44,"name":"HIT RADIO Côte d'Ivoire","init":"HCI","stream":"https://hrci.ice.infomaniak.ch/hrci-abidjan-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/image-cote-devoir-2.db70765b.png"},{"id":45,"name":"HIT RADIO Gabon","init":"HGA","stream":"https://hr-gabon.ice.infomaniak.ch/hr-gabon-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_gabon-2.257aa39e.png"},{"id":46,"name":"HIT RADIO Niger","init":"HNI","stream":"https://hr-niger.ice.infomaniak.ch/hr-niger-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_niger-2.d9ef6a90.png"},{"id":47,"name":"HIT RADIO Tchad","init":"HTC","stream":"https://hr-tchad.ice.infomaniak.ch/hr-tchad-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/HIT_RADIO_TCHAD-2.d1a48990.png"},{"id":48,"name":"HIT RADIO Togo","init":"HTO","stream":"https://hrtogo.ice.infomaniak.ch/hr-togo-20.mp3","logo":"https://www.hitradio.ma/_next/static/media/new_togo-2.08a554c6.png"}]</script>
-
-<script src="/app.js" defer></script>
+<script type="application/json" id="stations-data">
+[
+{"id":1,"name":"Medi 1 Radio","init":"M1","cat":"أخبار","stream":"https://cdn.live.easybroadcast.io/live/83_medi1radio-maghreb_8s9i4bn/playlist.m3u8","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Medi1radio.jpg"},
+{"id":2,"name":"Medi 1 Andalouse","init":"AND","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Andalouse","logo":"https://bridge.medi1.com/images/webradios/new/andalouse.jpg?123"},
+{"id":3,"name":"Medi 1 Soufi","init":"SOU","cat":"دينية","stream":"https://cdn.live.easybroadcast.io/medi1radio/Soufi","logo":"https://bridge.medi1.com/images/webradios/new/soufi.jpg?123"},
+{"id":4,"name":"Medi 1 Nayda","init":"NAY","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Nayda","logo":"https://bridge.medi1.com/images/webradios/new/nayda.jpg?123"},
+{"id":5,"name":"Medi 1 Tarab","init":"TAR","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Tarab","logo":"https://bridge.medi1.com/images/webradios/new/tarab.jpg?123"},
+{"id":6,"name":"Medi 1 Classique","init":"CLA","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Classique","logo":"https://bridge.medi1.com/images/webradios/new/classique.jpg?123"},
+{"id":7,"name":"Medi 1 Acoustic","init":"ACO","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Acoustic","logo":"https://bridge.medi1.com/images/webradios/new/acoustic.jpg?123"},
+{"id":8,"name":"Medi 1 Latino","init":"LAT","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Latino","logo":"https://bridge.medi1.com/images/webradios/new/latino.jpg?123"},
+{"id":9,"name":"Medi 1 Lounge","init":"LOU","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Lounge","logo":"https://bridge.medi1.com/images/webradios/new/lounge.jpg?123"},
+{"id":10,"name":"Medi 1 Hits","init":"HIT","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Hits","logo":"https://bridge.medi1.com/images/webradios/new/hits.jpg?123"},
+{"id":11,"name":"Medi 1 Jazz","init":"JAZ","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Jazz","logo":"https://bridge.medi1.com/images/webradios/new/jazz.jpg?123"},
+{"id":12,"name":"Medi 1 Française","init":"FRA","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Francaise","logo":"https://bridge.medi1.com/images/webradios/new/chanson%20fran%C3%A7aise.jpg?123"},
+{"id":13,"name":"Medi 1 DJ","init":"DJ","cat":"موسيقى","stream":"https://cdn.live.easybroadcast.io/medi1radio/Dj","logo":"https://bridge.medi1.com/images/webradios/new/dj.jpg?123"},
+{"id":14,"name":"Hit Radio","init":"HIT","cat":"موسيقى","stream":"https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Hit%20Radio.png"},
+{"id":15,"name":"Radio Mars","init":"MARS","cat":"رياضة","stream":"https://radiomars.ice.infomaniak.ch/radiomars-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/refs/heads/main/Radio%20Mars.jpg"},
+{"id":16,"name":"Med Radio","init":"MED","cat":"أخبار","stream":"https://medradio.ice.infomaniak.ch/medradio-128.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/4/48/Med_Radio_logo.svg/1200px-Med_Radio_logo.svg.png"},
+{"id":17,"name":"Chada FM","init":"CHD","cat":"موسيقى","stream":"https://edge19.vedge.infomaniak.com/livecast/ik:chadatv/chunklist_w2053981091.m3u8","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/3/3e/Chada_FM_logo.svg/1200px-Chada_FM_logo.svg.png"},
+{"id":18,"name":"MFM Radio","init":"MFM","cat":"أخبار","stream":"https://a5.asurahosting.com:7980/radio.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/0/05/MFM_Radio_logo.svg/1200px-MFM_Radio_logo.svg.png"},
+{"id":19,"name":"Radio Aswat","init":"ASW","cat":"مجتمع","stream":"https://aswat.ice.infomaniak.ch/aswat-high.mp3","logo":"https://www.radioaswat.com/images/logo.png"},
+{"id":20,"name":"Atlantic Radio","init":"ATL","cat":"أخبار","stream":"https://atlantic-sonic.nindohost.net:9300/stream/1/.mp3","logo":"https://www.atlanticradio.ma/images/logo.png"},
+{"id":21,"name":"Medina FM","init":"MED","cat":"موسيقى","stream":"https://medinafm.ice.infomaniak.ch/medinafm-64.mp3","logo":"https://www.medinafm.ma/images/logo.png"},
+{"id":22,"name":"Cap Radio","init":"CAP","cat":"جهوية","stream":"https://listen.radioking.com/radio/710810/stream/776360","logo":"https://www.capradio.ma/images/logo.png"},
+{"id":23,"name":"Radio Quran","init":"QR","cat":"دينية","stream":"http://s2.voscast.com:12312/;.mp3","logo":"https://upload.wikimedia.org/wikipedia/fr/thumb/9/9a/Radio_Quran_logo.svg/1200px-Radio_Quran_logo.svg.png"},
+{"id":24,"name":"URADIO","init":"URA","cat":"موسيقى","stream":"https://uradio-aac.ice.infomaniak.ch/uradio.aac","logo":"https://www.uradio.ma/images/logo.png"},
+{"id":25,"name":"Radio 2M","init":"2M","cat":"وطنية","stream":"https://d3ctxlq1ktw2nl.cloudfront.net/staging/2021-4-26/401b5514-f59f-7e6c-e5b6-fd72f9a5ade0.mp3","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDjwpx9_oGqBWAuNY5ZsX7RwiUf0Fdd7ifwMgrm3cDrv6qwdrdBh5XA7zz&s=10"},
+{"id":26,"name":"Zine Bladi","init":"ZB","cat":"دينية","stream":"https://asmaki.ma:8000/radio.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/zine%20bladi.png"},
+{"id":27,"name":"Radio Yabiladi","init":"YAB","cat":"موسيقى","stream":"http://media.yabiladi.com:8000/stream","logo":"https://www.yabiladi.com/images/logo.png"},
+{"id":28,"name":"Radio Atbir","init":"ATB","cat":"موسيقى","stream":"https://radioatbir.radioca.st/stream","logo":"https://cdn.instant.audio/images/logos/radio-co-ma/atbir.png"},
+{"id":29,"name":"Radio Plus","init":"PLS","cat":"موسيقى","stream":"https://radioplus.ice.infomaniak.ch/radioplus-high.mp3","logo":"https://www.radioplus.ma/images/logo.png"},
+{"id":30,"name":"Skyrock Casablanca","init":"SKY","cat":"موسيقى","stream":"https://icecast.skyrock.net/s/casa_aac_128k?tvr_name=radiofr&tvr_section1=64aac","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/skyrockcasablanca.webp"},
+{"id":31,"name":"Radio Sawa","init":"SAW","cat":"أخبار","stream":"https://montecarlodoualiya128k.ice.infomaniak.ch/mc-doualiya.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/Radio%20sawa.png"},
+{"id":32,"name":"Rim Radio","init":"RIM","cat":"أخبار","stream":"https://streaming.rimradio.ma/live.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/Radio-Rim-logo.png"},
+{"id":33,"name":"Radio Tangermed","init":"TNG","cat":"جهوية","stream":"https://radiotangermed-22.ice.infomaniak.ch/radiotangermed-22-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/radiotangermed.png"},
+{"id":34,"name":"Radio Azawan","init":"AZA","cat":"موسيقى","stream":"https://az-maroc.ice.infomaniak.ch/az-maroc-128.mp3","logo":"https://raw.githubusercontent.com/Azzeddine786/Radiomoroco/main/radio_azawan_logo.jpeg"},
+{"id":35,"name":"أضواء FM","init":"ADW","cat":"موسيقى","stream":"https://stream.zeno.fm/5bxh2nh0x1zuv","logo":"https://adwaafm.com/wp-content/uploads/2023/11/adwaalogo.png"},
+{"id":36,"name":"أضواء FM 2","init":"AD2","cat":"موسيقى","stream":"https://stream.zeno.fm/vrrtqsh0x1zuv","logo":"https://static.mytuner.mobi/media/tvos_radios/sax28w3r9x4a.png"},
+{"id":37,"name":"أضواء FM 3","init":"AD3","cat":"موسيقى","stream":"https://stream.zeno.fm/x4451xh0x1zuv","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQOUVHszFsriAQC0zumT-wFJZuRlHZsTjhh1KYbKJELwfYr-JTObfbTs&s=10"},
+{"id":38,"name":"أضواء FM 4","init":"AD4","cat":"موسيقى","stream":"https://stream.zeno.fm/8wrs2bh0x1zuv","logo":"https://static.mytuner.mobi/media/tvos_radios/nwanbpafczez.png"},
+{"id":39,"name":"أضواء FM 5","init":"AD5","cat":"موسيقى","stream":"https://stream.zeno.fm/ezxx195gq2zuv","logo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM21lSWNXBYKLQckCr9khdOijwuo9iIkJFGucul-gIpg&s=10"},
+{"id":40,"name":"أضواء FM 6","init":"AD6","cat":"موسيقى","stream":"https://stream.zeno.fm/tvxvud2kpm0uv","logo":"https://radio-maroc-live.com/storage/radios/23446/64451/conversions/EPJ8UXYZsa7Cx3fMWPId7ZvuBzWg16-metaYWR3YWFmbTYucG5n--lg.webp"},
+{"id":41,"name":"HIT RADIO Burkina Faso","init":"HBF","cat":"موسيقى","stream":"https://hr-burkina.ice.infomaniak.ch/hr-burkina-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/new_burkinafaso-2.c813f412.png"},
+{"id":42,"name":"HIT RADIO Centrafrique","init":"HCA","cat":"موسيقى","stream":"https://hr-rca.ice.infomaniak.ch/hr-rca-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_centrafrique-2.c1117e39.png"},
+{"id":43,"name":"HIT RADIO Congo","init":"HCO","cat":"موسيقى","stream":"https://hr-congobrazza.ice.infomaniak.ch/hr-congobrazza-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/congo.d79d6f80.png"},
+{"id":44,"name":"HIT RADIO Côte d'Ivoire","init":"HCI","cat":"موسيقى","stream":"https://hrci.ice.infomaniak.ch/ci-abidjan-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/image-cote-devoir-2.db70765b.png"},
+{"id":45,"name":"HIT RADIO Gabon","init":"HGA","cat":"موسيقى","stream":"https://hr-gabon.ice.infomaniak.ch/hr-gabon-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_gabon-2.257aa39e.png"},
+{"id":46,"name":"HIT RADIO Niger","init":"HNI","cat":"موسيقى","stream":"https://hr-niger.ice.infomaniak.ch/hr-niger-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/img_niger-2.d9ef6a90.png"},
+{"id":47,"name":"HIT RADIO Tchad","init":"HTC","cat":"موسيقى","stream":"https://hr-tchad.ice.infomaniak.ch/hr-tchad-128.mp3","logo":"https://www.hitradio.ma/_next/static/media/HIT_RADIO_TCHAD-2.d1a48990.png"},
+{"id":48,"name":"HIT RADIO Togo","init":"HTO","cat":"موسيقى","stream":"https://hrtogo.ice.infomaniak.ch/hr-togo-20.mp3","logo":"https://www.hitradio.ma/_next/static/media/new_togo-2.08a554c6.png"}
+]
+</script>
 
 <!-- ============ wpadmngr Ad Manager ============ -->
 <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="473321"></script>
 <!-- ============ End wpadmngr ============ -->
 
+<!-- ============ Service Worker ============ -->
 <script>
-// ============ محرك الترجمة واللغات الثلاث ============
+if ('serviceWorker' in navigator) {
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js').then(function(reg) {
+console.log('SW registered:', reg.scope);
+}).catch(function(err) {
+console.log('SW registration failed:', err);
+});
+});
+}
+</script>
+<!-- ============ End Service Worker ============ -->
+
+<script>
+// ============ محرك الترجمة واللغات ============
 const translations = {
   ar: {
     skip: "تخطَّ إلى المحتوى", nav_stations: "المحطات", nav_articles: "المقالات", nav_about: "من نحن", nav_contact: "اتصل بنا",
-    promo_text: "تطبيق راديو المغرب متاح الآن - استماع مباشر أسرع", btn_download: "تحميل",
     hero_kicker: "دليل مستقل للإذاعات المغربية", hero_title: "استمع إلى الإذاعات المغربية <strong>مباشرة</strong>",
     hero_desc: "ميدي 1، هيت راديو، راديو مارس، شذى FM وعشرات المحطات الأخرى في مكان واحد: أخبار وموسيقى ورياضة وقرآن وأمازيغية. اضغط «استمع» وابدأ، بلا تسجيل ولا تحميل.",
     btn_listen_now: "استمع الآن ▶", btn_browse: "تصفح المحطات ↓",
-    dir_title: "دليل المحطات", search_placeholder: "ابحث عن محطة...", filter_all: "الكل", filter_music: "موسيقى", filter_news: "أخبار", filter_sport: "رياضة", filter_fav: "⭐ المفضلة",
+    dir_title: "دليل المحطات", search_placeholder: "ابحث عن محطة...", filter_all: "الكل", filter_music: "موسيقى", filter_news: "أخبار", filter_sport: "رياضة", filter_religious: "دينية", filter_fav: "⭐ المفضلة",
     empty_text: "لا توجد محطات مطابقة. جرّب كلمة أخرى.", app_title: "تجربة أفضل على هاتفك", app_desc: "استماع مباشر أسرع وواجهة مصممة للهاتف، مجاناً.",
     footer_desc: "دليل مستقل للاستماع إلى الإذاعات المغربية. نكتب أدلتنا بأنفسنا ولا نتبع أي محطة.", footer_privacy: "الخصوصية", footer_terms: "شروط الاستخدام",
-    player_choose: "اختر محطة", player_ready: "جاهز", cookie_text: "نستعمل التخزين المحلي لحفظ مفضلتك.", btn_ok: "موافق"
+    player_choose: "اختر محطة", player_ready: "جاهز", cookie_text: "نستعمل التخزين المحلي لحفظ مفضلتك.", btn_ok: "موافق", btn_download: "تحميل التطبيق"
   },
   fr: {
     skip: "Aller au contenu", nav_stations: "Stations", nav_articles: "Articles", nav_about: "À propos", nav_contact: "Contact",
-    promo_text: "L'application Radio Maroc est disponible - Écoute plus rapide", btn_download: "Télécharger",
     hero_kicker: "Guide indépendant des radios marocaines", hero_title: "Écoutez les radios marocaines <strong>en direct</strong>",
     hero_desc: "Medi 1, Hit Radio, Radio Mars, Chada FM et des dizaines d'autres stations au même endroit : actualités, musique, sport, Coran et amazigh. Cliquez sur « Écouter » et c'est parti.",
     btn_listen_now: "Écouter maintenant ▶", btn_browse: "Parcourir les stations ↓",
-    dir_title: "Annuaire des stations", search_placeholder: "Rechercher une station...", filter_all: "Tout", filter_music: "Musique", filter_news: "Actualités", filter_sport: "Sport", filter_fav: "⭐ Favoris",
+    dir_title: "Annuaire des stations", search_placeholder: "Rechercher une station...", filter_all: "Tout", filter_music: "Musique", filter_news: "Actualités", filter_sport: "Sport", filter_religious: "Religion", filter_fav: "⭐ Favoris",
     empty_text: "Aucune station trouvée. Essayez un autre mot.", app_title: "Meilleure expérience sur mobile", app_desc: "Écoute directe plus rapide, interface mobile, gratuit.",
     footer_desc: "Guide indépendant pour écouter les radios marocaines. Nous écrivons nos propres guides.", footer_privacy: "Confidentialité", footer_terms: "Conditions",
-    player_choose: "Choisir une station", player_ready: "Prêt", cookie_text: "Nous utilisons le stockage local pour vos favoris.", btn_ok: "Accepter"
-  },
-  en: {
-    skip: "Skip to content", nav_stations: "Stations", nav_articles: "Articles", nav_about: "About", nav_contact: "Contact",
-    promo_text: "Radio Maroc app is now available - Faster live listening", btn_download: "Download",
-    hero_kicker: "Independent guide to Moroccan radio", hero_title: "Listen to Moroccan radios <strong>live</strong>",
-    hero_desc: "Medi 1, Hit Radio, Radio Mars, Chada FM and dozens of other stations in one place: news, music, sports, Quran and Amazigh. Click 'Listen' and start.",
-    btn_listen_now: "Listen now ▶", btn_browse: "Browse stations ↓",
-    dir_title: "Station Directory", search_placeholder: "Search for a station...", filter_all: "All", filter_music: "Music", filter_news: "News", filter_sport: "Sport", filter_fav: "⭐ Favorites",
-    empty_text: "No stations found. Try another word.", app_title: "Better experience on mobile", app_desc: "Faster live streaming, mobile-friendly interface, free.",
-    footer_desc: "Independent guide to listening to Moroccan radios. We write our own guides.", footer_privacy: "Privacy", footer_terms: "Terms",
-    player_choose: "Choose a station", player_ready: "Ready", cookie_text: "We use local storage to save your favorites.", btn_ok: "Agree"
+    player_choose: "Choisir une station", player_ready: "Prêt", cookie_text: "Nous utilisons le stockage local pour vos favoris.", btn_ok: "Accepter", btn_download: "Télécharger"
   }
 };
 
@@ -362,16 +403,10 @@ let currentLang = localStorage.getItem('rm_lang') || 'ar';
 function applyLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('rm_lang', lang);
-  
-  // تغيير اتجاه الصفحة
   document.documentElement.lang = lang;
   document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-  
-  // تحديث زر اللغة
   const langBtn = document.getElementById('langToggle');
   if(langBtn) langBtn.textContent = lang.toUpperCase();
-
-  // ترجمة النصوص
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
@@ -381,16 +416,13 @@ function applyLanguage(lang) {
 }
 
 function toggleLang() {
-  const order = ['ar', 'fr', 'en'];
-  let nextIndex = (order.indexOf(currentLang) + 1) % order.length;
-  applyLanguage(order[nextIndex]);
+  applyLanguage(currentLang === 'ar' ? 'fr' : 'ar');
 }
 
-// تطبيق اللغة فور التحميل
+// ============ توليد المحطات والمشغل ============
 document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(currentLang);
   
-  // إظهار إشعار الكوكيز
   const cookieBar = document.getElementById('cookieBar');
   if (cookieBar && !localStorage.getItem('rm_cookie')) {
     cookieBar.style.display = 'block';
@@ -400,13 +432,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // إظهار البانر الترويجي
-  const promo = document.getElementById('promo');
-  if(promo && !localStorage.getItem('rm_promo')) {
-    promo.style.display = 'block';
-  }
-
-  // تحديث الساعة
   const clock = document.getElementById('clock');
   if(clock) {
     setInterval(() => {
@@ -414,29 +439,126 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   }
 
-  // توليد المحطات ديناميكياً (لضمان عمل الفلاتر مع البحث)
   const grid = document.getElementById('stationGrid');
+  const emptyBox = document.getElementById('emptyBox');
+  const countTxt = document.getElementById('countTxt');
+  const searchInput = document.getElementById('mainSearch');
   const stations = JSON.parse(document.getElementById('stations-data').textContent);
   
   if(grid) {
     grid.innerHTML = stations.map(s => `
-      <article class="station" data-id="${s.id}" data-name="${s.name.toLowerCase()}">
+      <article class="station" data-id="${s.id}" data-cat="${s.cat}" data-name="${s.name.toLowerCase()}">
         <div class="tile-top">
-          <div class="logo">${s.init}</div>
-          <button class="fav" aria-label="حفظ" onclick="toggleFav(${s.id}, this)">
+          <div class="logo"><span>${s.init}</span><img src="${s.logo}" alt="${s.name}" onerror="this.remove()"></div>
+          <button class="fav" aria-label="حفظ" aria-pressed="false">
             <svg viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
           </button>
         </div>
         <h3>${s.name}</h3>
-        <p class="meta">المغرب</p>
+        <p class="meta">المغرب • ${s.cat}</p>
         <div class="tile-foot">
-          <button class="play" onclick="playStation(${s.id})">
+          <button class="play" data-src="${s.stream}" data-name="${s.name}" data-init="${s.init}">
             <span class="disc"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
             <span class="play-label">استمع</span>
           </button>
+          <span class="tag">${s.cat}</span>
         </div>
       </article>
     `).join('');
+    
+    // تفعيل الفلترة
+    const chips = document.querySelectorAll('.chip');
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
+        chip.setAttribute('aria-pressed', 'true');
+        const filter = chip.getAttribute('data-filter');
+        
+        let count = 0;
+        document.querySelectorAll('.station').forEach(st => {
+          let show = false;
+          if(filter === 'all') show = true;
+          else if(filter === 'fav') show = (st.querySelector('.fav').getAttribute('aria-pressed') === 'true');
+          else if(filter.startsWith('cat:')) show = st.getAttribute('data-cat') === filter.split(':')[1];
+          
+          if(show && searchInput.value) {
+            show = st.getAttribute('data-name').includes(searchInput.value.toLowerCase());
+          }
+          
+          st.hidden = !show;
+          if(show) count++;
+        });
+        if(emptyBox) emptyBox.hidden = count > 0;
+        if(countTxt) countTxt.textContent = count;
+      });
+    });
+
+    // تفعيل البحث
+    if(searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const q = e.target.value.toLowerCase();
+        let count = 0;
+        document.querySelectorAll('.station').forEach(st => {
+          const show = st.getAttribute('data-name').includes(q);
+          st.hidden = !show;
+          if(show) count++;
+        });
+        if(emptyBox) emptyBox.hidden = count > 0;
+        if(countTxt) countTxt.textContent = count;
+      });
+    }
+
+    // المفضلة
+    document.querySelectorAll('.fav').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isFav = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', !isFav);
+      });
+    });
+
+    // تشغيل الصوت
+    const playerBar = document.getElementById('playerBar');
+    const pName = document.getElementById('pName');
+    const pStatus = document.getElementById('pStatus');
+    const pDot = document.getElementById('pDot');
+    const pLogo = document.getElementById('pLogo');
+    const playBtn = document.getElementById('playBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    let audio = new Audio();
+    
+    grid.addEventListener('click', (e) => {
+      const playBtnClicked = e.target.closest('.play');
+      if(playBtnClicked) {
+        const src = playBtnClicked.getAttribute('data-src');
+        const name = playBtnClicked.getAttribute('data-name');
+        const init = playBtnClicked.getAttribute('data-init');
+        
+        audio.src = src;
+        audio.play().catch(() => alert('تعذر تشغيل هذا البث.'));
+        
+        pName.textContent = name;
+        pStatus.textContent = 'جاري التشغيل...';
+        pDot.style.background = '#f39c7d';
+        pLogo.textContent = init;
+        pLogo.innerHTML = init;
+        playerBar.classList.add('open');
+      }
+    });
+
+    audio.addEventListener('playing', () => {
+      pStatus.textContent = 'على الهواء الآن';
+      pDot.style.background = '#4ade80';
+      playBtn.innerHTML = '<svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
+    });
+
+    playBtn.addEventListener('click', () => {
+      if(audio.paused) audio.play(); else audio.pause();
+    });
+
+    stopBtn.addEventListener('click', () => {
+      audio.pause();
+      playerBar.classList.remove('open');
+    });
   }
 });
 </script>
