@@ -1,4 +1,5 @@
-name: Unzip Radio Maroc
+
+name: Publish Radio Maroc
 
 on:
   workflow_dispatch:
@@ -7,42 +8,44 @@ permissions:
   contents: write
 
 jobs:
-  unzip:
+  publish:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Extract ZIP
+      - name: Copy website files to root
         run: |
-          # اسم الملف المضغوط
-          ZIP_FILE="radiomaroc-site.zip"
+          set -e
 
-          if [ ! -f "$ZIP_FILE" ]; then
-            echo "ZIP file not found"
+          if [ ! -d "radiomaroc-site" ]; then
+            echo "Website folder not found"
             exit 1
           fi
 
-          # فك الضغط في المجلد الحالي
-          unzip -o "$ZIP_FILE" -d .
-          
-          # حذف الملف المضغوط بعد فك الضغط
-          rm -f "$ZIP_FILE"
+          # Copy all files, including hidden files
+          cp -a radiomaroc-site/. .
 
-          # --- نقل الملفات من المجلد الفرعي إلى الجذر ---
-          # نقل الملفات العادية
-          if [ -d "radiomaroc-site" ]; then
-            mv radiomaroc-site/* . 2>/dev/null || true
-            # نقل الملفات المخفية (مثل .nojekyll)
-            mv radiomaroc-site/.* . 2>/dev/null || true
-            # حذف المجلد الفارغ
-            rmdir radiomaroc-site 2>/dev/null || true
+          # Verify website entry point
+          if [ ! -f "index.html" ]; then
+            echo "ERROR: index.html is missing"
+            exit 1
           fi
-          
-          # إعدادات Git
+
+          # Ensure GitHub Pages does not use Jekyll
+          touch .nojekyll
+
+      - name: Commit and push
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # إضافة كل التغييرات ورفعها
           git add -A
-          git commit -m "Extract Radio Maroc website and move to root" || echo "No changes to commit"
-          git push
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish Radio Maroc website to root"
+            git push
+          else
+            echo "No changes to publish"
+          fi
