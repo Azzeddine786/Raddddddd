@@ -1,98 +1,1042 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-<url><loc>https://radiomaroc.live/</loc><lastmod>2026-11-20</lastmod><priority>1.0</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/"/></url>
-<url><loc>https://radiomaroc.live/fr/</loc><lastmod>2026-11-20</lastmod><priority>1.0</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/"/></url>
-<url><loc>https://radiomaroc.live/en/</loc><lastmod>2026-11-20</lastmod><priority>1.0</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/"/></url>
-<url><loc>https://radiomaroc.live/articles</loc><lastmod>2026-11-20</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles"/></url>
-<url><loc>https://radiomaroc.live/fr/articles</loc><lastmod>2026-11-20</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles"/></url>
-<url><loc>https://radiomaroc.live/en/articles</loc><lastmod>2026-11-20</lastmod><priority>0.9</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles"/></url>
-<url><loc>https://radiomaroc.live/listen-radio-online-morocco</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/listen-radio-online-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-online-free"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/listen-radio-online-morocco"/></url>
-<url><loc>https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/listen-radio-online-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-online-free"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/listen-radio-online-morocco"/></url>
-<url><loc>https://radiomaroc.live/en/listen-moroccan-radio-online-free</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/listen-radio-online-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-online-free"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/listen-radio-online-morocco"/></url>
-<url><loc>https://radiomaroc.live/medi1-music-channels-guide</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi1-music-channels-guide"/></url>
-<url><loc>https://radiomaroc.live/fr/chaines-musicales-medi-1</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi1-music-channels-guide"/></url>
-<url><loc>https://radiomaroc.live/en/medi-1-music-channels-guide</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-music-channels-guide"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi1-music-channels-guide"/></url>
-<url><loc>https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/></url>
-<url><loc>https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/></url>
-<url><loc>https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-fm-frequencies-by-city"/></url>
-<url><loc>https://radiomaroc.live/moroccan-french-language-radio</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-french-language-radio"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/french-language-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-french-language-radio"/></url>
-<url><loc>https://radiomaroc.live/fr/radios-marocaines-en-francais</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-french-language-radio"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/french-language-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-french-language-radio"/></url>
-<url><loc>https://radiomaroc.live/en/french-language-radio-morocco</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-french-language-radio"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/french-language-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-french-language-radio"/></url>
-<url><loc>https://radiomaroc.live/casablanca-radio-stations</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/casablanca-radio-stations"/></url>
-<url><loc>https://radiomaroc.live/fr/radios-casablanca-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/casablanca-radio-stations"/></url>
-<url><loc>https://radiomaroc.live/en/casablanca-radio-stations</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/casablanca-radio-stations"/></url>
-<url><loc>https://radiomaroc.live/moroccan-radio-alexa-google-home</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/></url>
-<url><loc>https://radiomaroc.live/fr/radio-marocaine-alexa-google-home</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/></url>
-<url><loc>https://radiomaroc.live/en/moroccan-radio-alexa-google-home</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/moroccan-radio-alexa-google-home"/></url>
-<url><loc>https://radiomaroc.live/chaabi-radio-morocco</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaabi-radio-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-nayda-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaabi-radio-morocco"/></url>
-<url><loc>https://radiomaroc.live/fr/radio-chaabi-nayda-maroc</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaabi-radio-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-nayda-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaabi-radio-morocco"/></url>
-<url><loc>https://radiomaroc.live/en/chaabi-nayda-radio-morocco</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaabi-radio-morocco"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-nayda-radio-morocco"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaabi-radio-morocco"/></url>
-<url><loc>https://radiomaroc.live/radio-marrakech-tangier</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marrakech-tangier"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/marrakech-tangier-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marrakech-tangier"/></url>
-<url><loc>https://radiomaroc.live/fr/radios-marrakech-tanger</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marrakech-tangier"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/marrakech-tangier-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marrakech-tangier"/></url>
-<url><loc>https://radiomaroc.live/en/marrakech-tangier-radio-stations</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marrakech-tangier"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/marrakech-tangier-radio-stations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marrakech-tangier"/></url>
-<url><loc>https://radiomaroc.live/medi-1-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live"/></url>
-<url><loc>https://radiomaroc.live/fr/medi-1-radio-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live"/></url>
-<url><loc>https://radiomaroc.live/en/medi-1-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live"/></url>
-<url><loc>https://radiomaroc.live/hit-radio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/fr/hit-radio-maroc-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/en/hit-radio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/radio-mars-live-frequency</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/fr/radio-mars-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/en/radio-mars-live-frequency</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/med-radio-live-frequency</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/fr/med-radio-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/en/med-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/chada-fm-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live"/></url>
-<url><loc>https://radiomaroc.live/fr/chada-fm-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live"/></url>
-<url><loc>https://radiomaroc.live/en/chada-fm-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live"/></url>
-<url><loc>https://radiomaroc.live/mfm-radio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/fr/mfm-radio-maroc-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/en/mfm-radio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/quran-radio-morocco-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/quran-radio-morocco-live"/></url>
-<url><loc>https://radiomaroc.live/fr/radio-coran-maroc-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/quran-radio-morocco-live"/></url>
-<url><loc>https://radiomaroc.live/en/quran-radio-morocco-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/quran-radio-morocco-live"/></url>
-<url><loc>https://radiomaroc.live/cap-radio-live-frequency</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/fr/cap-radio-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/en/cap-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/aswat-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live"/></url>
-<url><loc>https://radiomaroc.live/fr/aswat-radio-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live"/></url>
-<url><loc>https://radiomaroc.live/en/aswat-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live"/></url>
-<url><loc>https://radiomaroc.live/medina-fm-live-frequency</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/fr/medina-fm-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/en/medina-fm-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency"/></url>
-<url><loc>https://radiomaroc.live/atlantic-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live"/></url>
-<url><loc>https://radiomaroc.live/fr/atlantic-radio-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live"/></url>
-<url><loc>https://radiomaroc.live/en/atlantic-radio-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live"/></url>
-<url><loc>https://radiomaroc.live/uradio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/fr/uradio-maroc-en-direct</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/en/uradio-maroc-live</loc><lastmod>2026-11-20</lastmod><priority>0.8</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live"/></url>
-<url><loc>https://radiomaroc.live/radio-stream-not-working-fixes</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/choose-radio-car-phone-morocco</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/listen-moroccan-radio-abroad</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/moroccan-music-on-radio</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/best-moroccan-news-radio</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/sports-radio-morocco</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/regional-moroccan-radio-guide</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/ramadan-radio-morocco</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/best-moroccan-radio-stations-2026</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/history-of-moroccan-radio</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/amazigh-radio-morocco</loc><lastmod>2026-11-18</lastmod><priority>0.8</priority></url>
-<url><loc>https://radiomaroc.live/about</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/a-propos"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about"/></url>
-<url><loc>https://radiomaroc.live/fr/a-propos</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/a-propos"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about"/></url>
-<url><loc>https://radiomaroc.live/en/about</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/a-propos"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about"/></url>
-<url><loc>https://radiomaroc.live/contact</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact"/></url>
-<url><loc>https://radiomaroc.live/fr/contact</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact"/></url>
-<url><loc>https://radiomaroc.live/en/contact</loc><lastmod>2026-11-20</lastmod><priority>0.5</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact"/></url>
-<url><loc>https://radiomaroc.live/privacy</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy"/></url>
-<url><loc>https://radiomaroc.live/fr/confidentialite</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy"/></url>
-<url><loc>https://radiomaroc.live/en/privacy</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy"/></url>
-<url><loc>https://radiomaroc.live/terms</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms"/></url>
-<url><loc>https://radiomaroc.live/fr/conditions-utilisation</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms"/></url>
-<url><loc>https://radiomaroc.live/en/terms</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms"/></url>
-<url><loc>https://radiomaroc.live/disclaimer</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer"/></url>
-<url><loc>https://radiomaroc.live/fr/avertissement</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer"/></url>
-<url><loc>https://radiomaroc.live/en/disclaimer</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer"/></url>
-<url><loc>https://radiomaroc.live/cookies</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies"/></url>
-<url><loc>https://radiomaroc.live/fr/cookies</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies"/></url>
-<url><loc>https://radiomaroc.live/en/cookies</loc><lastmod>2026-11-20</lastmod><priority>0.3</priority><xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies"/><xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies"/><xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies"/><xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies"/></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ============================================================
+       Radio Maroc — Sitemap v2.0
+       Date: 2026-11-26
+       Structure: GitHub Pages (.html extension)
+       Languages: ar (root) / fr (/fr/) / en (/en/)
+       Total: ~120 URLs
+       ============================================================ -->
+
+  <!-- ═══════════════════ 1. الصفحة الرئيسية ═══════════════════ -->
+  <url>
+    <loc>https://radiomaroc.live/index.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/index.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/index.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/index.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/index.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/index.html"/>
+  </url>
+
+  <!-- ═══════════════════ 2. صفحة المقالات ═══════════════════ -->
+  <url>
+    <loc>https://radiomaroc.live/articles.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/articles.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/articles.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/articles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/articles.html"/>
+  </url>
+
+  <!-- ═══════════════════ 3. الصفحات القانونية ═══════════════════ -->
+  <!-- ملاحظة: privacy.html و confidentialite.html نسختان لنفس الصفحة -->
+  <!-- يجب اختيار canonical واحدة لكل لغة. هنا: privacy=AR، confidentialite=FR -->
+
+  <!-- About / À propos / About -->
+  <url>
+    <loc>https://radiomaroc.live/about.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/about.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/about.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/about.html"/>
+  </url>
+
+  <!-- Contact / Contact -->
+  <url>
+    <loc>https://radiomaroc.live/contact.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/contact.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/contact.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/contact.html"/>
+  </url>
+
+  <!-- Privacy / Confidentialité -->
+  <url>
+    <loc>https://radiomaroc.live/privacy.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/confidentialite.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/privacy.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/privacy.html"/>
+  </url>
+
+  <!-- Terms / Conditions d'utilisation -->
+  <url>
+    <loc>https://radiomaroc.live/terms.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/conditions-utilisation.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/terms.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/conditions-utilisation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/terms.html"/>
+  </url>
+
+  <!-- Disclaimer / Avertissement -->
+  <url>
+    <loc>https://radiomaroc.live/disclaimer.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/avertissement.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/disclaimer.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/avertissement.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/disclaimer.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/disclaimer.html"/>
+  </url>
+
+  <!-- Cookies -->
+  <url>
+    <loc>https://radiomaroc.live/cookies.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/cookies.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/cookies.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cookies.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cookies.html"/>
+  </url>
+
+  <!-- ═══════════════════ 4. صفحات المحطات (Fiches stations) ═══════════════════ -->
+  <!-- 48 محطة: كل محطة لها صفحة live (EN/AR) وصفحة en-direct (FR) -->
+
+  <!-- 4.1 Medi 1 Radio -->
+  <url>
+    <loc>https://radiomaroc.live/medi-1-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/medi-1-radio-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/medi-1-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medi-1-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi-1-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medi-1-radio-live.html"/>
+  </url>
+
+  <!-- 4.2 Hit Radio -->
+  <url>
+    <loc>https://radiomaroc.live/hit-radio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/hit-radio-maroc-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/hit-radio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/hit-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/hit-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/hit-radio-maroc-live.html"/>
+  </url>
+
+  <!-- 4.3 Radio Mars -->
+  <url>
+    <loc>https://radiomaroc.live/radio-mars-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-mars-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/radio-mars-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-mars-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-mars-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-mars-live-frequency.html"/>
+  </url>
+
+  <!-- 4.4 Med Radio -->
+  <url>
+    <loc>https://radiomaroc.live/med-radio-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/med-radio-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/med-radio-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/med-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/med-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/med-radio-live-frequency.html"/>
+  </url>
+
+  <!-- 4.5 Chada FM -->
+  <url>
+    <loc>https://radiomaroc.live/chada-fm-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/chada-fm-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/chada-fm-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chada-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chada-fm-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chada-fm-live.html"/>
+  </url>
+
+  <!-- 4.6 MFM Radio -->
+  <url>
+    <loc>https://radiomaroc.live/mfm-radio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/mfm-radio-maroc-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/mfm-radio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/mfm-radio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/mfm-radio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/mfm-radio-maroc-live.html"/>
+  </url>
+
+  <!-- 4.7 Radio Aswat -->
+  <url>
+    <loc>https://radiomaroc.live/aswat-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/aswat-radio-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/aswat-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/aswat-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/aswat-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/aswat-radio-live.html"/>
+  </url>
+
+  <!-- 4.8 Medina FM -->
+  <url>
+    <loc>https://radiomaroc.live/medina-fm-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/medina-fm-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/medina-fm-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/medina-fm-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medina-fm-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/medina-fm-live-frequency.html"/>
+  </url>
+
+  <!-- 4.9 Cap Radio -->
+  <url>
+    <loc>https://radiomaroc.live/cap-radio-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/cap-radio-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/cap-radio-live-frequency.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/cap-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/cap-radio-live-frequency.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/cap-radio-live-frequency.html"/>
+  </url>
+
+  <!-- 4.10 Atlantic Radio -->
+  <url>
+    <loc>https://radiomaroc.live/atlantic-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/atlantic-radio-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/atlantic-radio-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/atlantic-radio-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/atlantic-radio-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/atlantic-radio-live.html"/>
+  </url>
+
+  <!-- 4.11 URADIO -->
+  <url>
+    <loc>https://radiomaroc.live/uradio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/uradio-maroc-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/uradio-maroc-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/uradio-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/uradio-maroc-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/uradio-maroc-live.html"/>
+  </url>
+
+  <!-- ═══════════════════ 5. مقالات وأدلة (Guides) ═══════════════════ -->
+
+  <!-- 5.1 "أفضل الإذاعات 2026" (3 لغات) -->
+  <url>
+    <loc>https://radiomaroc.live/best-moroccan-radio-stations-2026.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-marocaines-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/meilleures-radios-marocaines-2026.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-marocaines-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/best-moroccan-radio-stations-2026.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-marocaines-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-radio-stations-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/best-moroccan-radio-stations-2026.html"/>
+  </url>
+
+  <!-- 5.2 "ترددات FM حسب المدينة" -->
+  <url>
+    <loc>https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/frequences-radios-maroc-fm-par-ville.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-fm-frequencies-by-city.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/frequences-radios-maroc-fm-par-ville.html"/>
+  </url>
+
+  <!-- 5.3 "الاستماع من الخارج" -->
+  <url>
+    <loc>https://radiomaroc.live/ecouter-radios-marocaines-etranger.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-abroad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/ecouter-radios-marocaines-etranger.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-abroad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/listen-moroccan-radio-abroad.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radios-marocaines-etranger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-moroccan-radio-abroad.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radios-marocaines-etranger.html"/>
+  </url>
+
+  <!-- 5.4 "الموسيقى المغربية" -->
+  <url>
+    <loc>https://radiomaroc.live/musique-marocaine-a-la-radio.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-music-on-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/musique-marocaine-a-la-radio.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-music-on-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/moroccan-music-on-radio.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/musique-marocaine-a-la-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-music-on-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/musique-marocaine-a-la-radio.html"/>
+  </url>
+
+  <!-- 5.5 "إذاعة Ramadan" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-ramadan-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/ramadan-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-ramadan-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/ramadan-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/ramadan-radio-morocco.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-ramadan-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/ramadan-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-ramadan-maroc.html"/>
+  </url>
+
+  <!-- 5.6 "الرياضة" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-sportive-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/sports-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-sportive-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/sports-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/sports-radio-morocco.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-sportive-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/sports-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-sportive-maroc.html"/>
+  </url>
+
+  <!-- 5.7 "الإذاعات الجهوية" -->
+  <url>
+    <loc>https://radiomaroc.live/radios-regionales-marocaines-guide.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/regional-moroccan-radio-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radios-regionales-marocaines-guide.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/regional-moroccan-radio-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/regional-moroccan-radio-guide.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-regionales-marocaines-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/regional-moroccan-radio-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-regionales-marocaines-guide.html"/>
+  </url>
+
+  <!-- 5.8 "Alexa / Google Home" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-marocaine-alexa-google-home.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-marocaine-alexa-google-home.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/moroccan-radio-alexa-google-home.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-marocaine-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-radio-alexa-google-home.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-marocaine-alexa-google-home.html"/>
+  </url>
+
+  <!-- 5.9 "إصلاح البث" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-qui-se-coupe-solutions.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-stream-not-working-fixes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-qui-se-coupe-solutions.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-stream-not-working-fixes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/radio-stream-not-working-fixes.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-qui-se-coupe-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-stream-not-working-fixes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-qui-se-coupe-solutions.html"/>
+  </url>
+
+  <!-- 5.10 "اختيار راديو للسيارة" -->
+  <url>
+    <loc>https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/choose-radio-car-phone-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/choisir-radio-voiture-telephone-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/choose-radio-car-phone-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/choose-radio-car-phone-morocco.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/choisir-radio-voiture-telephone-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/choose-radio-car-phone-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/choisir-radio-voiture-telephone-maroc.html"/>
+  </url>
+
+  <!-- 5.11 "الموسيقى/الأمازيغية/الشعبي" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-amazighe-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/amazigh-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-amazighe-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/amazigh-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/amazigh-radio-morocco.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-amazighe-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/amazigh-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-amazighe-maroc.html"/>
+  </url>
+
+  <!-- 5.12 "الإذاعات الإخبارية" -->
+  <url>
+    <loc>https://radiomaroc.live/meilleures-radios-information-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-news-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/meilleures-radios-information-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-news-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/best-moroccan-news-radio.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/meilleures-radios-information-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/best-moroccan-news-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/meilleures-radios-information-maroc.html"/>
+  </url>
+
+  <!-- 5.13 "الإذاعات الفرنسية" -->
+  <url>
+    <loc>https://radiomaroc.live/radios-marocaines-en-francais.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-french-language-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radios-marocaines-en-francais.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-french-language-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/moroccan-french-language-radio.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marocaines-en-francais.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/moroccan-french-language-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marocaines-en-francais.html"/>
+  </url>
+
+  <!-- 5.14 "الاستماع أونلاين" -->
+  <url>
+    <loc>https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-radio-online-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-radio-online-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/listen-radio-online-morocco.html</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/listen-radio-online-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/ecouter-radio-maroc-en-ligne-gratuit.html"/>
+  </url>
+
+  <!-- 5.15 "راديو القرآن" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-coran-maroc-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-coran-maroc-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/quran-radio-morocco-live.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-coran-maroc-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/quran-radio-morocco-live.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-coran-maroc-en-direct.html"/>
+  </url>
+
+  <!-- 5.16 "تاريخ الإذاعة المغربية" -->
+  <url>
+    <loc>https://radiomaroc.live/histoire-radio-marocaine.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/history-of-moroccan-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/histoire-radio-marocaine.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/history-of-moroccan-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/history-of-moroccan-radio.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/histoire-radio-marocaine.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/history-of-moroccan-radio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/histoire-radio-marocaine.html"/>
+  </url>
+
+  <!-- 5.17 "الإذاعات حسب المدينة" -->
+  <url>
+    <loc>https://radiomaroc.live/radios-casablanca-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radios-casablanca-en-direct.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/casablanca-radio-stations.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-casablanca-en-direct.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/casablanca-radio-stations.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-casablanca-en-direct.html"/>
+  </url>
+
+  <!-- 5.18 "إذاعات مراكش وطنجة" -->
+  <url>
+    <loc>https://radiomaroc.live/radios-marrakech-tanger.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-marrakech-tangier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radios-marrakech-tanger.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-marrakech-tangier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/radio-marrakech-tangier.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radios-marrakech-tanger.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/radio-marrakech-tangier.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radios-marrakech-tanger.html"/>
+  </url>
+
+  <!-- 5.19 "Medi 1 Music Channels" -->
+  <url>
+    <loc>https://radiomaroc.live/chaines-musicales-medi-1.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi1-music-channels-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/chaines-musicales-medi-1.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi1-music-channels-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/medi1-music-channels-guide.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/chaines-musicales-medi-1.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/medi1-music-channels-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/chaines-musicales-medi-1.html"/>
+  </url>
+
+  <!-- 5.20 "Radio Chaabi" -->
+  <url>
+    <loc>https://radiomaroc.live/radio-chaabi-nayda-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/fr/radio-chaabi-nayda-maroc.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+  </url>
+  <url>
+    <loc>https://radiomaroc.live/en/chaabi-radio-morocco.html</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://radiomaroc.live/fr/radio-chaabi-nayda-maroc.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://radiomaroc.live/en/chaabi-radio-morocco.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://radiomaroc.live/radio-chaabi-nayda-maroc.html"/>
+  </url>
+
+  <!-- 5.21 "أضواء FM" ومحطات أخرى (أمثلة أحادية اللغة) -->
+  <url>
+    <loc>https://radiomaroc.live/radio-marrakech-tangier.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+
 </urlset>
